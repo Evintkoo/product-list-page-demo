@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend-products-sub-menu-productssubmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Products_Sub_Menu/ProductsSubMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-products-sub-menu-useproductssubmenustate-md-exists",
+    "category": "structural",
+    "target": "Frontend/Products_Sub_Menu/useProductsSubMenuState.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-products-sub-menu-productspagecontainer-md-exists",
+    "category": "structural",
+    "target": "Frontend/Products_Sub_Menu/ProductsPageContainer.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

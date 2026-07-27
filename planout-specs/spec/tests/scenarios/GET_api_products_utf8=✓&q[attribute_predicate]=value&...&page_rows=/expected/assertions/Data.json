@@ -1,0 +1,76 @@
+[
+  {
+    "id": "data-get-api-products-utf8-q-attribute-predicate-value-page-rows-productqueryparams-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ProductQueryParams.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-products-utf8-q-attribute-predicate-value-page-rows-productrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ProductRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/GET_api_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ProductQueryParams.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PRODUCT"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PRODUCT\" entity."
+  },
+  {
+    "id": "schema-declares-product_brand",
+    "category": "structural",
+    "target": "Data/GET_api_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ProductQueryParams.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PRODUCT_BRAND"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PRODUCT_BRAND\" entity."
+  },
+  {
+    "id": "schema-declares-product_type",
+    "category": "structural",
+    "target": "Data/GET_api_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ProductQueryParams.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PRODUCT_TYPE"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PRODUCT_TYPE\" entity."
+  },
+  {
+    "id": "schema-declares-tax",
+    "category": "structural",
+    "target": "Data/GET_api_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ProductQueryParams.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "TAX"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"TAX\" entity."
+  },
+  {
+    "id": "schema-declares-product_tag",
+    "category": "structural",
+    "target": "Data/GET_api_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ProductQueryParams.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PRODUCT_TAG"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PRODUCT_TAG\" entity."
+  },
+  {
+    "id": "schema-declares-product_tag_assignment",
+    "category": "structural",
+    "target": "Data/GET_api_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ProductQueryParams.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PRODUCT_TAG_ASSIGNMENT"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PRODUCT_TAG_ASSIGNMENT\" entity."
+  }
+]

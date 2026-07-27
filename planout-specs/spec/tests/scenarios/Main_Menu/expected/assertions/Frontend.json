@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-main-menu-topnav-md-exists",
+    "category": "structural",
+    "target": "Frontend/Main_Menu/TopNav.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-main-menu-usedebouncedvalue-md-exists",
+    "category": "structural",
+    "target": "Frontend/Main_Menu/useDebouncedValue.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]
