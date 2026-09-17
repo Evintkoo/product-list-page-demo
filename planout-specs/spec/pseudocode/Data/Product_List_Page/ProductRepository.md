@@ -1,70 +1,30 @@
-// Data access layer used exclusively by the Logic swimlane. No business rules here —
-// only storage/query concerns. This is where filtering, searching, and pagination are
-// physically executed against the Product table.
+/**
+ * Data access layer for Product entities.
+ * Handles database queries for the Product List Page, including filtering and pagination.
+ */
 
-FUNCTION getProductList(filters, pagination):
-  INPUT filters:
-    - search      : string, optional   // matched against productName, SKU, productCode
-    - brandName   : string, optional
-    - category    : string, optional
-    - status      : string, optional
-    - priceMin    : decimal, optional
-    - priceMax    : decimal, optional
-  INPUT pagination:
-    - page        : integer, default 1
-    - pageSize    : integer, default 20
+FUNCTION getProducts(filterCriteria, paginationParams):
+    // Construct base query for Product entity
+    query = SELECT * FROM Product
 
-  BEGIN
-    baseQuery = SELECT * FROM Product
+    // Apply filtering based on search input (e.g., productName or SKU)
+    IF filterCriteria.searchQuery IS NOT NULL:
+        query = query.WHERE(productName LIKE %filterCriteria.searchQuery% OR sku LIKE %filterCriteria.searchQuery%)
 
-    IF filters.search is provided:
-      baseQuery.WHERE productName ILIKE "%search%"
-                 OR SKU ILIKE "%search%"
-                 OR productCode ILIKE "%search%"
+    // Apply brand filtering if provided
+    IF filterCriteria.brandName IS NOT NULL:
+        query = query.AND(brandName == filterCriteria.brandName)
 
-    IF filters.brandName is provided:
-      baseQuery.WHERE brandName = filters.brandName
+    // Apply pagination
+    query = query.LIMIT(paginationParams.pageSize)
+    query = query.OFFSET(paginationParams.offset)
 
-    IF filters.category is provided:
-      baseQuery.WHERE category = filters.category
+    RETURN execute(query)
 
-    IF filters.status is provided:
-      baseQuery.WHERE status = filters.status
-
-    IF filters.priceMin is provided:
-      baseQuery.WHERE price >= filters.priceMin
-
-    IF filters.priceMax is provided:
-      baseQuery.WHERE price <= filters.priceMax
-
-    totalCount = COUNT(baseQuery)
-
-    results = baseQuery
-                .ORDER BY productName ASC
-                .OFFSET (pagination.page - 1) * pagination.pageSize
-                .LIMIT pagination.pageSize
-
-    RETURN {
-      items: results,          // array of Product records, fields as defined in Product table
-      totalCount: totalCount,  // used by Logic swimlane to compute totalPages
-      page: pagination.page,
-      pageSize: pagination.pageSize
-    }
-  END
-
-FUNCTION getProductById(id):
-  BEGIN
-    RETURN SELECT * FROM Product WHERE id = id LIMIT 1
-  END
-
-FUNCTION getDistinctBrandNames():
-  // Supports populating the "Brand" filter dropdown on the Frontend swimlane
-  BEGIN
-    RETURN SELECT DISTINCT brandName FROM Product ORDER BY brandName ASC
-  END
-
-FUNCTION getDistinctCategories():
-  // Supports populating the "Category" filter dropdown on the Frontend swimlane
-  BEGIN
-    RETURN SELECT DISTINCT category FROM Product WHERE category IS NOT NULL ORDER BY category ASC
-  END
+FUNCTION getProductCount(filterCriteria):
+    // Returns total count for pagination metadata
+    query = SELECT COUNT(*) FROM Product
+    IF filterCriteria.searchQuery IS NOT NULL:
+        query = query.WHERE(productName LIKE %filterCriteria.searchQuery% OR sku LIKE %filterCriteria.searchQuery%)
+    
+    RETURN execute(query)

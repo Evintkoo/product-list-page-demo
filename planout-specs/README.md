@@ -1,11 +1,12 @@
 # Build app
 
-Four ways to build `/app/` from this bundle:
+Five ways to build `/app/` from this bundle:
 
 1. **In Claude Code:** open this folder and type `/planout`. Runs the build interactively, in your own session, with your normal tool-approval prompts.
 2. **In Antigravity / Cursor / VS Code:** open this folder → Command Palette → `Tasks: Run Task` → `Build App`.
-3. **Double-click `build.sh`** (POSIX) or **`build.bat`** (Windows). Headless — defaults to Claude Code.
-4. **Swap providers:** `AGENT_CMD="gemini -p" ./build.sh`. See the header of `build.sh` for all env-var knobs (`AGENT_CMD`, `PROMPT_FILE`, `PROGRESS_LOG`).
+3. **Double-click `build.sh`.** Headless — defaults to Claude Code. (Windows: run it from WSL or Git Bash — there's no native `.bat`.)
+4. **Swap providers:** `build.sh` runs the build inside your repl over SSH when `REPLIT_SSH_HOST` is set, falling back to local `claude` if that fails; it exits with instructions if neither is available. Point it at any other agent yourself with `AGENT_CMD="gemini -p" ./build.sh`. See the header of `build.sh` for all env-var knobs (`AGENT_CMD`, `REPLIT_SSH_HOST`, `REPLIT_AGENT_CMD`, `PROMPT_FILE`, `PROGRESS_LOG`).
+5. **In Replit:** upload this bundle's ZIP at **replit.com/import** (any plan). The root `replit.md` tells Replit Agent that `spec/AGENTS.md` is the contract, so one sentence in Agent chat starts the build — or run `./build.sh` in the Repl's Shell with Claude Code installed. Paid plans can also script it from your own terminal over SSH (`REPLIT_SSH_HOST=… ./build.sh`). All in `REPLIT_GUIDE.md`.
 
 ## Layout
 
@@ -28,9 +29,11 @@ Running a build produces three top-level directories:
 
 ### Workspace root
 
-- `build.sh` / `build.bat` — the headless build entry points.
+- `build.sh` — the headless build entry point.
 - `.claude/commands/planout.md` — the `/planout` interactive build entry point.
 - `CLAUDE.md` — points Claude Code at `spec/AGENTS.md` automatically when you reopen **this folder** (Claude Code auto-loads `CLAUDE.md`, not `AGENTS.md`), so the rules below apply without retyping `/planout`. Opening Claude Code from inside `/app/` instead is a different project root and won't pick this up — reopen the bundle root, or ask the agent to read `spec/AGENTS.md` directly.
+- `replit.md` — auto-read by Replit Agent after a ZIP import at replit.com/import; points it at `spec/AGENTS.md`, the same way `CLAUDE.md` does for Claude Code.
+- `REPLIT_GUIDE.md` — Replit walkthrough: ZIP import (any plan), or SSH so `build.sh` runs inside your repl from your own terminal (paid plans).
 - `.vscode/tasks.json` — `Build App` Command Palette entry.
 - `.devcontainer/devcontainer.json` — Codespaces / VS Code dev container for the bundle itself.
 

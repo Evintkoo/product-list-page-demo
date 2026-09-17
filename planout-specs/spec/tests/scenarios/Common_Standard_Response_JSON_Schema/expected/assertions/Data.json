@@ -1,199 +1,26 @@
 [
   {
-    "id": "data-common-standard-response-json-schema-httpstatuscodeoverview-md-exists",
+    "id": "data-common-standard-response-json-schema-apiresponsetypes-md-exists",
     "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HttpStatusCodeOverview.md",
+    "target": "Data/Common_Standard_Response_JSON_Schema/ApiResponseTypes.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
-    "id": "data-common-standard-response-json-schema-http201response-md-exists",
+    "id": "data-common-standard-response-json-schema-responsefactory-md-exists",
     "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HTTP201Response.md",
+    "target": "Data/Common_Standard_Response_JSON_Schema/ResponseFactory.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
-    "id": "data-common-standard-response-json-schema-http400response-md-exists",
+    "id": "schema-declares-apiresponse",
     "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HTTP400Response.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
-  },
-  {
-    "id": "data-common-standard-response-json-schema-http401response-md-exists",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HTTP401Response.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
-  },
-  {
-    "id": "data-common-standard-response-json-schema-http403response-md-exists",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HTTP403Response.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
-  },
-  {
-    "id": "data-common-standard-response-json-schema-http404response-md-exists",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HTTP404Response.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
-  },
-  {
-    "id": "data-common-standard-response-json-schema-http409response-md-exists",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HTTP409Response.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
-  },
-  {
-    "id": "data-common-standard-response-json-schema-http422response-md-exists",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HTTP422Response.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
-  },
-  {
-    "id": "data-common-standard-response-json-schema-http429response-md-exists",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HTTP429Response.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
-  },
-  {
-    "id": "data-common-standard-response-json-schema-http500response-md-exists",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HTTP500Response.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
-  },
-  {
-    "id": "data-common-standard-response-json-schema-http503response-md-exists",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HTTP503Response.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
-  },
-  {
-    "id": "schema-declares-http201response",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HttpStatusCodeOverview.md",
+    "target": "Data/Common_Standard_Response_JSON_Schema/ApiResponseTypes.md",
     "check": "schema_block_present",
     "args": {
-      "entity": "HTTP201Response"
+      "entity": "APIResponse"
     },
-    "rationale": "Data-tier SCHEMA block must declare the \"HTTP201Response\" entity."
-  },
-  {
-    "id": "schema-declares-http400response",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HttpStatusCodeOverview.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "HTTP400Response"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"HTTP400Response\" entity."
-  },
-  {
-    "id": "schema-declares-http401response",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HttpStatusCodeOverview.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "HTTP401Response"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"HTTP401Response\" entity."
-  },
-  {
-    "id": "schema-declares-http403response",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HttpStatusCodeOverview.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "HTTP403Response"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"HTTP403Response\" entity."
-  },
-  {
-    "id": "schema-declares-http404response",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HttpStatusCodeOverview.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "HTTP404Response"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"HTTP404Response\" entity."
-  },
-  {
-    "id": "schema-declares-http409response",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HttpStatusCodeOverview.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "HTTP409Response"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"HTTP409Response\" entity."
-  },
-  {
-    "id": "schema-declares-http422response",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HttpStatusCodeOverview.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "HTTP422Response"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"HTTP422Response\" entity."
-  },
-  {
-    "id": "schema-declares-http422errordetail",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HttpStatusCodeOverview.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "HTTP422ErrorDetail"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"HTTP422ErrorDetail\" entity."
-  },
-  {
-    "id": "schema-declares-http429response",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HttpStatusCodeOverview.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "HTTP429Response"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"HTTP429Response\" entity."
-  },
-  {
-    "id": "schema-declares-http500response",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HttpStatusCodeOverview.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "HTTP500Response"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"HTTP500Response\" entity."
-  },
-  {
-    "id": "schema-declares-http503response",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HttpStatusCodeOverview.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "HTTP503Response"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"HTTP503Response\" entity."
-  },
-  {
-    "id": "schema-declares-httpstatuscodeoverview",
-    "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/HttpStatusCodeOverview.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "HttpStatusCodeOverview"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"HttpStatusCodeOverview\" entity."
+    "rationale": "Data-tier SCHEMA block must declare the \"APIResponse\" entity."
   }
 ]

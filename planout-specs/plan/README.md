@@ -4,7 +4,7 @@ This directory is a **placeholder**. It ships empty and is filled at build /
 iteration time.
 
 Use it for any change that falls **outside** the standard staged build
-(`spec/prompts/01–05`, run headless via `build.sh`/`build.bat` or
+(`spec/prompts/01–05`, run headless via `build.sh` or
 interactively via `/planout`): iterations, fixes, additions, or rework
 requested after the initial `/app/` exists.
 

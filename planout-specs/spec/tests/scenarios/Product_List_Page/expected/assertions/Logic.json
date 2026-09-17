@@ -1,29 +1,22 @@
 [
   {
-    "id": "logic-product-list-page-productscontroller-md-exists",
+    "id": "logic-product-list-page-productservice-md-exists",
     "category": "structural",
-    "target": "Logic/Product_List_Page/ProductsController.md",
+    "target": "Logic/Product_List_Page/ProductService.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
   },
   {
-    "id": "logic-product-list-page-productsservice-md-exists",
+    "id": "logic-product-list-page-productcontroller-md-exists",
     "category": "structural",
-    "target": "Logic/Product_List_Page/ProductsService.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
-  },
-  {
-    "id": "logic-product-list-page-productsrepository-md-exists",
-    "category": "structural",
-    "target": "Logic/Product_List_Page/ProductsRepository.md",
+    "target": "Logic/Product_List_Page/ProductController.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
   },
   {
     "id": "logic-has-api-payload-block",
     "category": "behavioural",
-    "target": "Logic/Product_List_Page/ProductsController.md",
+    "target": "Logic/Product_List_Page/ProductService.md",
     "check": "source_contains_string",
     "args": {
       "needle": "<!-- API_PAYLOAD"

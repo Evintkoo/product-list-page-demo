@@ -1,7 +1,9 @@
 /**
- * @license
- * Copyright 2025 Kolosal Inc.
- * SPDX-License-Identifier: Apache-2.0
+ * Copyright (c) 2025-present Kolosal Inc. All rights reserved.
+ *
+ * PROPRIETARY AND CONFIDENTIAL.
+ * Unauthorized copying, distribution, or modification of this file,
+ * via any medium, is strictly prohibited.
  */
 
 import { join } from 'path';

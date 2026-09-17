@@ -6,9 +6,6 @@
       "detail": "Run the agent against AGENTS.md to build /app from this bundle.",
       "type": "shell",
       "command": "./build.sh",
-      "windows": {
-        "command": "build.bat"
-      },
       "options": {
         "cwd": "${workspaceFolder}"
       },

@@ -7,23 +7,9 @@
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-product-list-page-useproductlist-md-exists",
+    "id": "frontend-product-list-page-api-md-exists",
     "category": "structural",
-    "target": "Frontend/Product_List_Page/useProductList.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  },
-  {
-    "id": "frontend-product-list-page-productfilterbar-md-exists",
-    "category": "structural",
-    "target": "Frontend/Product_List_Page/ProductFilterBar.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  },
-  {
-    "id": "frontend-product-list-page-producttable-md-exists",
-    "category": "structural",
-    "target": "Frontend/Product_List_Page/ProductTable.md",
+    "target": "Frontend/Product_List_Page/api.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }

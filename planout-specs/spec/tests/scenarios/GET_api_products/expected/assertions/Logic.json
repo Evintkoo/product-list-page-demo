@@ -1,8 +1,8 @@
 [
   {
-    "id": "logic-get-api-products-productscontroller-md-exists",
+    "id": "logic-get-api-products-productcontroller-md-exists",
     "category": "structural",
-    "target": "Logic/GET_api_products/ProductsController.md",
+    "target": "Logic/GET_api_products/ProductController.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
   },
@@ -16,7 +16,7 @@
   {
     "id": "logic-has-api-payload-block",
     "category": "behavioural",
-    "target": "Logic/GET_api_products/ProductsController.md",
+    "target": "Logic/GET_api_products/ProductController.md",
     "check": "source_contains_string",
     "args": {
       "needle": "<!-- API_PAYLOAD"

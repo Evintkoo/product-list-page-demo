@@ -64,7 +64,7 @@ from `spec/tech-stack.md`, from inside `/app/`.
 
 # Further changes (`plan/`)
 
-The staged build (`spec/prompts/01–05`, run headless via `build.sh`/`build.bat`
+The staged build (`spec/prompts/01–05`, run headless via `build.sh`
 or interactively via `/planout`) produces the initial `/app/`. Any **further
 change that is not part of that staged build** — an iteration, fix, addition,
 or rework requested after `/app/` exists — follows a **plan-then-execute**

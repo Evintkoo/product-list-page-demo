@@ -2,7 +2,7 @@
   {
     "id": "feature-has-files",
     "category": "cross-swimlane",
-    "target": "Data/GET_api_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ProductQueryParams.md",
+    "target": "Data/GET_api_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ProductRepository.md",
     "check": "file_exists",
     "rationale": "Feature must produce at least one file across all swimlanes."
   }

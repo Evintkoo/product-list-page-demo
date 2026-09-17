@@ -2,37 +2,71 @@
 # Auto-build agent runner — double-click or run: ./build.sh
 #
 # Override defaults via env vars:
-#   AGENT_CMD="..."     # the agent CLI invocation (default: Claude with stream-json flags)
-#   CLAUDE_MODEL="..."  # model the default AGENT_CMD runs (default: opus —
+#   AGENT_CMD="..."     # the agent CLI invocation. If unset, auto-selected:
+#                       # if REPLIT_SSH_HOST is set, the build runs INSIDE
+#                       # your repl over Replit's official SSH transport
+#                       # (spec/ is synced up, the agent runs there, app/ is
+#                       # pulled back); if that fails (or isn't configured),
+#                       # local Claude Code is tried next; if nothing works
+#                       # the script exits with instructions.
+#                       # An explicit AGENT_CMD skips selection entirely and
+#                       # is always streamed raw — its output schema is
+#                       # unknown to us.
+#   CLAUDE_MODEL="..."  # model the auto-selected Claude command runs (default: opus —
 #                       # the most capable model, so the build actually completes
 #                       # /app/ end-to-end). Set CLAUDE_MODEL=sonnet or =haiku for
 #                       # a cheaper, faster build. Ignored if you override AGENT_CMD.
-#   MAX_BUDGET_USD="..."# hard spend cap for the default AGENT_CMD, in USD
+#   MAX_BUDGET_USD="..."# hard spend cap for the auto-selected Claude command, in USD
 #                       # (default: 15). The run stops once it has spent ~this
 #                       # much. Set MAX_BUDGET_USD=0 (or empty) to disable the cap
 #                       # and run uncapped. Ignored if you override AGENT_CMD.
 #                       # Note: a cap can end a large build before /app/ is
 #                       # finished — raise it (or set 0) if the build is truncated.
-#   PROMPT_FILE="..."   # path to the prompt/contract file (default: AGENTS.md)
+#   PROMPT_FILE="..."   # path to the prompt/contract file (default: spec/AGENTS.md).
+#                       # For the Replit path keep it under spec/ — that's what
+#                       # gets synced to the repl.
 #   PROGRESS_LOG="..."  # raw NDJSON event log (default: .build/progress.log)
 #
-# The default jq renderer assumes Claude Code's `--output-format stream-json`
-# schema. If you swap AGENT_CMD to a non-Claude provider, the rendered stdout
-# will likely be empty — read PROGRESS_LOG for the raw event stream instead.
+# Replit (see REPLIT_GUIDE.md for the one-time setup):
+#   REPLIT_SSH_HOST="..."   # [user]@[host].[cluster].replit.dev — from the
+#                           # repl's SSH pane. Setting this turns the Replit
+#                           # path on. Paid plans only (Replit gates SSH).
+#   REPLIT_SSH_PORT="..."   # default 22
+#   REPLIT_SSH_KEY="..."    # identity file, e.g. ~/.ssh/replit. Optional if
+#                           # your ~/.ssh/config already maps *.replit.dev.
+#   REPLIT_REMOTE_DIR="..." # directory inside the repl, relative to the SSH
+#                           # login dir (default: workspace — the repl root).
+#   REPLIT_AGENT_CMD="..."  # command to run inside the repl (default: the
+#                           # same Claude Code command as the local path, so
+#                           # install `claude` in the repl and set
+#                           # ANTHROPIC_API_KEY as a Replit Secret). Streamed raw.
+#
+# The jq renderer parses Claude Code's `--output-format stream-json` schema
+# and only runs for Claude-shaped commands. Any custom AGENT_CMD /
+# REPLIT_AGENT_CMD streams stdout raw instead of going silently blank —
+# PROGRESS_LOG always has the same raw event stream either way.
+#
+# Reality check on Replit: Replit Agent is a browser-only product — there is
+# no public API, webhook or CLI to trigger the agent from outside a repl
+# (the published npm `replit` CLI predates Agent and 403s against today's
+# backend). What Replit does officially expose is SSH into a repl, so the
+# honest integration is "use the repl as the compute": ship spec/ up, run a
+# headless coding agent there, pull app/ back. That is what this path does.
+# To drive Replit's own Agent by hand instead, follow REPLIT_GUIDE.md.
 
 set -euo pipefail
 cd "$(dirname "$0")"
 
-# Hard spend cap (USD) for the default agent run. `--max-budget-usd` is a native
-# Claude Code print-mode flag; the run stops once it has spent ~this much. Set
-# MAX_BUDGET_USD=0 (or empty) to run uncapped. Only applied to the DEFAULT
-# AGENT_CMD — if you override AGENT_CMD, add your own cap.
+# Hard spend cap (USD) for the auto-detected Claude agent run. `--max-budget-usd`
+# is a native Claude Code print-mode flag; the run stops once it has spent ~this
+# much. Set MAX_BUDGET_USD=0 (or empty) to run uncapped. Only applied to the
+# auto-detected Claude AGENT_CMD — if you override AGENT_CMD, add your own cap.
 #
 # The default is a per-project estimate the server substitutes for
-# 18 at generation (sized to this bundle's features /
+# 15 at generation (sized to this bundle's features /
 # pseudocode / assets). If this bundle was assembled without the server, the
 # placeholder is left as-is; the numeric guard below then falls back to a flat 15.
-DEFAULT_BUDGET_USD="18"
+DEFAULT_BUDGET_USD="15"
 case "$DEFAULT_BUDGET_USD" in ''|*[!0-9.]*) DEFAULT_BUDGET_USD="15" ;; esac
 MAX_BUDGET_USD="${MAX_BUDGET_USD-$DEFAULT_BUDGET_USD}"
 if [ -n "$MAX_BUDGET_USD" ] && [ "$MAX_BUDGET_USD" != "0" ]; then
@@ -41,39 +75,42 @@ else
   BUDGET_FLAG=""
 fi
 
-AGENT_CMD="${AGENT_CMD:-claude -p --model ${CLAUDE_MODEL:-opus} --output-format stream-json --verbose --dangerously-skip-permissions${BUDGET_FLAG}}"
 PROMPT_FILE="${PROMPT_FILE:-spec/AGENTS.md}"
 PROGRESS_LOG="${PROGRESS_LOG:-.build/progress.log}"
-
 mkdir -p "$(dirname "$PROGRESS_LOG")"
 
-echo "========================================="
-echo "  Code Auto-Builder - ver 0.10"
-echo "========================================="
-echo ""
-echo "  Agent:   $AGENT_CMD"
-echo "  Prompt:  $PROMPT_FILE"
-echo "  Log:     $PROGRESS_LOG"
-if [ -n "$BUDGET_FLAG" ]; then
-  echo "  Budget:  \$${MAX_BUDGET_USD} (set MAX_BUDGET_USD=0 to disable)"
-else
-  echo "  Budget:  uncapped"
-fi
-echo ""
-echo "  Steps:"
-echo "    1. Read $PROMPT_FILE and scan project"
-echo "    2. Scaffold app structure"
-echo "    3. Generate code from pseudocode + hints"
-echo "    4. Write UI from .png + .structure.txt"
-echo "    5. Install dependencies"
-echo "    6. Verify dev server starts"
-echo ""
-echo "========================================="
-echo "Starting analysis"
+print_banner() {
+  echo "========================================="
+  echo "  Code Auto-Builder - ver 0.10"
+  echo "========================================="
+  echo ""
+  echo "  Agent:   $AGENT_CMD"
+  echo "  Source:  $AGENT_SOURCE"
+  echo "  Prompt:  $PROMPT_FILE"
+  echo "  Log:     $PROGRESS_LOG"
+  if [ -n "$BUDGET_FLAG" ]; then
+    echo "  Budget:  \$${MAX_BUDGET_USD} (set MAX_BUDGET_USD=0 to disable)"
+  else
+    echo "  Budget:  uncapped"
+  fi
+  echo ""
+  echo "  Steps:"
+  echo "    1. Read $PROMPT_FILE and scan project"
+  echo "    2. Scaffold app structure"
+  echo "    3. Generate code from pseudocode + hints"
+  echo "    4. Write UI from .png + .structure.txt"
+  echo "    5. Install dependencies"
+  echo "    6. Verify dev server starts"
+  echo ""
+  echo "========================================="
+  echo "Starting analysis"
+}
 
-$AGENT_CMD "$(cat "$PROMPT_FILE")" \
-  | tee "$PROGRESS_LOG" \
-  | jq --unbuffered -j '
+# Renders an agent's stdout: through the Claude stream-json jq filter iff
+# USE_CLAUDE_RENDERER=1, raw otherwise. Shared by the local and Replit paths.
+render_output() {
+  if [ "$USE_CLAUDE_RENDERER" = "1" ]; then
+    jq --unbuffered -j '
       if .type=="assistant" then
         .message.content[]? |
         if .type=="text" then "\n" + .text + "\n"
@@ -87,6 +124,110 @@ $AGENT_CMD "$(cat "$PROMPT_FILE")" \
         "\n✅ done (cost: $\(.total_cost_usd // 0), tokens: in=\(.usage.input_tokens // 0) out=\(.usage.output_tokens // 0) total=\((.usage.input_tokens // 0) + (.usage.output_tokens // 0)))\n"
       else empty end
     '
+  else
+    cat
+  fi
+}
+
+# Runs $AGENT_CMD locally against $PROMPT_FILE. Returns the agent CLI's own
+# exit code (via PIPESTATUS[0], not tee's or the renderer's) so callers can
+# tell a real failure from a real success.
+run_agent() {
+  set +e
+  $AGENT_CMD "$(cat "$PROMPT_FILE")" | tee "$PROGRESS_LOG" | render_output
+  local rc="${PIPESTATUS[0]}"
+  set -e
+  return "$rc"
+}
+
+# Runs $AGENT_CMD inside the repl at $REPLIT_SSH_HOST over Replit's official
+# SSH transport: scp spec/ up → ssh in and run the agent from the repl root
+# (it reads the synced $PROMPT_FILE there, so no giant prompt goes through
+# argv quoting) → scp app/ back. Returns the REMOTE agent's exit code (ssh
+# propagates it); a failed upload returns 1 before ssh is ever attempted.
+# BatchMode=yes so a missing key fails fast instead of hanging on a password
+# prompt; accept-new is what Replit's own SSH docs recommend for ~/.ssh/config.
+run_replit_ssh() {
+  local port="${REPLIT_SSH_PORT:-22}"
+  local rdir="${REPLIT_REMOTE_DIR:-workspace}"
+  local key_opt=()
+  if [ -n "${REPLIT_SSH_KEY:-}" ]; then key_opt=(-i "$REPLIT_SSH_KEY"); fi
+  # ${arr[@]+"${arr[@]}"} — bash 3.2 (macOS) treats an empty array as unbound under set -u.
+  local ssh_opts=(${key_opt[@]+"${key_opt[@]}"} -o BatchMode=yes -o StrictHostKeyChecking=accept-new)
+
+  echo "→ syncing spec/ to $REPLIT_SSH_HOST:$rdir/ ..."
+  if ! scp -P "$port" "${ssh_opts[@]}" -q -r spec "$REPLIT_SSH_HOST:$rdir/"; then
+    echo "✗ could not upload spec/ to the repl." >&2
+    return 1
+  fi
+
+  set +e
+  ssh -p "$port" "${ssh_opts[@]}" "$REPLIT_SSH_HOST" \
+    "cd '$rdir' && $AGENT_CMD \"\$(cat '$PROMPT_FILE')\"" \
+    | tee "$PROGRESS_LOG" | render_output
+  local rc="${PIPESTATUS[0]}"
+  set -e
+  if [ "$rc" != "0" ]; then return "$rc"; fi
+
+  echo "→ pulling app/ back from $REPLIT_SSH_HOST:$rdir/app ..."
+  if ! scp -P "$port" "${ssh_opts[@]}" -q -r "$REPLIT_SSH_HOST:$rdir/app" .; then
+    echo "⚠ remote build succeeded but app/ could not be pulled back — it is still in the repl at $rdir/app." >&2
+  fi
+  return 0
+}
+
+# Selection: explicit AGENT_CMD skips everything below (always raw-streamed,
+# and — like the pre-fallback script — a failure aborts via `set -e`, no
+# fallback for an override you chose yourself). Otherwise, when
+# REPLIT_SSH_HOST is set, the build is run inside the repl first; only a real
+# failure (checked via run_replit_ssh's actual exit code) falls back to
+# local Claude, which is the last resort — its own failure also aborts via
+# `set -e`, matching prior behavior.
+USE_CLAUDE_RENDERER=0
+CLAUDE_CMD="claude -p --model ${CLAUDE_MODEL:-opus} --output-format stream-json --verbose --dangerously-skip-permissions${BUDGET_FLAG}"
+if [ -n "${AGENT_CMD:-}" ]; then
+  AGENT_SOURCE="custom AGENT_CMD"
+  USE_CLAUDE_RENDERER=0
+  print_banner
+  run_agent
+else
+  REPLIT_SUCCEEDED=0
+  if [ -n "${REPLIT_SSH_HOST:-}" ]; then
+    if [ -n "${REPLIT_AGENT_CMD:-}" ]; then
+      AGENT_CMD="$REPLIT_AGENT_CMD"
+      USE_CLAUDE_RENDERER=0
+    else
+      AGENT_CMD="$CLAUDE_CMD"
+      USE_CLAUDE_RENDERER=1
+    fi
+    AGENT_SOURCE="replit over ssh ($REPLIT_SSH_HOST)"
+    print_banner
+    if run_replit_ssh; then
+      REPLIT_SUCCEEDED=1
+    else
+      echo ""
+      echo "⚠ replit (ssh) failed — falling back to local claude."
+      echo ""
+    fi
+  fi
+
+  if [ "$REPLIT_SUCCEEDED" != "1" ]; then
+    if command -v claude >/dev/null 2>&1; then
+      AGENT_CMD="$CLAUDE_CMD"
+      AGENT_SOURCE="auto-detected: claude"
+      USE_CLAUDE_RENDERER=1
+      print_banner
+      run_agent
+    else
+      echo "error: no agent configured." >&2
+      echo "Either:" >&2
+      echo "  - set REPLIT_SSH_HOST to run the build inside your repl (see REPLIT_GUIDE.md), or" >&2
+      echo "  - install Claude Code so \`claude\` is on PATH, or" >&2
+      echo "  - set AGENT_CMD to your own agent invocation, e.g. AGENT_CMD=\"gemini -p\" ./build.sh" >&2
+      exit 1
+    fi
+  fi
+fi
 
 # ---------------------------------------------------------------------------
 # GxP pack — assemble the agent-authored HTML documents into one print-ready
