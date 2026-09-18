@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Product Catalog"
+description = "An ERP product catalog for browsing, searching, filtering, and reviewing inventory products with paginated results."
+version = "1.0.0"
+id = "artifacts/product-catalog"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 26131
+
+[services.development]
+run = "pnpm --filter @workspace/product-catalog run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/product-catalog", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/product-catalog/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "26131"
+BASE_PATH = "/"

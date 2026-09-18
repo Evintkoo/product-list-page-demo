@@ -1,0 +1,197 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: products
+    description: Product catalog operations
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /health:
+    get:
+      operationId: healthCheckLegacy
+      tags: [health]
+      summary: Compatibility health check
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /products:
+    get:
+      operationId: listProducts
+      tags: [products]
+      summary: List products
+      description: Search and paginate the product catalog.
+      parameters:
+        - name: page
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            default: 1
+        - name: limit
+          in: query
+          required: false
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 50
+            default: 20
+        - name: search
+          in: query
+          required: false
+          schema:
+            type: string
+        - name: brandName
+          in: query
+          required: false
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Paginated products
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProductListResponse"
+        "400":
+          description: Invalid pagination parameters
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+  /products/filters:
+    get:
+      operationId: getProductFilters
+      tags: [products]
+      summary: Get product filter options
+      responses:
+        "200":
+          description: Available product filters
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProductFilters"
+  /products/{id}:
+    get:
+      operationId: getProduct
+      tags: [products]
+      summary: Get product details
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Product details
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ProductDetail"
+        "404":
+          description: Product not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    Product:
+      type: object
+      required: [id, sku, productName, brandName, productCode, productType, tags, tracking, bundle, bundleFlexible, tax, price, created_at]
+      properties:
+        id: { type: integer }
+        sku: { type: string }
+        productName: { type: string }
+        brandName: { type: string }
+        productCode: { type: string }
+        productType: { type: string }
+        tags: { type: boolean }
+        tracking: { type: boolean }
+        bundle: { type: boolean }
+        bundleFlexible: { type: boolean }
+        tax: { type: string }
+        price: { type: number }
+        created_at: { type: string, format: date-time }
+    ProductDetail:
+      allOf:
+        - $ref: "#/components/schemas/Product"
+        - type: object
+          required: [category, unitBusiness, description, inventory]
+          properties:
+            category: { type: string }
+            unitBusiness: { type: string }
+            description: { type: string }
+            inventory:
+              type: object
+              required: [onHand, reserved, available]
+              properties:
+                onHand: { type: integer }
+                reserved: { type: integer }
+                available: { type: integer }
+    ProductListResponse:
+      type: object
+      required: [data, metadata]
+      properties:
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/Product"
+        metadata:
+          type: object
+          required: [page, limit, total_count]
+          properties:
+            page: { type: integer }
+            limit: { type: integer }
+            total_count: { type: integer }
+    ProductFilters:
+      type: object
+      required: [brands, types, taxes]
+      properties:
+        brands:
+          type: array
+          items: { type: string }
+        types:
+          type: array
+          items: { type: string }
+        taxes:
+          type: array
+          items: { type: string }
+    ErrorResponse:
+      type: object
+      required: [error]
+      properties:
+        error: { type: string }
+
