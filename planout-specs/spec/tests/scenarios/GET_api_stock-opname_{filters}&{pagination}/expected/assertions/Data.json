@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-get-api-stock-opname-filters-pagination-stockopnamerepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_stock-opname_{filters}&{pagination}/StockOpnameRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-stock-opname-filters-pagination-stockopnamecontroller-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_stock-opname_{filters}&{pagination}/StockOpnameController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockorder",
+    "category": "structural",
+    "target": "Data/GET_api_stock-opname_{filters}&{pagination}/StockOpnameRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrder\" entity."
+  }
+]

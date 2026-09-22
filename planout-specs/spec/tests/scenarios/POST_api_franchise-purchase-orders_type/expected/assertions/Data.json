@@ -1,0 +1,46 @@
+[
+  {
+    "id": "data-post-api-franchise-purchase-orders-type-franchisepurchaseorderservice-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_franchise-purchase-orders_type/FranchisePurchaseOrderService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-post-api-franchise-purchase-orders-type-franchisepurchaseordervalidation-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_franchise-purchase-orders_type/FranchisePurchaseOrderValidation.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockorder",
+    "category": "structural",
+    "target": "Data/POST_api_franchise-purchase-orders_type/FranchisePurchaseOrderService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrder\" entity."
+  },
+  {
+    "id": "schema-declares-stockorderitem",
+    "category": "structural",
+    "target": "Data/POST_api_franchise-purchase-orders_type/FranchisePurchaseOrderService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrderItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrderItem\" entity."
+  },
+  {
+    "id": "schema-declares-stockorderworkflowhistory",
+    "category": "structural",
+    "target": "Data/POST_api_franchise-purchase-orders_type/FranchisePurchaseOrderService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrderWorkflowHistory"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrderWorkflowHistory\" entity."
+  }
+]

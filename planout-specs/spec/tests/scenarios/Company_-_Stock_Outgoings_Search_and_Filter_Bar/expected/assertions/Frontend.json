@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-company-stock-outgoings-search-and-filter-bar-stockoutgoingfilterbar-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_Stock_Outgoings_Search_and_Filter_Bar/StockOutgoingFilterBar.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-company-stock-outgoings-search-and-filter-bar-usestockoutgoingsearch-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_Stock_Outgoings_Search_and_Filter_Bar/useStockOutgoingSearch.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

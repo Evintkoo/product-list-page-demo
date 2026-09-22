@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-sales-order-list-company-sales-orders-salesorderrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Sales_Order_List_-_Company_sales_orders/SalesOrderRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-sales-order-list-company-sales-orders-salesordercontroller-md-exists",
+    "category": "structural",
+    "target": "Data/Sales_Order_List_-_Company_sales_orders/SalesOrderController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-salesorder",
+    "category": "structural",
+    "target": "Data/Sales_Order_List_-_Company_sales_orders/SalesOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrder\" entity."
+  },
+  {
+    "id": "schema-declares-salesorderlistquery",
+    "category": "structural",
+    "target": "Data/Sales_Order_List_-_Company_sales_orders/SalesOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrderListQuery"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrderListQuery\" entity."
+  }
+]

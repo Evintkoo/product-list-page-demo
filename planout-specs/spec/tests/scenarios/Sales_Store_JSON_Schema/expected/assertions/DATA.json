@@ -1,0 +1,56 @@
+[
+  {
+    "id": "data-sales-store-json-schema-salesschema-md-exists",
+    "category": "structural",
+    "target": "DATA/Sales_Store_JSON_Schema/SalesSchema.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"DATA\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-sales-store-json-schema-createsaleschema-md-exists",
+    "category": "structural",
+    "target": "DATA/Sales_Store_JSON_Schema/CreateSaleSchema.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"DATA\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-sale",
+    "category": "structural",
+    "target": "DATA/Sales_Store_JSON_Schema/SalesSchema.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Sale"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Sale\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "DATA/Sales_Store_JSON_Schema/SalesSchema.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  },
+  {
+    "id": "schema-declares-saleitem",
+    "category": "structural",
+    "target": "DATA/Sales_Store_JSON_Schema/SalesSchema.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SaleItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SaleItem\" entity."
+  },
+  {
+    "id": "schema-declares-salepayment",
+    "category": "structural",
+    "target": "DATA/Sales_Store_JSON_Schema/SalesSchema.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalePayment"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalePayment\" entity."
+  }
+]

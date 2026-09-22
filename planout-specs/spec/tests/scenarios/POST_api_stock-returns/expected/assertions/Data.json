@@ -1,0 +1,56 @@
+[
+  {
+    "id": "data-post-api-stock-returns-stockreturnrepository-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_stock-returns/StockReturnRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-post-api-stock-returns-stockreturnservice-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_stock-returns/StockReturnService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockreturn",
+    "category": "structural",
+    "target": "Data/POST_api_stock-returns/StockReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockReturn"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockReturn\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/POST_api_stock-returns/StockReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  },
+  {
+    "id": "schema-declares-warehouse",
+    "category": "structural",
+    "target": "Data/POST_api_stock-returns/StockReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Warehouse"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Warehouse\" entity."
+  },
+  {
+    "id": "schema-declares-supplier",
+    "category": "structural",
+    "target": "Data/POST_api_stock-returns/StockReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Supplier"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Supplier\" entity."
+  }
+]

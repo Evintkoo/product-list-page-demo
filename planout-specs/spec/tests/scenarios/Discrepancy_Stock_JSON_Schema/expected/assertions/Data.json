@@ -1,0 +1,66 @@
+[
+  {
+    "id": "data-discrepancy-stock-json-schema-discrepancystockrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Discrepancy_Stock_JSON_Schema/DiscrepancyStockRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-discrepancy-stock-json-schema-discrepancystockservice-md-exists",
+    "category": "structural",
+    "target": "Data/Discrepancy_Stock_JSON_Schema/DiscrepancyStockService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-discrepancy_stock",
+    "category": "structural",
+    "target": "Data/Discrepancy_Stock_JSON_Schema/DiscrepancyStockRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "discrepancy_stock"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"discrepancy_stock\" entity."
+  },
+  {
+    "id": "schema-declares-discrepancy_stock_item",
+    "category": "structural",
+    "target": "Data/Discrepancy_Stock_JSON_Schema/DiscrepancyStockRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "discrepancy_stock_item"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"discrepancy_stock_item\" entity."
+  },
+  {
+    "id": "schema-declares-products",
+    "category": "structural",
+    "target": "Data/Discrepancy_Stock_JSON_Schema/DiscrepancyStockRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "products"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"products\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/Discrepancy_Stock_JSON_Schema/DiscrepancyStockRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"store\" entity."
+  },
+  {
+    "id": "schema-declares-users",
+    "category": "structural",
+    "target": "Data/Discrepancy_Stock_JSON_Schema/DiscrepancyStockRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "users"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"users\" entity."
+  }
+]

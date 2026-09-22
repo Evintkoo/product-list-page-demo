@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-sales-invoice-list-salesinvoicelist-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Invoice_List/SalesInvoiceList.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-sales-invoice-list-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Invoice_List/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

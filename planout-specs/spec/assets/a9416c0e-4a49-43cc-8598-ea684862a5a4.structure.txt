@@ -1,0 +1,6 @@
+Canvas: 1440×44px
+
+├─ rect [0,0 1440×44]  fill=white
+├─ text-path [25,17 49×12]  fill=#4A54C4
+├─ text-path [100,17 43×9]  fill=#565B66
+└─ text-path [170,17 104×12]  fill=#565B66

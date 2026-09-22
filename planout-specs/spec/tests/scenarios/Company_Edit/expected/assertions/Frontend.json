@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-company-edit-companyeditpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_Edit/CompanyEditPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

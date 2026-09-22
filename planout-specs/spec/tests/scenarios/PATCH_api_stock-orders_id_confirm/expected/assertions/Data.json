@@ -1,0 +1,29 @@
+[
+  {
+    "id": "data-patch-api-stock-orders-id-confirm-stockorderrepository-md-exists",
+    "category": "structural",
+    "target": "Data/PATCH_api_stock-orders_id_confirm/StockOrderRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockorder",
+    "category": "structural",
+    "target": "Data/PATCH_api_stock-orders_id_confirm/StockOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrder\" entity."
+  },
+  {
+    "id": "schema-declares-stockorderworkflowhistory",
+    "category": "structural",
+    "target": "Data/PATCH_api_stock-orders_id_confirm/StockOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrderWorkflowHistory"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrderWorkflowHistory\" entity."
+  }
+]

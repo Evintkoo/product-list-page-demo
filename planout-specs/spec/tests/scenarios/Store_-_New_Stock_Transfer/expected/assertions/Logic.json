@@ -1,0 +1,26 @@
+[
+  {
+    "id": "logic-store-new-stock-transfer-stocktransferlogic-md-exists",
+    "category": "structural",
+    "target": "Logic/Store_-_New_Stock_Transfer/StockTransferLogic.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-store-new-stock-transfer-producttablecalculations-md-exists",
+    "category": "structural",
+    "target": "Logic/Store_-_New_Stock_Transfer/ProductTableCalculations.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-has-api-payload-block",
+    "category": "behavioural",
+    "target": "Logic/Store_-_New_Stock_Transfer/StockTransferLogic.md",
+    "check": "source_contains_string",
+    "args": {
+      "needle": "<!-- API_PAYLOAD"
+    },
+    "rationale": "Logic-tier pseudocode must carry an API_PAYLOAD block (plan 23 phase 3)."
+  }
+]

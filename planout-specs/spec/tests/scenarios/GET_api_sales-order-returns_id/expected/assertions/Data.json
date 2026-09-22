@@ -1,0 +1,76 @@
+[
+  {
+    "id": "data-get-api-sales-order-returns-id-salesorderreturnrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_sales-order-returns_id/SalesOrderReturnRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-sales-order-returns-id-salesorderreturnservice-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_sales-order-returns_id/SalesOrderReturnService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-salesorderreturn",
+    "category": "structural",
+    "target": "Data/GET_api_sales-order-returns_id/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrderReturn"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrderReturn\" entity."
+  },
+  {
+    "id": "schema-declares-salesorderreturnlineitem",
+    "category": "structural",
+    "target": "Data/GET_api_sales-order-returns_id/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrderReturnLineItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrderReturnLineItem\" entity."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/GET_api_sales-order-returns_id/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  },
+  {
+    "id": "schema-declares-inventory",
+    "category": "structural",
+    "target": "Data/GET_api_sales-order-returns_id/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Inventory"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Inventory\" entity."
+  },
+  {
+    "id": "schema-declares-company",
+    "category": "structural",
+    "target": "Data/GET_api_sales-order-returns_id/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Company"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Company\" entity."
+  },
+  {
+    "id": "schema-declares-warehouse",
+    "category": "structural",
+    "target": "Data/GET_api_sales-order-returns_id/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Warehouse"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Warehouse\" entity."
+  }
+]

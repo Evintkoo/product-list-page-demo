@@ -1,0 +1,69 @@
+[
+  {
+    "id": "data-franchise-purchase-return-json-schema-stockreturnrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Return_JSON_Schema/StockReturnRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stock_returns",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Return_JSON_Schema/StockReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "stock_returns"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"stock_returns\" entity."
+  },
+  {
+    "id": "schema-declares-stock_return_items",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Return_JSON_Schema/StockReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "stock_return_items"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"stock_return_items\" entity."
+  },
+  {
+    "id": "schema-declares-franchise_purchase_orders",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Return_JSON_Schema/StockReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "franchise_purchase_orders"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"franchise_purchase_orders\" entity."
+  },
+  {
+    "id": "schema-declares-franchise_purchase_order_items",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Return_JSON_Schema/StockReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "franchise_purchase_order_items"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"franchise_purchase_order_items\" entity."
+  },
+  {
+    "id": "schema-declares-store_stocks",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Return_JSON_Schema/StockReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "store_stocks"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"store_stocks\" entity."
+  },
+  {
+    "id": "schema-declares-products",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Return_JSON_Schema/StockReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "products"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"products\" entity."
+  }
+]

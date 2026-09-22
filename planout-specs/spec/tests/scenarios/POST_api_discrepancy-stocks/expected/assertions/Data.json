@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-post-api-discrepancy-stocks-discrepancystockrepository-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_discrepancy-stocks/DiscrepancyStockRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-post-api-discrepancy-stocks-discrepancystockservice-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_discrepancy-stocks/DiscrepancyStockService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-discrepancy_stock",
+    "category": "structural",
+    "target": "Data/POST_api_discrepancy-stocks/DiscrepancyStockRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "DISCREPANCY_STOCK"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"DISCREPANCY_STOCK\" entity."
+  },
+  {
+    "id": "schema-declares-discrepancy_stock_line",
+    "category": "structural",
+    "target": "Data/POST_api_discrepancy-stocks/DiscrepancyStockRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "DISCREPANCY_STOCK_LINE"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"DISCREPANCY_STOCK_LINE\" entity."
+  }
+]

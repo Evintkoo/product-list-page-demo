@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-deactivate-component-deactivatesuppliermodal-md-exists",
+    "category": "structural",
+    "target": "Frontend/Deactivate_Component/DeactivateSupplierModal.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-deactivate-component-hooks-usesupplierstatus-md-exists",
+    "category": "structural",
+    "target": "Frontend/Deactivate_Component/hooks_useSupplierStatus.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

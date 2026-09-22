@@ -1,0 +1,59 @@
+[
+  {
+    "id": "data-franchise-purchase-orders-standard-external-new-purchase-franchisepurchaseorderrepository-m-exists",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Orders_Standard_(External)_-_New_Purchase/FranchisePurchaseOrderRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockorder",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Orders_Standard_(External)_-_New_Purchase/FranchisePurchaseOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrder\" entity."
+  },
+  {
+    "id": "schema-declares-stockorderitem",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Orders_Standard_(External)_-_New_Purchase/FranchisePurchaseOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrderItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrderItem\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Orders_Standard_(External)_-_New_Purchase/FranchisePurchaseOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  },
+  {
+    "id": "schema-declares-supplier",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Orders_Standard_(External)_-_New_Purchase/FranchisePurchaseOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Supplier"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Supplier\" entity."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Orders_Standard_(External)_-_New_Purchase/FranchisePurchaseOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  }
+]

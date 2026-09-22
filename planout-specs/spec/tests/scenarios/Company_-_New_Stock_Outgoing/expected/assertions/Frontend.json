@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-company-new-stock-outgoing-newstockoutgoingform-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_New_Stock_Outgoing/NewStockOutgoingForm.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-company-new-stock-outgoing-serviceworkorderpicker-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_New_Stock_Outgoing/ServiceWorkOrderPicker.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

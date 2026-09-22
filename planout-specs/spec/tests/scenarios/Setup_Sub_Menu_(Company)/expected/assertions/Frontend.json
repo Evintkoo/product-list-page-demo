@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-setup-sub-menu-company-setupcompanysubmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Setup_Sub_Menu_(Company)/SetupCompanySubMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-setup-sub-menu-company-setupcompanysubmenu-styles-md-exists",
+    "category": "structural",
+    "target": "Frontend/Setup_Sub_Menu_(Company)/SetupCompanySubMenu.styles.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

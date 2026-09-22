@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-stock-new-stock-return-warehouse-form-card-stockreturnform-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_New_Stock_Return_Warehouse_Form_Card/StockReturnForm.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

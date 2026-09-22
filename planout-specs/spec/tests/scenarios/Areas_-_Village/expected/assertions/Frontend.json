@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-areas-village-villagelist-md-exists",
+    "category": "structural",
+    "target": "Frontend/Areas_-_Village/VillageList.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-areas-village-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Areas_-_Village/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

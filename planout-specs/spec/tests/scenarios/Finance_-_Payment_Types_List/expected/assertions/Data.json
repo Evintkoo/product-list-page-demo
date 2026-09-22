@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-finance-payment-types-list-paymenttyperepository-md-exists",
+    "category": "structural",
+    "target": "Data/Finance_-_Payment_Types_List/PaymentTypeRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-finance-payment-types-list-paymenttypemapper-md-exists",
+    "category": "structural",
+    "target": "Data/Finance_-_Payment_Types_List/PaymentTypeMapper.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-paymenttype",
+    "category": "structural",
+    "target": "Data/Finance_-_Payment_Types_List/PaymentTypeRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PaymentType"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PaymentType\" entity."
+  }
+]

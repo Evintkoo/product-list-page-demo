@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-customer-detail-page-details-card-extension-franchise-customer-franchisecustomerdetails-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Detail_Page_-_Details_Card_(Extension_Franchise_Customer)/FranchiseCustomerDetailsCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

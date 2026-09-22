@@ -1,0 +1,29 @@
+[
+  {
+    "id": "data-customer-add-wholesale-customer-customerservice-md-exists",
+    "category": "structural",
+    "target": "Data/Customer_-_Add_Wholesale_Customer/CustomerService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/Customer_-_Add_Wholesale_Customer/CustomerService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Customer\" entity."
+  },
+  {
+    "id": "schema-declares-address",
+    "category": "structural",
+    "target": "Data/Customer_-_Add_Wholesale_Customer/CustomerService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Address"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Address\" entity."
+  }
+]

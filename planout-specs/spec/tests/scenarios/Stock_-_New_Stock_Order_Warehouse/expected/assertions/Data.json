@@ -1,0 +1,59 @@
+[
+  {
+    "id": "data-stock-new-stock-order-warehouse-stockorderrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Stock_Order_Warehouse/StockOrderRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockorder",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Stock_Order_Warehouse/StockOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrder\" entity."
+  },
+  {
+    "id": "schema-declares-stockorderitem",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Stock_Order_Warehouse/StockOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrderItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrderItem\" entity."
+  },
+  {
+    "id": "schema-declares-warehouse",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Stock_Order_Warehouse/StockOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Warehouse"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Warehouse\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Stock_Order_Warehouse/StockOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Stock_Order_Warehouse/StockOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  }
+]

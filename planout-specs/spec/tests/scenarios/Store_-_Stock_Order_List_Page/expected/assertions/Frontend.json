@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-store-stock-order-list-page-stockorderlistpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_-_Stock_Order_List_Page/StockOrderListPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-store-stock-order-list-page-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_-_Stock_Order_List_Page/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

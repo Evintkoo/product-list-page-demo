@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-supplier-new-supplier-page-supplierrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Supplier_-_New_Supplier_Page/SupplierRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-supplier",
+    "category": "structural",
+    "target": "Data/Supplier_-_New_Supplier_Page/SupplierRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Supplier"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Supplier\" entity."
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-login-page-authservice-md-exists",
+    "category": "structural",
+    "target": "Data/Login_Page/AuthService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-login-page-authcontroller-md-exists",
+    "category": "structural",
+    "target": "Data/Login_Page/AuthController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-user",
+    "category": "structural",
+    "target": "Data/Login_Page/AuthService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "User"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"User\" entity."
+  },
+  {
+    "id": "schema-declares-session",
+    "category": "structural",
+    "target": "Data/Login_Page/AuthService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Session"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Session\" entity."
+  }
+]

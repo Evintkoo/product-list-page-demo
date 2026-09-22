@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-setup-sub-menu-finances-financessubmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Setup_Sub_Menu_(Finances)/FinancesSubMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-setup-sub-menu-finances-paymenttypespage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Setup_Sub_Menu_(Finances)/PaymentTypesPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

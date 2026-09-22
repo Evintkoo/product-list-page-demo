@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232 92" font-family="Helvetica, Arial, sans-serif" width="232" height="92">
+<rect x="5" y="6" width="220" height="80" rx="8" fill="#e9ebef"/>
+<rect x="4" y="4" width="220" height="80" rx="8" fill="#ffffff" stroke="#d9dde3"/>
+<text x="26" y="35" fill="#333" font-size="14">Internal</text>
+<line x1="16" y1="46" x2="212" y2="46" stroke="#eef0f3"/>
+<text x="26" y="69" fill="#333" font-size="14">Standard (External)</text>
+</svg>

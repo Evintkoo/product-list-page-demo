@@ -1,0 +1,7 @@
+Canvas: 232×92px
+
+├─ card [5,6 220×80]  fill=#e9ebef rx=8
+├─ card [4,4 220×80]  fill=#ffffff stroke=#d9dde3 rx=8
+├─ text [26,35 0×0] "Internal"  fill=#333 14px
+├─ divider [16,46 196×0]  stroke=#eef0f3
+└─ text [26,69 0×0] "Standard (External)"  fill=#333 14px

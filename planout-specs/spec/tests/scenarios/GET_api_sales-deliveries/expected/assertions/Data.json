@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-get-api-sales-deliveries-salesdeliveryrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_sales-deliveries/SalesDeliveryRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-sales-deliveries-salesdeliveryservice-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_sales-deliveries/SalesDeliveryService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-salesdelivery",
+    "category": "structural",
+    "target": "Data/GET_api_sales-deliveries/SalesDeliveryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesDelivery"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesDelivery\" entity."
+  },
+  {
+    "id": "schema-declares-salesorder",
+    "category": "structural",
+    "target": "Data/GET_api_sales-deliveries/SalesDeliveryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrder\" entity."
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "data-voucher-schema-voucherrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Voucher_Schema/VoucherRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-voucher-schema-voucherschema-md-exists",
+    "category": "structural",
+    "target": "Data/Voucher_Schema/VoucherSchema.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-voucher",
+    "category": "structural",
+    "target": "Data/Voucher_Schema/VoucherRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Voucher"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Voucher\" entity."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/Voucher_Schema/VoucherRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/Voucher_Schema/VoucherRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  },
+  {
+    "id": "schema-declares-voucherselllocation",
+    "category": "structural",
+    "target": "Data/Voucher_Schema/VoucherRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "VoucherSellLocation"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"VoucherSellLocation\" entity."
+  },
+  {
+    "id": "schema-declares-voucherredeemlocation",
+    "category": "structural",
+    "target": "Data/Voucher_Schema/VoucherRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "VoucherRedeemLocation"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"VoucherRedeemLocation\" entity."
+  }
+]

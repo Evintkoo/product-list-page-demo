@@ -1,0 +1,30 @@
+[
+  {
+    "id": "frontend-stock-store-work-order-workorderlist-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_Store_Work_Order/WorkOrderList.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-store-work-order-workordertable-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_Store_Work_Order/WorkOrderTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-store-work-order-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_Store_Work_Order/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-store-work-order-stockordersearchbar-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_Store_Work_Order/StockOrderSearchBar.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

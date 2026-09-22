@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-customer-detail-page-prices-card-customerpricescard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Detail_Page_-_Prices_Card/CustomerPricesCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-detail-page-prices-card-hooks-usecustomerdetails-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Detail_Page_-_Prices_Card/hooks_useCustomerDetails.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

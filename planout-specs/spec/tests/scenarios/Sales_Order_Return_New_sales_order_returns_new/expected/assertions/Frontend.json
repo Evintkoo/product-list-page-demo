@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-sales-order-return-new-sales-order-returns-new-salesorderreturnnew-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Order_Return_New_sales_order_returns_new/SalesOrderReturnNew.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-sales-order-return-new-sales-order-returns-new-salesorderreturntypes-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Order_Return_New_sales_order_returns_new/SalesOrderReturnTypes.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "data-customer-retail-customers-detail-page-customerrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Customer_-_Retail_Customers_Detail_Page/CustomerRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-retailcustomer",
+    "category": "structural",
+    "target": "Data/Customer_-_Retail_Customers_Detail_Page/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "RetailCustomer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"RetailCustomer\" entity."
+  },
+  {
+    "id": "schema-declares-address",
+    "category": "structural",
+    "target": "Data/Customer_-_Retail_Customers_Detail_Page/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Address"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Address\" entity."
+  }
+]

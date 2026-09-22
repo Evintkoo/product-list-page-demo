@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-get-api-payment-type-paymenttyperepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_payment-type/PaymentTypeRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-payment-type-paymenttypeservice-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_payment-type/PaymentTypeService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-paymenttype",
+    "category": "structural",
+    "target": "Data/GET_api_payment-type/PaymentTypeRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PaymentType"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PaymentType\" entity."
+  }
+]

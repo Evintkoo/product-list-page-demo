@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-vouchers-edit-flexible-voucher-page-editflexiblevoucherpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Vouchers_-_Edit_Flexible_Voucher_Page/EditFlexibleVoucherPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-vouchers-edit-flexible-voucher-page-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Vouchers_-_Edit_Flexible_Voucher_Page/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

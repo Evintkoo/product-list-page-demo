@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-inventory-menu-inventorymenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Inventory_Menu/InventoryMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

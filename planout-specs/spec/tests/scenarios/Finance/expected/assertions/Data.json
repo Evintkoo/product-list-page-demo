@@ -1,0 +1,59 @@
+[
+  {
+    "id": "data-finance-financemasterdata-md-exists",
+    "category": "structural",
+    "target": "Data/Finance/FinanceMasterData.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-tax_product_code",
+    "category": "structural",
+    "target": "Data/Finance/FinanceMasterData.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "TAX_PRODUCT_CODE"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"TAX_PRODUCT_CODE\" entity."
+  },
+  {
+    "id": "schema-declares-chart_of_accounts",
+    "category": "structural",
+    "target": "Data/Finance/FinanceMasterData.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "CHART_OF_ACCOUNTS"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"CHART_OF_ACCOUNTS\" entity."
+  },
+  {
+    "id": "schema-declares-pricelist",
+    "category": "structural",
+    "target": "Data/Finance/FinanceMasterData.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PRICELIST"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PRICELIST\" entity."
+  },
+  {
+    "id": "schema-declares-tax",
+    "category": "structural",
+    "target": "Data/Finance/FinanceMasterData.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "TAX"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"TAX\" entity."
+  },
+  {
+    "id": "schema-declares-tax_unit_of_measure",
+    "category": "structural",
+    "target": "Data/Finance/FinanceMasterData.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "TAX_UNIT_OF_MEASURE"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"TAX_UNIT_OF_MEASURE\" entity."
+  }
+]

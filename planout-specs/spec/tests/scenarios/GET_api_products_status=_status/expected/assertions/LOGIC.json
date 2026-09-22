@@ -1,0 +1,26 @@
+[
+  {
+    "id": "logic-get-api-products-status-status-productcontroller-md-exists",
+    "category": "structural",
+    "target": "LOGIC/GET_api_products_status=_status/ProductController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"LOGIC\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-get-api-products-status-status-productservice-md-exists",
+    "category": "structural",
+    "target": "LOGIC/GET_api_products_status=_status/ProductService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"LOGIC\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-has-api-payload-block",
+    "category": "behavioural",
+    "target": "LOGIC/GET_api_products_status=_status/ProductController.md",
+    "check": "source_contains_string",
+    "args": {
+      "needle": "<!-- API_PAYLOAD"
+    },
+    "rationale": "Logic-tier pseudocode must carry an API_PAYLOAD block (plan 23 phase 3)."
+  }
+]

@@ -1,0 +1,37 @@
+Canvas: 322.0000305175781×212.00000095367432px
+
+├─ rect [0,0 322×212]  fill=#ffffff
+├─ group [0,0 322×210]
+│  └─ shape [0,0 322×210]  fill=#ffffff stroke=#ffffff
+├─ group [1,0 320×177]
+│  └─ shape [1,0 320×177]  fill=#ffffff stroke=#ffffff
+├─ text-group [1,8 321×33]
+│  └─ text-path [1,8 321×33]  fill=#234d9c stroke=#234d9c
+├─ text-group [1,25 321×25]
+│  └─ text-path [1,25 321×25]  fill=#224993 stroke=#224993
+├─ text-group [1,46 321×10]
+│  └─ text-path [1,46 321×10]  fill=#1f458b stroke=#1f458b
+├─ group [0,72 322×140]
+│  └─ shape [0,72 322×140]  fill=#a8a8a8
+├─ text-group [19,26 86×16]
+│  └─ text-path [19,26 86×16]  fill=#5170ab
+├─ group [94,24 16×21]
+│  └─ icon [94,24 16×21]  fill=#f6f7fb
+├─ group [68,27 2×15]
+│  └─ icon [68,27 2×15]  fill=#748dbb
+├─ group [66,24 8×18]
+│  └─ icon [66,24 8×18]  fill=#3e62a4
+├─ group [82,30 2×10]
+│  └─ icon [82,30 2×10]  fill=#6682b5
+├─ group [99,34 6×6]
+│  └─ icon [99,34 6×6]  fill=#4465a4
+├─ group [66,22 3×4]
+│  └─ icon [66,22 3×4]  fill=#e6eaf3
+├─ group [16,69 265×122]
+│  └─ shape [16,69 265×122]  fill=#3c3c3c
+├─ group [16,70 252×117]
+│  └─ shape [16,70 252×117]  fill=#3d3d3d
+├─ group [31,73 222×112]
+│  └─ shape [31,73 222×112]  fill=#373737
+└─ group [19,24 11×9]
+   └─ icon [19,24 11×9]  fill=#355aa0 stroke=#355aa0

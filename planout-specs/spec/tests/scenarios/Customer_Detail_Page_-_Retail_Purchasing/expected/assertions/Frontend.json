@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-customer-detail-page-retail-purchasing-retailpurchasingtable-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Detail_Page_-_Retail_Purchasing/RetailPurchasingTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-detail-page-retail-purchasing-customerdetailactions-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Detail_Page_-_Retail_Purchasing/CustomerDetailActions.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

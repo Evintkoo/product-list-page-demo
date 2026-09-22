@@ -1,0 +1,60 @@
+Canvas: 1408×278px
+
+└─ card-group [8,6 1392×262]
+   ├─ card [8,6 1392×262]  fill=white rx=12
+   ├─ text-group [34,28 80×11]
+   │  ├─ icon [34,28 10×11]  stroke=#4A54C4
+   │  └─ text-path [54,29 60×9]  fill=#4A54C4
+   ├─ card-group [46,54 385×128]
+   │  ├─ text-path [163,57 40×9]  fill=#495261
+   │  ├─ card [212,54 16×16]  fill=#4E5BD6 rx=4
+   │  ├─ icon [216,59 7×5]  stroke=white
+   │  ├─ group [237,56 12×12]
+   │  │  └─ icon [237,56 12×12]  stroke=#999EA8
+   │  ├─ text-path [108,87 95×11]  fill=#495261
+   │  ├─ card [213,85 15×15]  fill=white rx=3.5
+   │  ├─ card [213,85 15×15]  stroke=#D9DBE0 rx=3.5
+   │  ├─ group [237,86 12×12]
+   │  │  └─ icon [237,86 12×12]  stroke=#999EA8
+   │  ├─ text-path [46,118 156×9]  fill=#495261
+   │  ├─ card [213,115 15×15]  fill=white rx=3.5
+   │  ├─ card [213,115 15×15]  stroke=#D9DBE0 rx=3.5
+   │  ├─ group [237,116 12×12]
+   │  │  └─ icon [237,116 12×12]  stroke=#999EA8
+   │  ├─ group [141,159 60×9]
+   │  │  └─ text-group [141,159 60×9]
+   │  │     ├─ icon [141,159 5×5]  fill=#D93D3D
+   │  │     └─ text-path [150,159 51×9]  fill=#495261
+   │  ├─ card [213,145 219×37]  fill=white rx=7.5
+   │  ├─ card [213,145 219×37]  stroke=#D9DEE6 rx=7.5
+   │  ├─ text-path [225,158 126×9]  fill=#999EA8
+   │  └─ icon [411,162 6×3]  stroke=#999EA8
+   └─ card-group [324,55 576×193]
+      ├─ group [404,68 106×9]
+      │  └─ text-group [404,68 106×9]
+      │     └─ text-path [404,68 106×9]  fill=#495261
+      ├─ card [522,55 379×37]  fill=white rx=7.5
+      ├─ card [522,55 379×37]  stroke=#D9DEE6 rx=7.5
+      ├─ text-path [534,68 185×10]  fill=#999EA8
+      ├─ icon [880,72 6×3]  stroke=#999EA8
+      ├─ group [324,120 186×11]
+      │  └─ text-group [324,120 186×11]
+      │     └─ text-path [324,120 186×11]  fill=#495261
+      ├─ card [522,107 379×37]  fill=white rx=7.5
+      ├─ card [522,107 379×37]  stroke=#D9DEE6 rx=7.5
+      ├─ text-path [534,120 290×12]  fill=#999EA8
+      ├─ icon [880,124 6×3]  stroke=#999EA8
+      ├─ group [332,172 179×11]
+      │  └─ text-group [332,172 179×11]
+      │     └─ text-path [332,172 179×11]  fill=#495261
+      ├─ card [522,159 379×37]  fill=white rx=7.5
+      ├─ card [522,159 379×37]  stroke=#D9DEE6 rx=7.5
+      ├─ text-path [534,172 264×12]  fill=#999EA8
+      ├─ icon [880,176 6×3]  stroke=#999EA8
+      ├─ group [372,224 139×11]
+      │  └─ text-group [372,224 139×11]
+      │     └─ text-path [372,224 139×11]  fill=#495261
+      ├─ card [522,211 379×37]  fill=white rx=7.5
+      ├─ card [522,211 379×37]  stroke=#D9DEE6 rx=7.5
+      ├─ text-path [534,224 221×12]  fill=#999EA8
+      └─ icon [880,228 6×3]  stroke=#999EA8

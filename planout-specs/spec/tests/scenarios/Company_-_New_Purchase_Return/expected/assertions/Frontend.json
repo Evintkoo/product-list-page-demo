@@ -1,0 +1,30 @@
+[
+  {
+    "id": "frontend-company-new-purchase-return-purchasereturnform-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_New_Purchase_Return/PurchaseReturnForm.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-company-new-purchase-return-purchasereturnlogic-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_New_Purchase_Return/PurchaseReturnLogic.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-company-new-purchase-return-productlistsection-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_New_Purchase_Return/ProductListSection.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-company-new-purchase-return-workflowstatusbar-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_New_Purchase_Return/WorkflowStatusBar.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

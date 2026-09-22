@@ -1,0 +1,29 @@
+[
+  {
+    "id": "data-company-purchase-return-standard-details-purchasereturnrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Company_-_Purchase_Return_(Standard)_Details/PurchaseReturnRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-purchasereturn",
+    "category": "structural",
+    "target": "Data/Company_-_Purchase_Return_(Standard)_Details/PurchaseReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PurchaseReturn"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PurchaseReturn\" entity."
+  },
+  {
+    "id": "schema-declares-purchasereturnitem",
+    "category": "structural",
+    "target": "Data/Company_-_Purchase_Return_(Standard)_Details/PurchaseReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PurchaseReturnItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PurchaseReturnItem\" entity."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "logic-post-api-stock-orders-stockorderservice-md-exists",
+    "category": "structural",
+    "target": "Logic/POST_api_stock-orders/StockOrderService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-post-api-stock-orders-stockordercontroller-md-exists",
+    "category": "structural",
+    "target": "Logic/POST_api_stock-orders/StockOrderController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-has-api-payload-block",
+    "category": "behavioural",
+    "target": "Logic/POST_api_stock-orders/StockOrderService.md",
+    "check": "source_contains_string",
+    "args": {
+      "needle": "<!-- API_PAYLOAD"
+    },
+    "rationale": "Logic-tier pseudocode must carry an API_PAYLOAD block (plan 23 phase 3)."
+  }
+]

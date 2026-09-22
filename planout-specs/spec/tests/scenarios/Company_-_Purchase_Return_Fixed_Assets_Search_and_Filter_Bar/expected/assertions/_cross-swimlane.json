@@ -1,0 +1,9 @@
+[
+  {
+    "id": "feature-has-files",
+    "category": "cross-swimlane",
+    "target": "Frontend/Company_-_Purchase_Return_Fixed_Assets_Search_and_Filter_Bar/PurchaseReturnFilterBar.md",
+    "check": "file_exists",
+    "rationale": "Feature must produce at least one file across all swimlanes."
+  }
+]

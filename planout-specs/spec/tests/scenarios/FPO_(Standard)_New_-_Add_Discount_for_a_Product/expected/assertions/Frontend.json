@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-fpo-standard-new-add-discount-for-a-product-adddiscountmodal-md-exists",
+    "category": "structural",
+    "target": "Frontend/FPO_(Standard)_New_-_Add_Discount_for_a_Product/AddDiscountModal.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-fpo-standard-new-add-discount-for-a-product-discountlogic-md-exists",
+    "category": "structural",
+    "target": "Frontend/FPO_(Standard)_New_-_Add_Discount_for_a_Product/DiscountLogic.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

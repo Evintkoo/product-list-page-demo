@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-common-standard-response-json-schema-apiresponsetypes-md-exists",
+    "category": "structural",
+    "target": "Data/Common_Standard_Response_JSON_Schema/ApiResponseTypes.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-apiresponse",
+    "category": "structural",
+    "target": "Data/Common_Standard_Response_JSON_Schema/ApiResponseTypes.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "APIResponse"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"APIResponse\" entity."
+  }
+]

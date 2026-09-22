@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-stock-order-details-workflow-status-bar-stockorderworkflowbar-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_Order_Details_Workflow_Status_Bar/StockOrderWorkflowBar.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-order-details-workflow-status-bar-hooks-usestockorderactions-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_Order_Details_Workflow_Status_Bar/hooks_useStockOrderActions.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

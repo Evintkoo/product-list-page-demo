@@ -1,0 +1,43 @@
+[
+  {
+    "id": "data-patch-api-franchise-purchase-orders-id-confirm-franchisepurchaseorderrepository-md-exists",
+    "category": "structural",
+    "target": "Data/PATCH_api_franchise-purchase-orders_id_confirm/FranchisePurchaseOrderRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-patch-api-franchise-purchase-orders-id-confirm-authorizationservice-md-exists",
+    "category": "structural",
+    "target": "Data/PATCH_api_franchise-purchase-orders_id_confirm/AuthorizationService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-patch-api-franchise-purchase-orders-id-confirm-franchisepurchaseorderservice-md-exists",
+    "category": "structural",
+    "target": "Data/PATCH_api_franchise-purchase-orders_id_confirm/FranchisePurchaseOrderService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-franchisepurchaseorder",
+    "category": "structural",
+    "target": "Data/PATCH_api_franchise-purchase-orders_id_confirm/FranchisePurchaseOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "FranchisePurchaseOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"FranchisePurchaseOrder\" entity."
+  },
+  {
+    "id": "schema-declares-user",
+    "category": "structural",
+    "target": "Data/PATCH_api_franchise-purchase-orders_id_confirm/FranchisePurchaseOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "User"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"User\" entity."
+  }
+]

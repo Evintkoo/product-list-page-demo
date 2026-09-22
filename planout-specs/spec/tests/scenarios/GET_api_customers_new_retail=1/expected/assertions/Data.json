@@ -1,0 +1,69 @@
+[
+  {
+    "id": "data-get-api-customers-new-retail-1-customerretailcontroller-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_customers_new_retail=1/CustomerRetailController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/GET_api_customers_new_retail=1/CustomerRetailController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  },
+  {
+    "id": "schema-declares-user",
+    "category": "structural",
+    "target": "Data/GET_api_customers_new_retail=1/CustomerRetailController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "User"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"User\" entity."
+  },
+  {
+    "id": "schema-declares-occupation",
+    "category": "structural",
+    "target": "Data/GET_api_customers_new_retail=1/CustomerRetailController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Occupation"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Occupation\" entity."
+  },
+  {
+    "id": "schema-declares-wholesalecustomer",
+    "category": "structural",
+    "target": "Data/GET_api_customers_new_retail=1/CustomerRetailController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "WholesaleCustomer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"WholesaleCustomer\" entity."
+  },
+  {
+    "id": "schema-declares-customergroup",
+    "category": "structural",
+    "target": "Data/GET_api_customers_new_retail=1/CustomerRetailController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "CustomerGroup"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"CustomerGroup\" entity."
+  },
+  {
+    "id": "schema-declares-tax",
+    "category": "structural",
+    "target": "Data/GET_api_customers_new_retail=1/CustomerRetailController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Tax"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Tax\" entity."
+  }
+]

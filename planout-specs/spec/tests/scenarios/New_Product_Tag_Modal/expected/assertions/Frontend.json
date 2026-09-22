@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-new-product-tag-modal-producttagmodal-md-exists",
+    "category": "structural",
+    "target": "Frontend/New_Product_Tag_Modal/ProductTagModal.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-new-product-tag-modal-hooks-useproducttagmutation-md-exists",
+    "category": "structural",
+    "target": "Frontend/New_Product_Tag_Modal/hooks_useProductTagMutation.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

@@ -1,0 +1,33 @@
+[
+  {
+    "id": "logic-customers-retail-customers-list-page-customerservice-md-exists",
+    "category": "structural",
+    "target": "Logic/Customers_-_Retail_Customers_List_Page/CustomerService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-customers-retail-customers-list-page-customermapper-md-exists",
+    "category": "structural",
+    "target": "Logic/Customers_-_Retail_Customers_List_Page/CustomerMapper.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-customers-retail-customers-list-page-customercontroller-md-exists",
+    "category": "structural",
+    "target": "Logic/Customers_-_Retail_Customers_List_Page/CustomerController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-has-api-payload-block",
+    "category": "behavioural",
+    "target": "Logic/Customers_-_Retail_Customers_List_Page/CustomerService.md",
+    "check": "source_contains_string",
+    "args": {
+      "needle": "<!-- API_PAYLOAD"
+    },
+    "rationale": "Logic-tier pseudocode must carry an API_PAYLOAD block (plan 23 phase 3)."
+  }
+]

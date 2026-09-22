@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend-stock-stock-order-sales-retail-list-page-stockordersalesretailpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_Stock_Order_Sales_Retail_List_Page/StockOrderSalesRetailPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-stock-order-sales-retail-list-page-api-stockorderservice-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_Stock_Order_Sales_Retail_List_Page/api_stockOrderService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-stock-order-sales-retail-list-page-searchtoolbar-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_Stock_Order_Sales_Retail_List_Page/SearchToolbar.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

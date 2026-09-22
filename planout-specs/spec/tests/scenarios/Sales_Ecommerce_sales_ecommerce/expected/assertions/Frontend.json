@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend-sales-ecommerce-sales-ecommerce-ecommercesalespage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Ecommerce_sales_ecommerce/EcommerceSalesPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-sales-ecommerce-sales-ecommerce-salestable-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Ecommerce_sales_ecommerce/SalesTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-sales-ecommerce-sales-ecommerce-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Ecommerce_sales_ecommerce/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

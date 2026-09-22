@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-store-stocks-storestockspage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_Stocks/StoreStocksPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-store-stocks-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_Stocks/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

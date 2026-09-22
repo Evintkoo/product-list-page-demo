@@ -1,0 +1,9 @@
+[
+  {
+    "id": "feature-has-files",
+    "category": "cross-swimlane",
+    "target": "Frontend/Stock_-_Stock_Order_Sales_Retail_Search_and_Filter_Toolbar/StockOrderToolbar.md",
+    "check": "file_exists",
+    "rationale": "Feature must produce at least one file across all swimlanes."
+  }
+]

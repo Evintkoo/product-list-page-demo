@@ -1,0 +1,29 @@
+[
+  {
+    "id": "data-customer-add-vehicle-vehiclerepository-md-exists",
+    "category": "structural",
+    "target": "Data/Customer_-_Add_Vehicle/VehicleRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-vehicle",
+    "category": "structural",
+    "target": "Data/Customer_-_Add_Vehicle/VehicleRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Vehicle"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Vehicle\" entity."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/Customer_-_Add_Vehicle/VehicleRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Customer\" entity."
+  }
+]

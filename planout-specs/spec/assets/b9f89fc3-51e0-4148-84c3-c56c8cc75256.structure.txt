@@ -1,0 +1,21 @@
+Canvas: 345×452px
+
+├─ rect [1,1 343×450]  fill=#ffffff stroke=#2452a8
+├─ rect [1,1 343×49]  fill=#1f4faa
+├─ text [24,32 0×0] "Stock Orders"  fill=#ffffff 19px
+├─ divider [1,50 343×0]  stroke=#d9d9d9
+├─ text [24,82 0×0] "Stock Returns"  fill=#1a1a1a 19px
+├─ divider [1,100 343×0]  stroke=#d9d9d9
+├─ text [24,132 0×0] "Franchise Purchase Orders"  fill=#1a1a1a 19px
+├─ divider [1,150 343×0]  stroke=#d9d9d9
+├─ text [24,182 0×0] "Franchise Purchase Returns"  fill=#1a1a1a 19px
+├─ divider [1,200 343×0]  stroke=#d9d9d9
+├─ text [24,232 0×0] "Stock Transfers"  fill=#1a1a1a 19px
+├─ divider [1,250 343×0]  stroke=#d9d9d9
+├─ text [24,282 0×0] "Stock Opname"  fill=#1a1a1a 19px
+├─ divider [1,300 343×0]  stroke=#d9d9d9
+├─ text [24,332 0×0] "Stock Histories"  fill=#1a1a1a 19px
+├─ divider [1,350 343×0]  stroke=#d9d9d9
+├─ text [24,382 0×0] "Stock Reservations"  fill=#1a1a1a 19px
+├─ divider [1,400 343×0]  stroke=#d9d9d9
+└─ text [24,432 0×0] "Discrepancy Stocks"  fill=#1a1a1a 19px

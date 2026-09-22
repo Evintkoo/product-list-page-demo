@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-product-detail-page-tax-card-taxcard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page_-_Tax_Card/TaxCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-page-tax-card-taxcard-styles-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page_-_Tax_Card/TaxCard.styles.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

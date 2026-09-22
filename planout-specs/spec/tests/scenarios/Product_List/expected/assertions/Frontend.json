@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-product-list-productlistselector-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_List/ProductListSelector.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-list-useproductliststate-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_List/useProductListState.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

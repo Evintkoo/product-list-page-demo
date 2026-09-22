@@ -1,0 +1,9 @@
+[
+  {
+    "id": "feature-has-files",
+    "category": "cross-swimlane",
+    "target": "Frontend/Product_Detail_Page_-_Company_Pricing_Card/CompanyPricingCard.md",
+    "check": "file_exists",
+    "rationale": "Feature must produce at least one file across all swimlanes."
+  }
+]

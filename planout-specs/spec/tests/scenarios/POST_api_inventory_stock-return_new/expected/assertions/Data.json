@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-post-api-inventory-stock-return-new-stockreturnrepository-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_inventory_stock-return_new/StockReturnRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-post-api-inventory-stock-return-new-inventoryrepository-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_inventory_stock-return_new/InventoryRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockreturn",
+    "category": "structural",
+    "target": "Data/POST_api_inventory_stock-return_new/StockReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockReturn"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockReturn\" entity."
+  },
+  {
+    "id": "schema-declares-inventoryitem",
+    "category": "structural",
+    "target": "Data/POST_api_inventory_stock-return_new/StockReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "InventoryItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"InventoryItem\" entity."
+  }
+]

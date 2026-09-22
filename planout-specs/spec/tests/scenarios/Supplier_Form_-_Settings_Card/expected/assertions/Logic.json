@@ -1,0 +1,26 @@
+[
+  {
+    "id": "logic-supplier-form-settings-card-usesuppliersettings-md-exists",
+    "category": "structural",
+    "target": "Logic/Supplier_Form_-_Settings_Card/useSupplierSettings.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-supplier-form-settings-card-suppliersettingsform-md-exists",
+    "category": "structural",
+    "target": "Logic/Supplier_Form_-_Settings_Card/SupplierSettingsForm.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-has-api-payload-block",
+    "category": "behavioural",
+    "target": "Logic/Supplier_Form_-_Settings_Card/useSupplierSettings.md",
+    "check": "source_contains_string",
+    "args": {
+      "needle": "<!-- API_PAYLOAD"
+    },
+    "rationale": "Logic-tier pseudocode must carry an API_PAYLOAD block (plan 23 phase 3)."
+  }
+]

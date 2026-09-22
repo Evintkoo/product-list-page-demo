@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-company-stock-outgoings-list-page-stockoutgoingspage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_Stock_Outgoings_List_Page/StockOutgoingsPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-company-stock-outgoings-list-page-stockoutgoingslogic-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_Stock_Outgoings_List_Page/StockOutgoingsLogic.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-sales-deliveries-details-page-sales-deliveries-record-id-salesdeliveryrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Sales_Deliveries_Details_Page_sales_deliveries_[record_id]/SalesDeliveryRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-sales-deliveries-details-page-sales-deliveries-record-id-salesdeliverydto-md-exists",
+    "category": "structural",
+    "target": "Data/Sales_Deliveries_Details_Page_sales_deliveries_[record_id]/SalesDeliveryDTO.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-salesdelivery",
+    "category": "structural",
+    "target": "Data/Sales_Deliveries_Details_Page_sales_deliveries_[record_id]/SalesDeliveryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesDelivery"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesDelivery\" entity."
+  },
+  {
+    "id": "schema-declares-salesdeliveryline",
+    "category": "structural",
+    "target": "Data/Sales_Deliveries_Details_Page_sales_deliveries_[record_id]/SalesDeliveryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesDeliveryLine"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesDeliveryLine\" entity."
+  }
+]

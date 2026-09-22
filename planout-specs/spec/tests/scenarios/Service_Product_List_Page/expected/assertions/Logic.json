@@ -1,0 +1,26 @@
+[
+  {
+    "id": "logic-service-product-list-page-serviceproductcontroller-md-exists",
+    "category": "structural",
+    "target": "Logic/Service_Product_List_Page/ServiceProductController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-service-product-list-page-serviceproductservice-md-exists",
+    "category": "structural",
+    "target": "Logic/Service_Product_List_Page/ServiceProductService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-has-api-payload-block",
+    "category": "behavioural",
+    "target": "Logic/Service_Product_List_Page/ServiceProductController.md",
+    "check": "source_contains_string",
+    "args": {
+      "needle": "<!-- API_PAYLOAD"
+    },
+    "rationale": "Logic-tier pseudocode must carry an API_PAYLOAD block (plan 23 phase 3)."
+  }
+]

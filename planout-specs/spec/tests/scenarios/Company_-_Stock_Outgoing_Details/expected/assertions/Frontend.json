@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend-company-stock-outgoing-details-stockoutgoingdetails-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_Stock_Outgoing_Details/StockOutgoingDetails.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-company-stock-outgoing-details-approvestockoutgoing-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_Stock_Outgoing_Details/ApproveStockOutgoing.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-company-stock-outgoing-details-stockoutgoinghooks-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_Stock_Outgoing_Details/StockOutgoingHooks.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-customer-customer-vehicle-customervehiclespage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Customer_Vehicle/CustomerVehiclesPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

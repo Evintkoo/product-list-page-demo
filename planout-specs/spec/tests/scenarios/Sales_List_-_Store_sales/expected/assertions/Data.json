@@ -1,0 +1,66 @@
+[
+  {
+    "id": "data-sales-list-store-sales-salesrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Sales_List_-_Store_sales/SalesRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-sales-list-store-sales-salesservice-md-exists",
+    "category": "structural",
+    "target": "Data/Sales_List_-_Store_sales/SalesService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-sale",
+    "category": "structural",
+    "target": "Data/Sales_List_-_Store_sales/SalesRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Sale"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Sale\" entity."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/Sales_List_-_Store_sales/SalesRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Customer\" entity."
+  },
+  {
+    "id": "schema-declares-vehicle",
+    "category": "structural",
+    "target": "Data/Sales_List_-_Store_sales/SalesRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Vehicle"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Vehicle\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/Sales_List_-_Store_sales/SalesRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  },
+  {
+    "id": "schema-declares-user",
+    "category": "structural",
+    "target": "Data/Sales_List_-_Store_sales/SalesRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "User"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"User\" entity."
+  }
+]

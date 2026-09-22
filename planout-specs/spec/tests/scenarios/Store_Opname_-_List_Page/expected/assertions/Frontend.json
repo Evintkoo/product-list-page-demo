@@ -1,0 +1,30 @@
+[
+  {
+    "id": "frontend-store-opname-list-page-stockopnamelistpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_Opname_-_List_Page/StockOpnameListPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-store-opname-list-page-api-stockopnameservice-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_Opname_-_List_Page/api_stockOpnameService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-store-opname-list-page-components-stockopnametable-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_Opname_-_List_Page/components_StockOpnameTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-store-opname-list-page-components-filtersection-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_Opname_-_List_Page/components_FilterSection.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

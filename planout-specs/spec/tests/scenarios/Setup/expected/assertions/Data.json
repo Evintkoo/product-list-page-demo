@@ -1,0 +1,80 @@
+[
+  {
+    "id": "data-setup-warehouserepository-md-exists",
+    "category": "structural",
+    "target": "Data/Setup/WarehouseRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-setup-paymenttypeservice-md-exists",
+    "category": "structural",
+    "target": "Data/Setup/PaymentTypeService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-setup-companysettingsservice-md-exists",
+    "category": "structural",
+    "target": "Data/Setup/CompanySettingsService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-setup-areaservice-md-exists",
+    "category": "structural",
+    "target": "Data/Setup/AreaService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-warehouse",
+    "category": "structural",
+    "target": "Data/Setup/WarehouseRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Warehouse"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Warehouse\" entity."
+  },
+  {
+    "id": "schema-declares-paymenttype",
+    "category": "structural",
+    "target": "Data/Setup/WarehouseRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PaymentType"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PaymentType\" entity."
+  },
+  {
+    "id": "schema-declares-paymenttypemapping",
+    "category": "structural",
+    "target": "Data/Setup/WarehouseRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PaymentTypeMapping"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PaymentTypeMapping\" entity."
+  },
+  {
+    "id": "schema-declares-company",
+    "category": "structural",
+    "target": "Data/Setup/WarehouseRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Company"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Company\" entity."
+  },
+  {
+    "id": "schema-declares-area",
+    "category": "structural",
+    "target": "Data/Setup/WarehouseRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Area"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Area\" entity."
+  }
+]

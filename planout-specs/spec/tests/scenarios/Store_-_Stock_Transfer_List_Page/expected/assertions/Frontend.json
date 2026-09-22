@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend-store-stock-transfer-list-page-stocktransferlistpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_-_Stock_Transfer_List_Page/StockTransferListPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-store-stock-transfer-list-page-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_-_Stock_Transfer_List_Page/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-store-stock-transfer-list-page-stocktransfertable-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_-_Stock_Transfer_List_Page/StockTransferTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

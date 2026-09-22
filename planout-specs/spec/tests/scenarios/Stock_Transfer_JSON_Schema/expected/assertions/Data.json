@@ -1,0 +1,69 @@
+[
+  {
+    "id": "data-stock-transfer-json-schema-stocktransferrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_Transfer_JSON_Schema/StockTransferRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stock_transfers",
+    "category": "structural",
+    "target": "Data/Stock_Transfer_JSON_Schema/StockTransferRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "stock_transfers"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"stock_transfers\" entity."
+  },
+  {
+    "id": "schema-declares-stock_transfer_items",
+    "category": "structural",
+    "target": "Data/Stock_Transfer_JSON_Schema/StockTransferRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "stock_transfer_items"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"stock_transfer_items\" entity."
+  },
+  {
+    "id": "schema-declares-stores",
+    "category": "structural",
+    "target": "Data/Stock_Transfer_JSON_Schema/StockTransferRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "stores"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"stores\" entity."
+  },
+  {
+    "id": "schema-declares-warehouses",
+    "category": "structural",
+    "target": "Data/Stock_Transfer_JSON_Schema/StockTransferRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "warehouses"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"warehouses\" entity."
+  },
+  {
+    "id": "schema-declares-users",
+    "category": "structural",
+    "target": "Data/Stock_Transfer_JSON_Schema/StockTransferRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "users"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"users\" entity."
+  },
+  {
+    "id": "schema-declares-products",
+    "category": "structural",
+    "target": "Data/Stock_Transfer_JSON_Schema/StockTransferRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "products"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"products\" entity."
+  }
+]

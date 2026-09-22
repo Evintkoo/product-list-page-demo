@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1266 40" font-family="Arial, Helvetica, sans-serif" font-size="14" width="1266" height="40">
+  <rect x="0" y="0" width="1266" height="40" fill="#ffffff"/>
+  <line x1="0" y1="39" x2="1266" y2="39" stroke="#e0e0e0" stroke-width="1"/>
+
+  <text x="14" y="20" fill="#5b5fc7" font-weight="bold">Product</text>
+  <line x1="14" y1="30" x2="72" y2="30" stroke="#5b5fc7" stroke-width="2"/>
+
+  <text x="99" y="20" fill="#8a8a8a">Store Stocks</text>
+  <text x="208" y="20" fill="#8a8a8a">Warehouse Stocks</text>
+  <text x="349" y="20" fill="#8a8a8a">Reservation</text>
+  <text x="453" y="20" fill="#8a8a8a">In Transit</text>
+  <text x="545" y="20" fill="#8a8a8a">Stock History</text>
+  <text x="656" y="20" fill="#8a8a8a">Warehouse History</text>
+  <text x="805" y="20" fill="#8a8a8a">Product History</text>
+  <text x="944" y="20" fill="#8a8a8a">Purchase History</text>
+  <text x="1086" y="20" fill="#8a8a8a">Substitutes</text>
+</svg>

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-stock-new-order-warehouse-form-card-neworderwarehouseform-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_New_Order_Warehouse_Form_Card/NewOrderWarehouseForm.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

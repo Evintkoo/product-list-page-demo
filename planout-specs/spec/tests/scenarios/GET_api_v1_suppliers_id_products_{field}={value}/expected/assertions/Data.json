@@ -1,0 +1,29 @@
+[
+  {
+    "id": "data-get-api-v1-suppliers-id-products-field-value-productrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_v1_suppliers_id_products_{field}={value}/ProductRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-supplier",
+    "category": "structural",
+    "target": "Data/GET_api_v1_suppliers_id_products_{field}={value}/ProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Supplier"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Supplier\" entity."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/GET_api_v1_suppliers_id_products_{field}={value}/ProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  }
+]

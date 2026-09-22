@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-product-detail-page-attributes-card-productattributescard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page_-_Attributes_Card/ProductAttributesCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

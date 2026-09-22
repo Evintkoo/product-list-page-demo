@@ -1,0 +1,39 @@
+[
+  {
+    "id": "data-get-api-sales-order-returns-salesorderreturnrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_sales-order_returns/SalesOrderReturnRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-salesorderreturn",
+    "category": "structural",
+    "target": "Data/GET_api_sales-order_returns/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrderReturn"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrderReturn\" entity."
+  },
+  {
+    "id": "schema-declares-company",
+    "category": "structural",
+    "target": "Data/GET_api_sales-order_returns/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Company"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Company\" entity."
+  },
+  {
+    "id": "schema-declares-salesorder",
+    "category": "structural",
+    "target": "Data/GET_api_sales-order_returns/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrder\" entity."
+  }
+]

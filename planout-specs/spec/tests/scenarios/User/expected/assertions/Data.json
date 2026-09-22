@@ -1,0 +1,49 @@
+[
+  {
+    "id": "data-user-schema-md-exists",
+    "category": "structural",
+    "target": "Data/User/schema.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-user",
+    "category": "structural",
+    "target": "Data/User/schema.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "User"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"User\" entity."
+  },
+  {
+    "id": "schema-declares-session",
+    "category": "structural",
+    "target": "Data/User/schema.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Session"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Session\" entity."
+  },
+  {
+    "id": "schema-declares-auditlog",
+    "category": "structural",
+    "target": "Data/User/schema.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "AuditLog"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"AuditLog\" entity."
+  },
+  {
+    "id": "schema-declares-loginattempt",
+    "category": "structural",
+    "target": "Data/User/schema.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "LoginAttempt"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"LoginAttempt\" entity."
+  }
+]

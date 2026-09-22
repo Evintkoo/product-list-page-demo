@@ -1,0 +1,66 @@
+[
+  {
+    "id": "data-patch-api-stock-outgoings-id-stockoutgoingcontroller-md-exists",
+    "category": "structural",
+    "target": "Data/PATCH_api_stock-outgoings_id/StockOutgoingController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-patch-api-stock-outgoings-id-stockoutgoingservice-md-exists",
+    "category": "structural",
+    "target": "Data/PATCH_api_stock-outgoings_id/StockOutgoingService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockoutgoing",
+    "category": "structural",
+    "target": "Data/PATCH_api_stock-outgoings_id/StockOutgoingController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOutgoing"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOutgoing\" entity."
+  },
+  {
+    "id": "schema-declares-stockoutgoingline",
+    "category": "structural",
+    "target": "Data/PATCH_api_stock-outgoings_id/StockOutgoingController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOutgoingLine"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOutgoingLine\" entity."
+  },
+  {
+    "id": "schema-declares-location",
+    "category": "structural",
+    "target": "Data/PATCH_api_stock-outgoings_id/StockOutgoingController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Location"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Location\" entity."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/PATCH_api_stock-outgoings_id/StockOutgoingController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  },
+  {
+    "id": "schema-declares-inventory",
+    "category": "structural",
+    "target": "Data/PATCH_api_stock-outgoings_id/StockOutgoingController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Inventory"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Inventory\" entity."
+  }
+]

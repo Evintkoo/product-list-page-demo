@@ -1,0 +1,16 @@
+Canvas: 1328×51px
+
+├─ card [0,0 1328×51]  fill=white rx=12
+├─ icon [23,23 9×5]  stroke=#4A54C4
+├─ text-path [44,21 74×9]  fill=#4A54C4
+├─ card [135,12 77×27]  fill=#EEF0FE rx=13.5
+├─ icon-shape [150,23 5×5]  stroke=#A2A6C3
+├─ text-path [162,22 36×8]  fill=#A2A6C3
+├─ icon [225,22 4×7]  stroke=#C7CDF9
+├─ card [242,12 146×27]  fill=#EEF0FE rx=13.5
+├─ icon-shape [257,23 5×5]  stroke=#A2A6C3
+├─ text-path [269,22 104×8]  fill=#A2A6C3
+├─ icon [401,22 4×7]  stroke=#C7CDF9
+├─ card [418,12 134×27]  fill=#EEF0FE rx=13.5
+├─ icon-shape [433,23 5×5]  stroke=#A2A6C3
+└─ text-path [445,22 92×8]  fill=#A2A6C3

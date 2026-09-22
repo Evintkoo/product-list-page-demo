@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-service-product-schema-serviceproductrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Service_Product_Schema/ServiceProductRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-service-product-schema-serviceproductservice-md-exists",
+    "category": "structural",
+    "target": "Data/Service_Product_Schema/ServiceProductService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-serviceproduct",
+    "category": "structural",
+    "target": "Data/Service_Product_Schema/ServiceProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ServiceProduct"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ServiceProduct\" entity."
+  },
+  {
+    "id": "schema-declares-serviceproducttag",
+    "category": "structural",
+    "target": "Data/Service_Product_Schema/ServiceProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ServiceProductTag"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ServiceProductTag\" entity."
+  }
+]

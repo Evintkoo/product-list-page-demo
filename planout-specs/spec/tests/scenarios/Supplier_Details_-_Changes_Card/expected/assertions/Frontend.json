@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-supplier-details-changes-card-supplierchangescard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Supplier_Details_-_Changes_Card/SupplierChangesCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-supplier-details-changes-card-supplierchangescard-styles-md-exists",
+    "category": "structural",
+    "target": "Frontend/Supplier_Details_-_Changes_Card/SupplierChangesCard.styles.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

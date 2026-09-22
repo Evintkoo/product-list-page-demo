@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-supplier-form-details-card-supplierdetailscard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Supplier_Form_-_Details_Card/SupplierDetailsCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-supplier-form-details-card-usesuppliervalidation-md-exists",
+    "category": "structural",
+    "target": "Frontend/Supplier_Form_-_Details_Card/useSupplierValidation.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

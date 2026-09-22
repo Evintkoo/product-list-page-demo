@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-stock-order-details-details-panel-stockorderdetailspanel-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_Order_Details_Details_Panel/StockOrderDetailsPanel.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

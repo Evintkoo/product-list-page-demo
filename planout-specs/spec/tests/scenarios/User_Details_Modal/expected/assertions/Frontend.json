@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-user-details-modal-userdetailsmodal-md-exists",
+    "category": "structural",
+    "target": "Frontend/User_Details_Modal/UserDetailsModal.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-user-details-modal-userdetailslogic-md-exists",
+    "category": "structural",
+    "target": "Frontend/User_Details_Modal/UserDetailsLogic.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

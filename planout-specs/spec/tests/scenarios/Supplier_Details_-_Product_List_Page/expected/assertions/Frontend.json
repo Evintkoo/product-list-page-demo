@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-supplier-details-product-list-page-supplierproductlist-md-exists",
+    "category": "structural",
+    "target": "Frontend/Supplier_Details_-_Product_List_Page/SupplierProductList.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-supplier-details-product-list-page-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Supplier_Details_-_Product_List_Page/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

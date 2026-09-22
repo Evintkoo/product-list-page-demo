@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-stock-order-details-workflow-status-bar-stockorderservice-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_-_Order_Details_Workflow_Status_Bar/StockOrderService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-stock-order-details-workflow-status-bar-stockorderworkflowcontroller-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_-_Order_Details_Workflow_Status_Bar/StockOrderWorkflowController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockorder",
+    "category": "structural",
+    "target": "Data/Stock_-_Order_Details_Workflow_Status_Bar/StockOrderService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrder\" entity."
+  },
+  {
+    "id": "schema-declares-stockorderresponse",
+    "category": "structural",
+    "target": "Data/Stock_-_Order_Details_Workflow_Status_Bar/StockOrderService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrderResponse"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrderResponse\" entity."
+  }
+]

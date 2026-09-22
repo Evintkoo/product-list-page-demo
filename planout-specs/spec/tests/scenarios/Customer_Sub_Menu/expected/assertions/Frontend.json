@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-customer-sub-menu-customersubmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Sub_Menu/CustomerSubMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-sub-menu-usecustomernavigation-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Sub_Menu/useCustomerNavigation.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

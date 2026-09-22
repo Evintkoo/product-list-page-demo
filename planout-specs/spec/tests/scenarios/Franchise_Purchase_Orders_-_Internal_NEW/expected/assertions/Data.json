@@ -1,0 +1,29 @@
+[
+  {
+    "id": "data-franchise-purchase-orders-internal-new-franchisepurchaseordercontroller-md-exists",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Orders_-_Internal_NEW/FranchisePurchaseOrderController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-franchisepurchaseorder",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Orders_-_Internal_NEW/FranchisePurchaseOrderController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "FranchisePurchaseOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"FranchisePurchaseOrder\" entity."
+  },
+  {
+    "id": "schema-declares-franchisepurchaseorderlineitem",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Orders_-_Internal_NEW/FranchisePurchaseOrderController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "FranchisePurchaseOrderLineItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"FranchisePurchaseOrderLineItem\" entity."
+  }
+]

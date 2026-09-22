@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-product-details-productrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Product_Details/ProductRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-product-details-productdatamapper-md-exists",
+    "category": "structural",
+    "target": "Data/Product_Details/ProductDataMapper.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/Product_Details/ProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  },
+  {
+    "id": "schema-declares-category",
+    "category": "structural",
+    "target": "Data/Product_Details/ProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Category"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Category\" entity."
+  }
+]

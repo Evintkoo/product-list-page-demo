@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-store-new-stock-opname-newstockopnamepage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_-_New_Stock_Opname/NewStockOpnamePage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-store-new-stock-opname-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_-_New_Stock_Opname/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

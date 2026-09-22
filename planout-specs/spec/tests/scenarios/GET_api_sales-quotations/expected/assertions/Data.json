@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-get-api-sales-quotations-salesquotationrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_sales-quotations/SalesQuotationRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-sales_quotations",
+    "category": "structural",
+    "target": "Data/GET_api_sales-quotations/SalesQuotationRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "sales_quotations"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"sales_quotations\" entity."
+  }
+]

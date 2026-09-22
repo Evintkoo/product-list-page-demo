@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-customer-products-filter-component-customerproductsfilter-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Products_Filter_Component/CustomerProductsFilter.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-products-filter-component-useproducttable-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Products_Filter_Component/useProductTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

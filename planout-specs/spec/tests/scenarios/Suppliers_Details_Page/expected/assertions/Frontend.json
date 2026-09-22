@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-suppliers-details-page-supplierdetailspage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Suppliers_Details_Page/SupplierDetailsPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

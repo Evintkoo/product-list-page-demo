@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-get-api-customers-id-sales-customerrepository-md-exists",
+    "category": "structural",
+    "target": "DATA/GET_api_customers_id_sales/CustomerRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"DATA\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-customers-id-sales-salesservice-md-exists",
+    "category": "structural",
+    "target": "DATA/GET_api_customers_id_sales/SalesService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"DATA\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "DATA/GET_api_customers_id_sales/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Customer\" entity."
+  },
+  {
+    "id": "schema-declares-sale",
+    "category": "structural",
+    "target": "DATA/GET_api_customers_id_sales/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Sale"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Sale\" entity."
+  }
+]

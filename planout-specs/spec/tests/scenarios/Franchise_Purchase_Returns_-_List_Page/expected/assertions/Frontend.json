@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-franchise-purchase-returns-list-page-franchisepurchasereturnslist-md-exists",
+    "category": "structural",
+    "target": "Frontend/Franchise_Purchase_Returns_-_List_Page/FranchisePurchaseReturnsList.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-franchise-purchase-returns-list-page-hooks-useapi-md-exists",
+    "category": "structural",
+    "target": "Frontend/Franchise_Purchase_Returns_-_List_Page/hooks_useApi.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

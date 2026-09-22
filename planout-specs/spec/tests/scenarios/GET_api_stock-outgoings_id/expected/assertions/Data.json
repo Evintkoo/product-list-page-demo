@@ -1,0 +1,49 @@
+[
+  {
+    "id": "data-get-api-stock-outgoings-id-stockoutgoingrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_stock-outgoings_id/StockOutgoingRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockoutgoing",
+    "category": "structural",
+    "target": "Data/GET_api_stock-outgoings_id/StockOutgoingRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOutgoing"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOutgoing\" entity."
+  },
+  {
+    "id": "schema-declares-stockoutgoingline",
+    "category": "structural",
+    "target": "Data/GET_api_stock-outgoings_id/StockOutgoingRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOutgoingLine"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOutgoingLine\" entity."
+  },
+  {
+    "id": "schema-declares-workorder",
+    "category": "structural",
+    "target": "Data/GET_api_stock-outgoings_id/StockOutgoingRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "WorkOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"WorkOrder\" entity."
+  },
+  {
+    "id": "schema-declares-stockorder",
+    "category": "structural",
+    "target": "Data/GET_api_stock-outgoings_id/StockOutgoingRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrder\" entity."
+  }
+]

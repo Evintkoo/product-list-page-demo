@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-get-api-customers-customerrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_customers/CustomerRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/GET_api_customers/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Customer\" entity."
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend-add-page-info-card-serviceinfocard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Add_Page_-_Info_Card/ServiceInfoCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-add-page-info-card-newtypemodal-md-exists",
+    "category": "structural",
+    "target": "Frontend/Add_Page_-_Info_Card/NewTypeModal.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-add-page-info-card-newtagmodal-md-exists",
+    "category": "structural",
+    "target": "Frontend/Add_Page_-_Info_Card/NewTagModal.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

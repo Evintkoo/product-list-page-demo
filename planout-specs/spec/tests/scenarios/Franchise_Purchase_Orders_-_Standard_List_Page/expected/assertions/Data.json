@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-franchise-purchase-orders-standard-list-page-franchisepurchaseordermapper-md-exists",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Orders_-_Standard_List_Page/FranchisePurchaseOrderMapper.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-franchisepurchaseorder",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Orders_-_Standard_List_Page/FranchisePurchaseOrderMapper.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "FranchisePurchaseOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"FranchisePurchaseOrder\" entity."
+  }
+]

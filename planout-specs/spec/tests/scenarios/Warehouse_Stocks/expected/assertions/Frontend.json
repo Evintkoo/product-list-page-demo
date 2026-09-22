@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-warehouse-stocks-warehousestockpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Warehouse_Stocks/WarehouseStockPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-areas-district-districtlistpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Areas_-_District/DistrictListPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-areas-district-districtlisttypes-md-exists",
+    "category": "structural",
+    "target": "Frontend/Areas_-_District/DistrictListTypes.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

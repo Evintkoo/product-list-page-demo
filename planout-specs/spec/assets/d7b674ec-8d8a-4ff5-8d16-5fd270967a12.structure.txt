@@ -1,0 +1,55 @@
+Canvas: 1440×65px
+
+├─ shape [0,0 1440×64]  fill=white
+├─ text-path [0,63 1440×2]  fill=#EBEDF1
+├─ card-group [29,18 1129×29]
+│  ├─ icon [29,21 23×23]  fill=#4A54C4
+│  ├─ icon [43,22 10×13]  fill=#4A54C4
+│  ├─ card [68,18 107×29]  fill=white rx=8
+│  ├─ icon [80,26 4×4]  stroke=#9297A1
+│  ├─ icon [87,26 4×4]  stroke=#9297A1
+│  ├─ icon [87,33 4×4]  stroke=#9297A1
+│  ├─ icon [80,33 4×4]  stroke=#9297A1
+│  ├─ text-path [100,27 63×9]  fill=#565B66
+│  ├─ card [179,18 74×29]  fill=white rx=8
+│  ├─ icon [193,26 8×13]  stroke=#9297A1
+│  ├─ icon [211,27 31×9]  fill=#565B66
+│  ├─ card [257,18 107×29]  fill=white rx=8
+│  ├─ icon [268,26 13×11]  stroke=#9297A1
+│  ├─ text-path [289,27 64×9]  fill=#565B66
+│  ├─ card [368,18 97×29]  fill=white rx=8
+│  ├─ icon [379,27 13×10]  stroke=#9297A1
+│  ├─ text-path [400,27 55×12]  fill=#565B66
+│  ├─ card [469,18 96×29]  fill=#EEF0FE rx=8
+│  ├─ icon [481,26 11×12]  stroke=#4A54C4
+│  ├─ text-path [501,27 53×9]  fill=#4A54C4
+│  ├─ card [569,18 98×29]  fill=white rx=8
+│  ├─ icon [581,26 11×11]  stroke=#9297A1
+│  ├─ text-path [601,27 55×12]  fill=#565B66
+│  ├─ card [671,18 88×29]  fill=white rx=8
+│  ├─ icon [683,26 12×11]  stroke=#9297A1
+│  ├─ text-path [703,27 45×10]  fill=#565B66
+│  ├─ card [763,18 110×29]  fill=white rx=8
+│  ├─ icon [776,26 10×13]  stroke=#9297A1
+│  ├─ text-path [794,27 67×12]  fill=#565B66
+│  ├─ card [877,18 88×29]  fill=white rx=8
+│  ├─ icon [890,26 10×13]  stroke=#9297A1
+│  ├─ text-path [909,27 45×12]  fill=#565B66
+│  ├─ card [969,18 77×29]  fill=white rx=8
+│  ├─ icon [981,26 11×11]  stroke=#9297A1
+│  ├─ shape [1001,27 34×12]  fill=#565B66
+│  ├─ card [1050,18 108×29]  fill=white rx=8
+│  ├─ icon [1061,26 13×11]  stroke=#9297A1
+│  └─ text-path [1082,27 65×10]  fill=#565B66
+└─ card-group [1195,15 221×35]
+   ├─ card [1195,19 72×26]  fill=#F4F5F7 rx=8
+   ├─ icon [1207,27 10×10]  stroke=#9297A1
+   ├─ icon [1227,28 29×9]  fill=#9297A1
+   ├─ icon [1287,25 13×14]  stroke=#565B66
+   ├─ card [1320,15 96×35]  fill=#F4F5F7 rx=17.5
+   ├─ card [1326,20 24×24]  fill=#D8DCFC rx=12
+   ├─ icon [1335,28 6×8]  fill=#4A54C4
+   ├─ group [1358,22 27×21]
+   │  ├─ icon [1358,22 20×8]  fill=#20242D
+   │  └─ icon [1359,36 27×7]  fill=#9297A1
+   └─ icon [1398,30 7×3]  stroke=#9297A1

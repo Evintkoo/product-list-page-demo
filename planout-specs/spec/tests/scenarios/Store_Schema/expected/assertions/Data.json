@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-store-schema-storerepository-md-exists",
+    "category": "structural",
+    "target": "Data/Store_Schema/StoreRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-store-schema-storeschema-md-exists",
+    "category": "structural",
+    "target": "Data/Store_Schema/StoreSchema.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/Store_Schema/StoreRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  }
+]

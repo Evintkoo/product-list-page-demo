@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-settings-card-settingscard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Settings_Card/SettingsCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-settings-card-settingscard-hooks-md-exists",
+    "category": "structural",
+    "target": "Frontend/Settings_Card/SettingsCard.hooks.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

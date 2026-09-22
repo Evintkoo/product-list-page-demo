@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-company-purchase-orders-standard-purchaseorderlist-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_Purchase_Orders_(Standard)/PurchaseOrderList.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

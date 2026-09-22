@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-customer-group-card-customergroupcard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Group_Card/CustomerGroupCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-group-card-hooks-usecustomergroupdata-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Group_Card/hooks_useCustomerGroupData.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

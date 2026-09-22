@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-finance-menu-financemenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Finance_Menu/FinanceMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-finance-menu-financesubmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Finance_Menu/FinanceSubMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

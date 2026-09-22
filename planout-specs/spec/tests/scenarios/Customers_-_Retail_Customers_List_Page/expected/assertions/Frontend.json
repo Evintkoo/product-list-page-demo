@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-customers-retail-customers-list-page-retailcustomerlist-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customers_-_Retail_Customers_List_Page/RetailCustomerList.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customers-retail-customers-list-page-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customers_-_Retail_Customers_List_Page/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-sales-store-sub-menu-salesstoresubmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Store_Sub_Menu/SalesStoreSubMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-sales-store-sub-menu-salesstoresubmenu-styles-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Store_Sub_Menu/SalesStoreSubMenu.styles.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

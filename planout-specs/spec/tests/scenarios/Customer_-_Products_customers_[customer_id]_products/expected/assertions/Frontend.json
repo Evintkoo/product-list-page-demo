@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend-customer-products-customers-customer-id-products-customerproductspage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Products_customers_[customer_id]_products/CustomerProductsPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-products-customers-customer-id-products-hooks-useproducttable-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Products_customers_[customer_id]_products/hooks_useProductTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-products-customers-customer-id-products-components-searchfilterbar-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Products_customers_[customer_id]_products/components_SearchFilterBar.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

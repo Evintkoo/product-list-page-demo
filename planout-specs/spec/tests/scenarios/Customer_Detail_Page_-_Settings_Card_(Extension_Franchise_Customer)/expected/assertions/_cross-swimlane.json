@@ -1,0 +1,9 @@
+[
+  {
+    "id": "feature-has-files",
+    "category": "cross-swimlane",
+    "target": "Frontend/Customer_Detail_Page_-_Settings_Card_(Extension_Franchise_Customer)/FranchiseCustomerSettingsCard.md",
+    "check": "file_exists",
+    "rationale": "Feature must produce at least one file across all swimlanes."
+  }
+]

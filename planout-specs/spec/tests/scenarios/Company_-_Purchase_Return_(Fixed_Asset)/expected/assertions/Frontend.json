@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend-company-purchase-return-fixed-asset-purchasereturnlist-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_Purchase_Return_(Fixed_Asset)/PurchaseReturnList.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-company-purchase-return-fixed-asset-filterbar-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_Purchase_Return_(Fixed_Asset)/FilterBar.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-company-purchase-return-fixed-asset-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Company_-_Purchase_Return_(Fixed_Asset)/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

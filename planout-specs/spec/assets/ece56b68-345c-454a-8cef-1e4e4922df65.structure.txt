@@ -1,0 +1,18 @@
+Canvas: 610×68px
+
+├─ rect [1,1 608×66]  fill=#ffffff stroke=#c9d3f5
+├─ card [16,14 90×26]  fill=#ffffff stroke=#b9c2e8 rx=6
+├─ text [28,31 0×0] "SKU"  fill=#a9adc1 11px
+├─ card [116,14 90×26]  fill=#ffffff stroke=#b9c2e8 rx=6
+├─ text [128,31 0×0] "Name"  fill=#a9adc1 11px
+├─ card [216,14 90×26]  fill=#ffffff stroke=#b9c2e8 rx=6
+├─ text [228,31 0×0] "Type"  fill=#a9adc1 11px
+├─ card [316,14 90×26]  fill=#ffffff stroke=#b9c2e8 rx=6
+├─ text [328,31 0×0] "Tag"  fill=#a9adc1 11px
+├─ card [424,14 86×26]  fill=#5b4bdb rx=6
+├─ icon-shape [438,22 10×10]  stroke=#ffffff
+├─ divider [447,31 3×3]  stroke=#ffffff
+├─ text [458,31 0×0] "Search"  fill=#ffffff 11px
+├─ card [518,14 90×26]  fill=#ffffff stroke=#b9c2e8 rx=6
+├─ icon [531,24 6×6]  stroke=#5b4bdb
+└─ text [544,31 0×0] "Download"  fill=#5b4bdb 11px

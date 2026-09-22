@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-product-detail-page-settings-card-productsettingscard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page_-_Settings_Card/ProductSettingsCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-page-settings-card-hooks-useproductdetails-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page_-_Settings_Card/hooks_useProductDetails.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

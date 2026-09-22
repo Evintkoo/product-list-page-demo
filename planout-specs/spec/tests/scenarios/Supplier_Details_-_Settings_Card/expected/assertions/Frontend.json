@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-supplier-details-settings-card-suppliersettingscard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Supplier_Details_-_Settings_Card/SupplierSettingsCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-store-stock-reservations-stockreservationspage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_-_Stock_Reservations/StockReservationsPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-store-stock-reservations-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_-_Stock_Reservations/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-company-stock-outgoing-details-stockoutgoingrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Company_-_Stock_Outgoing_Details/StockOutgoingRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-company-stock-outgoing-details-stockoutgoingcontroller-md-exists",
+    "category": "structural",
+    "target": "Data/Company_-_Stock_Outgoing_Details/StockOutgoingController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockoutgoing",
+    "category": "structural",
+    "target": "Data/Company_-_Stock_Outgoing_Details/StockOutgoingRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOutgoing"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOutgoing\" entity."
+  },
+  {
+    "id": "schema-declares-stockoutgoingitem",
+    "category": "structural",
+    "target": "Data/Company_-_Stock_Outgoing_Details/StockOutgoingRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOutgoingItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOutgoingItem\" entity."
+  }
+]

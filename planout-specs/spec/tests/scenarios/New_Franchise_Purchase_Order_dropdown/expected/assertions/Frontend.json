@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-new-franchise-purchase-order-dropdown-franchisepurchaseorderdropdown-md-exists",
+    "category": "structural",
+    "target": "Frontend/New_Franchise_Purchase_Order_dropdown/FranchisePurchaseOrderDropdown.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-new-franchise-purchase-order-dropdown-styles-md-exists",
+    "category": "structural",
+    "target": "Frontend/New_Franchise_Purchase_Order_dropdown/styles.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

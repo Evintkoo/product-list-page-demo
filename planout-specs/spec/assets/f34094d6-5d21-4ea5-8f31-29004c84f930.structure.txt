@@ -1,0 +1,12 @@
+Canvas: 1392×34px
+
+├─ group [0,7 126×23]
+│  ├─ text-group [0,7 53×23]
+│  │  ├─ text-path [1,7 51×13]  fill=#4A54C4
+│  │  └─ divider [0,28 53×2]  fill=#4A54C4 rx=1
+│  └─ text-group [82,8 44×10]
+│     └─ text-path [82,8 44×10]  fill=#868C97
+├─ text-path [0,29 128×2]  fill=#E6E8ED
+├─ card [1252,0 140×34]  fill=#4E5BD6 rx=8
+├─ icon [1271,12 9×9]  stroke=white
+└─ text-path [1293,12 82×13]  fill=white

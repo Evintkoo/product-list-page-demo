@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-customer-add-wholesale-page-data-mapping-wholesalecustomerdatamapping-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Add_Wholesale_Page_-_Data_Mapping/WholesaleCustomerDataMapping.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-add-wholesale-page-data-mapping-usewholesalecustomerform-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Add_Wholesale_Page_-_Data_Mapping/useWholesaleCustomerForm.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

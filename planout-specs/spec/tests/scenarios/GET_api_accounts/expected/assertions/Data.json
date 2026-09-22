@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-get-api-accounts-accountrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_accounts/AccountRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-accounts-accountservice-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_accounts/AccountService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-account",
+    "category": "structural",
+    "target": "Data/GET_api_accounts/AccountRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Account"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Account\" entity."
+  },
+  {
+    "id": "schema-declares-company",
+    "category": "structural",
+    "target": "Data/GET_api_accounts/AccountRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Company"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Company\" entity."
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-vouchers-new-flexible-voucher-page-voucherrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Vouchers_-_New_Flexible_Voucher_Page/VoucherRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-vouchers-new-flexible-voucher-page-vouchercontroller-md-exists",
+    "category": "structural",
+    "target": "Data/Vouchers_-_New_Flexible_Voucher_Page/VoucherController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-voucher",
+    "category": "structural",
+    "target": "Data/Vouchers_-_New_Flexible_Voucher_Page/VoucherRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Voucher"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Voucher\" entity."
+  }
+]

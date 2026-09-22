@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-franchise-purchase-order-response-shape-franchisepurchaseorderrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Order_Response_Shape/FranchisePurchaseOrderRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-franchise_purchase_order",
+    "category": "structural",
+    "target": "Data/Franchise_Purchase_Order_Response_Shape/FranchisePurchaseOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "franchise_purchase_order"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"franchise_purchase_order\" entity."
+  }
+]

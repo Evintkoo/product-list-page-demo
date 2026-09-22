@@ -1,0 +1,39 @@
+[
+  {
+    "id": "data-warehouse-history-warehousehistoryrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Warehouse_History/WarehouseHistoryRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-warehousestockhistory",
+    "category": "structural",
+    "target": "Data/Warehouse_History/WarehouseHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "WarehouseStockHistory"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"WarehouseStockHistory\" entity."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/Warehouse_History/WarehouseHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  },
+  {
+    "id": "schema-declares-warehouse",
+    "category": "structural",
+    "target": "Data/Warehouse_History/WarehouseHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Warehouse"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Warehouse\" entity."
+  }
+]

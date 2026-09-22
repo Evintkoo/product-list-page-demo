@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-company-edit-companyservice-md-exists",
+    "category": "structural",
+    "target": "Data/Company_Edit/CompanyService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-company-edit-companycontroller-md-exists",
+    "category": "structural",
+    "target": "Data/Company_Edit/CompanyController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-company",
+    "category": "structural",
+    "target": "Data/Company_Edit/CompanyService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Company"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Company\" entity."
+  }
+]

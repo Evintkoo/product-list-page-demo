@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-suppliers-menu-suppliersmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Suppliers_Menu/SuppliersMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-suppliers-menu-suppliersubmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Suppliers_Menu/SupplierSubMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

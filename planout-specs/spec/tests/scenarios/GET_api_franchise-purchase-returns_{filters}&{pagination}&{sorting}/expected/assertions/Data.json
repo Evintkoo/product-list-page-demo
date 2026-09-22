@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-get-api-franchise-purchase-returns-filters-pagination-sorting-franchisepurchasereturnrepo-exists",
+    "category": "structural",
+    "target": "Data/GET_api_franchise-purchase-returns_{filters}&{pagination}&{sorting}/FranchisePurchaseReturnRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockreturn",
+    "category": "structural",
+    "target": "Data/GET_api_franchise-purchase-returns_{filters}&{pagination}&{sorting}/FranchisePurchaseReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockReturn"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockReturn\" entity."
+  }
+]

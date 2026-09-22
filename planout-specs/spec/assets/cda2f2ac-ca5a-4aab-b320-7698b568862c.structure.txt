@@ -1,0 +1,51 @@
+Canvas: 1376.0001220703125×378px
+
+└─ card-group [0,6 1376×362]
+   ├─ card [0,6 1376×362]  fill=white rx=12
+   ├─ group [26,31 39×9]
+   │  ├─ icon [26,31 9×9]  stroke=#4A54C4
+   │  └─ icon [44,31 22×8]  fill=#4A54C4
+   ├─ group [142,73 27×9]
+   │  └─ group [142,73 27×9]
+   │     ├─ icon [142,73 5×5]  fill=#D93D3D
+   │     └─ icon [151,73 19×9]  fill=#495261
+   ├─ card [181,59 219×37]  fill=white rx=7.5
+   ├─ card [181,59 219×37]  stroke=#D9DEE6 rx=7.5
+   ├─ text-path [193,72 60×9]  fill=#999EA8
+   ├─ icon [379,76 6×3]  stroke=#999EA8
+   ├─ group [108,123 62×9]
+   │  └─ text-group [108,123 62×9]
+   │     ├─ icon [108,123 5×5]  fill=#D93D3D
+   │     └─ text-path [117,123 53×9]  fill=#495261
+   ├─ card [181,109 219×37]  fill=white rx=7.5
+   ├─ card [181,109 219×37]  stroke=#D9DEE6 rx=7.5
+   ├─ text-path [193,122 60×9]  fill=#999EA8
+   ├─ icon [379,126 6×3]  stroke=#999EA8
+   ├─ group [68,173 102×9]
+   │  └─ text-group [68,173 102×9]
+   │     └─ text-path [68,173 102×9]  fill=#495261
+   ├─ card [181,159 219×37]  fill=white rx=7.5
+   ├─ card [181,159 219×37]  stroke=#D9DEE6 rx=7.5
+   ├─ text-path [193,172 151×9]  fill=#999EA8
+   ├─ icon [379,176 6×3]  stroke=#999EA8
+   ├─ group [25,222 144×9]
+   │  └─ text-group [25,222 144×9]
+   │     └─ text-path [25,222 144×9]  fill=#495261
+   ├─ card [181,209 219×37]  fill=white rx=7.5
+   ├─ card [181,209 219×37]  stroke=#D9DEE6 rx=7.5
+   ├─ text-path [193,222 151×9]  fill=#999EA8
+   ├─ icon [379,226 6×3]  stroke=#999EA8
+   ├─ group [72,273 97×9]
+   │  └─ text-group [72,273 97×9]
+   │     └─ text-path [72,273 97×9]  fill=#495261
+   ├─ card [181,259 219×37]  fill=white rx=7.5
+   ├─ card [181,259 219×37]  stroke=#D9DEE6 rx=7.5
+   ├─ text-path [193,272 145×9]  fill=#999EA8
+   ├─ icon [379,276 6×3]  stroke=#999EA8
+   ├─ group [61,322 109×9]
+   │  └─ text-group [61,322 109×9]
+   │     └─ text-path [61,322 109×9]  fill=#495261
+   ├─ card [181,309 219×37]  fill=white rx=7.5
+   ├─ card [181,309 219×37]  stroke=#D9DEE6 rx=7.5
+   ├─ text-path [193,322 158×10]  fill=#999EA8
+   └─ icon [379,326 6×3]  stroke=#999EA8

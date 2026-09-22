@@ -1,0 +1,59 @@
+Canvas: 230×136px
+
+└─ card-group [8,6 214×120]
+   ├─ card [8,6 214×120]  fill=white rx=12
+   ├─ card [9,7 213×119]  stroke=#EBEDF1 rx=11.5
+   ├─ rect [28,26 2×46]  fill=#20242D
+   ├─ rect [31,26 1×46]  fill=#20242D
+   ├─ rect [34,26 1×46]  fill=#20242D
+   ├─ rect [39,26 2×46]  fill=#20242D
+   ├─ rect [41,26 3×46]  fill=#20242D
+   ├─ rect [45,26 1×46]  fill=#20242D
+   ├─ rect [49,26 1×46]  fill=#20242D
+   ├─ rect [51,26 2×46]  fill=#20242D
+   ├─ rect [56,26 1×46]  fill=#20242D
+   ├─ rect [60,26 1×46]  fill=#20242D
+   ├─ rect [62,26 3×46]  fill=#20242D
+   ├─ rect [66,26 2×46]  fill=#20242D
+   ├─ rect [70,26 3×46]  fill=#20242D
+   ├─ rect [74,26 1×46]  fill=#20242D
+   ├─ rect [78,26 2×46]  fill=#20242D
+   ├─ rect [81,26 2×46]  fill=#20242D
+   ├─ rect [86,26 1×46]  fill=#20242D
+   ├─ rect [88,26 1×46]  fill=#20242D
+   ├─ rect [91,26 1×46]  fill=#20242D
+   ├─ rect [94,26 3×46]  fill=#20242D
+   ├─ rect [98,26 2×46]  fill=#20242D
+   ├─ rect [102,26 1×46]  fill=#20242D
+   ├─ rect [105,26 3×46]  fill=#20242D
+   ├─ rect [110,26 2×46]  fill=#20242D
+   ├─ rect [113,26 1×46]  fill=#20242D
+   ├─ rect [114,26 3×46]  fill=#20242D
+   ├─ rect [119,26 2×46]  fill=#20242D
+   ├─ rect [123,26 1×46]  fill=#20242D
+   ├─ rect [125,26 3×46]  fill=#20242D
+   ├─ rect [129,26 4×46]  fill=#20242D
+   ├─ rect [134,26 2×46]  fill=#20242D
+   ├─ rect [137,26 3×46]  fill=#20242D
+   ├─ rect [141,26 1×46]  fill=#20242D
+   ├─ rect [144,26 1×46]  fill=#20242D
+   ├─ rect [146,26 2×46]  fill=#20242D
+   ├─ rect [150,26 3×46]  fill=#20242D
+   ├─ rect [155,26 2×46]  fill=#20242D
+   ├─ rect [158,26 2×46]  fill=#20242D
+   ├─ rect [162,26 2×46]  fill=#20242D
+   ├─ rect [165,26 1×46]  fill=#20242D
+   ├─ rect [168,26 1×46]  fill=#20242D
+   ├─ rect [172,26 2×46]  fill=#20242D
+   ├─ rect [176,26 1×46]  fill=#20242D
+   ├─ rect [178,26 3×46]  fill=#20242D
+   ├─ rect [184,26 2×46]  fill=#20242D
+   ├─ rect [187,26 2×46]  fill=#20242D
+   ├─ rect [191,26 3×46]  fill=#20242D
+   ├─ rect [195,26 1×46]  fill=#20242D
+   ├─ rect [197,26 2×46]  fill=#20242D
+   ├─ rect [197,26 2×46]  fill=#20242D
+   ├─ rect [197,26 2×46]  fill=#20242D
+   ├─ rect [197,26 2×46]  fill=#20242D
+   ├─ rect [197,26 2×46]  fill=#20242D
+   └─ text-path [29,91 172×13]  fill=#20242D

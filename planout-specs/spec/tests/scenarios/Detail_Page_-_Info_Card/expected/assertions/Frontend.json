@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-detail-page-info-card-serviceproductinfocard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Detail_Page_-_Info_Card/ServiceProductInfoCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-customer-detail-page-changes-card-customerchangescard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Detail_Page_-_Changes_Card/CustomerChangesCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

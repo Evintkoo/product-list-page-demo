@@ -1,0 +1,46 @@
+[
+  {
+    "id": "data-voucher-details-json-schema-voucherrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Voucher_Details_JSON_Schema/VoucherRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-voucher-details-json-schema-voucherresponseschema-md-exists",
+    "category": "structural",
+    "target": "Data/Voucher_Details_JSON_Schema/VoucherResponseSchema.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-voucher",
+    "category": "structural",
+    "target": "Data/Voucher_Details_JSON_Schema/VoucherRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "voucher"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"voucher\" entity."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/Voucher_Details_JSON_Schema/VoucherRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"product\" entity."
+  },
+  {
+    "id": "schema-declares-user",
+    "category": "structural",
+    "target": "Data/Voucher_Details_JSON_Schema/VoucherRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "user"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"user\" entity."
+  }
+]

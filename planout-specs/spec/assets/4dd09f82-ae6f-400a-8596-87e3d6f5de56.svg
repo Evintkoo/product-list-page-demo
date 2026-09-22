@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 90" width="200" height="90">
+  <rect x="0" y="0" width="200" height="90" fill="#ffffff"/>
+  <rect x="1" y="1" width="198" height="88" fill="none" stroke="#88bb88" stroke-width="1.5"/>
+
+  <rect x="2" y="2" width="196" height="26" fill="#3b5aa6"/>
+  <text x="12" y="19" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#ffffff">Retail Customers</text>
+
+  <rect x="2" y="28" width="196" height="29" fill="#ffffff"/>
+  <text x="12" y="47" font-family="Arial, sans-serif" font-size="13" fill="#333333">Wholesale Customers</text>
+  <line x1="2" y1="57" x2="198" y2="57" stroke="#dddddd" stroke-width="1"/>
+
+  <rect x="2" y="57" width="196" height="29" fill="#ffffff"/>
+  <text x="12" y="76" font-family="Arial, sans-serif" font-size="13" fill="#333333">Franchisee</text>
+</svg>

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend-vouchers-flexible-voucher-page-flexiblevoucherpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Vouchers_-_Flexible_Voucher_Page/FlexibleVoucherPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-vouchers-flexible-voucher-page-voucherstable-md-exists",
+    "category": "structural",
+    "target": "Frontend/Vouchers_-_Flexible_Voucher_Page/VouchersTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-vouchers-flexible-voucher-page-filterbar-md-exists",
+    "category": "structural",
+    "target": "Frontend/Vouchers_-_Flexible_Voucher_Page/FilterBar.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

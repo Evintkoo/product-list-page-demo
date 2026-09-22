@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-stock-reservation-json-schema-stockreservationrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_Reservation_JSON_Schema/StockReservationRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-stock-reservation-json-schema-stockreservationservice-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_Reservation_JSON_Schema/StockReservationService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stock_reservation",
+    "category": "structural",
+    "target": "Data/Stock_Reservation_JSON_Schema/StockReservationRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "stock_reservation"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"stock_reservation\" entity."
+  }
+]

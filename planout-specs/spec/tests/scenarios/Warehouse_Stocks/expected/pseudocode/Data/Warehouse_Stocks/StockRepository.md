@@ -1,0 +1,21 @@
+/**
+ * Fetches aggregated stock data for a specific product across all warehouses.
+ * Joins ProductStock with Warehouse to provide human-readable warehouse details.
+ */
+FUNCTION getStockLevelsByProduct(product_id: UUID):
+    QUERY = SELECT 
+        w.warehouse_code,
+        w.warehouse_name,
+        ps.inventory_quantity,
+        ps.available_quantity,
+        ps.reserved_quantity,
+        ps.in_transit_quantity,
+        ps.min_quantity,
+        ps.max_quantity,
+        ps.average_cost,
+        (ps.inventory_quantity * ps.average_cost) AS total_cost
+    FROM ProductStock ps
+    JOIN Warehouse w ON ps.warehouse_id = w.id
+    WHERE ps.product_id = product_id;
+
+    RETURN executeQuery(QUERY);

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "frontend-service-product-list-page-serviceproductlistpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Service_Product_List_Page/ServiceProductListPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-service-product-list-page-api-serviceproductservice-md-exists",
+    "category": "structural",
+    "target": "Frontend/Service_Product_List_Page/api_serviceProductService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-service-product-list-page-components-serviceproducttable-md-exists",
+    "category": "structural",
+    "target": "Frontend/Service_Product_List_Page/components_ServiceProductTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-service-product-list-page-components-searchfilter-md-exists",
+    "category": "structural",
+    "target": "Frontend/Service_Product_List_Page/components_SearchFilter.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

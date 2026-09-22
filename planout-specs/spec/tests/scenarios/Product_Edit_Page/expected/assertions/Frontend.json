@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-product-edit-page-producteditpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Edit_Page/ProductEditPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-edit-page-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Edit_Page/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

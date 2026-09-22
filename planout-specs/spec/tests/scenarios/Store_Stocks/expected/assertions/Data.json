@@ -1,0 +1,46 @@
+[
+  {
+    "id": "data-store-stocks-stockrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Store_Stocks/StockRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-store-stocks-stockcontroller-md-exists",
+    "category": "structural",
+    "target": "Data/Store_Stocks/StockController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/Store_Stocks/StockRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/Store_Stocks/StockRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  },
+  {
+    "id": "schema-declares-stock",
+    "category": "structural",
+    "target": "Data/Store_Stocks/StockRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Stock"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Stock\" entity."
+  }
+]

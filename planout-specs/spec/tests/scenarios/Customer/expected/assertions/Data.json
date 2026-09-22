@@ -1,0 +1,76 @@
+[
+  {
+    "id": "data-customer-customerrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Customer/CustomerRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-customer-customerschema-md-exists",
+    "category": "structural",
+    "target": "Data/Customer/CustomerSchema.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/Customer/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Customer\" entity."
+  },
+  {
+    "id": "schema-declares-customeraddress",
+    "category": "structural",
+    "target": "Data/Customer/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "CustomerAddress"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"CustomerAddress\" entity."
+  },
+  {
+    "id": "schema-declares-customergroup",
+    "category": "structural",
+    "target": "Data/Customer/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "CustomerGroup"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"CustomerGroup\" entity."
+  },
+  {
+    "id": "schema-declares-customerbilling",
+    "category": "structural",
+    "target": "Data/Customer/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "CustomerBilling"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"CustomerBilling\" entity."
+  },
+  {
+    "id": "schema-declares-customerproductprice",
+    "category": "structural",
+    "target": "Data/Customer/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "CustomerProductPrice"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"CustomerProductPrice\" entity."
+  },
+  {
+    "id": "schema-declares-occupation",
+    "category": "structural",
+    "target": "Data/Customer/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Occupation"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Occupation\" entity."
+  }
+]

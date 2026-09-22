@@ -1,0 +1,29 @@
+[
+  {
+    "id": "data-get-api-purchase-order-purchaseorderrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_purchase_order/PurchaseOrderRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-purchaseorder",
+    "category": "structural",
+    "target": "Data/GET_api_purchase_order/PurchaseOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PurchaseOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PurchaseOrder\" entity."
+  },
+  {
+    "id": "schema-declares-purchaseorderitem",
+    "category": "structural",
+    "target": "Data/GET_api_purchase_order/PurchaseOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PurchaseOrderItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PurchaseOrderItem\" entity."
+  }
+]

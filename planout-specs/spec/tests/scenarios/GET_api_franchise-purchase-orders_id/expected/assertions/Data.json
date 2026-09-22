@@ -1,0 +1,33 @@
+[
+  {
+    "id": "data-get-api-franchise-purchase-orders-id-franchisepurchaseorderrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_franchise-purchase-orders_id/FranchisePurchaseOrderRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-franchise-purchase-orders-id-franchisepurchaseorderservice-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_franchise-purchase-orders_id/FranchisePurchaseOrderService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-franchise-purchase-orders-id-franchisepurchaseordercontroller-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_franchise-purchase-orders_id/FranchisePurchaseOrderController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-franchisepurchaseorder",
+    "category": "structural",
+    "target": "Data/GET_api_franchise-purchase-orders_id/FranchisePurchaseOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "FranchisePurchaseOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"FranchisePurchaseOrder\" entity."
+  }
+]

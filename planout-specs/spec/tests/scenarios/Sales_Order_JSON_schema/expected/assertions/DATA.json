@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-sales-order-json-schema-salesorderrepository-md-exists",
+    "category": "structural",
+    "target": "DATA/Sales_Order_JSON_schema/SalesOrderRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"DATA\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-sales-order-json-schema-salesorderservice-md-exists",
+    "category": "structural",
+    "target": "DATA/Sales_Order_JSON_schema/SalesOrderService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"DATA\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-salesorder",
+    "category": "structural",
+    "target": "DATA/Sales_Order_JSON_schema/SalesOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrder\" entity."
+  },
+  {
+    "id": "schema-declares-salesorderitem",
+    "category": "structural",
+    "target": "DATA/Sales_Order_JSON_schema/SalesOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrderItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrderItem\" entity."
+  }
+]

@@ -1,0 +1,18 @@
+Canvas: 550×430px
+
+└─ text-group [0,0 550×430]
+   ├─ shape [0,0 550×430]  fill=#F4F5F7
+   ├─ shape [8,8 534×414]  fill=white stroke=#ECEEF2
+   ├─ text-path [139,56 40×11]  fill=#6B7280
+   ├─ icon [200,50 22×22]  fill=#5B5BD6
+   ├─ icon [205,55 14×11]  stroke=white
+   ├─ text-path [108,110 71×13]  fill=#6B7280
+   ├─ icon [200,104 22×22]  fill=#5B5BD6
+   ├─ icon [205,109 14×11]  stroke=white
+   ├─ text-path [79,168 101×11]  fill=#6B7280
+   ├─ text-path [200,158 250×40]  fill=white stroke=#E5E7EB
+   ├─ icon [215,173 16×10]  fill=#9CA3AF
+   ├─ icon [464,167 22×22]  stroke=#C4C8CE
+   ├─ icon [472,173 5×10]  fill=#9AA0A8
+   ├─ text-path [39,226 140×13]  fill=#6B7280
+   └─ icon [200,220 22×22]  fill=white stroke=#CBD0D8

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-get-api-discrepancy-stocks-discrepancystockrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_discrepancy-stocks/DiscrepancyStockRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-discrepancystock",
+    "category": "structural",
+    "target": "Data/GET_api_discrepancy-stocks/DiscrepancyStockRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "DiscrepancyStock"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"DiscrepancyStock\" entity."
+  }
+]

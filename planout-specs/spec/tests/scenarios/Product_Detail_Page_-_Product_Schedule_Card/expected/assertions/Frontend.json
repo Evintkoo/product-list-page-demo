@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-product-detail-page-product-schedule-card-productschedulecard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page_-_Product_Schedule_Card/ProductScheduleCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-new-customer-group-modal-newcustomergroupmodal-md-exists",
+    "category": "structural",
+    "target": "Frontend/New_Customer_Group_Modal/NewCustomerGroupModal.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-new-customer-group-modal-hooks-usecustomergroupmutation-md-exists",
+    "category": "structural",
+    "target": "Frontend/New_Customer_Group_Modal/hooks_useCustomerGroupMutation.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

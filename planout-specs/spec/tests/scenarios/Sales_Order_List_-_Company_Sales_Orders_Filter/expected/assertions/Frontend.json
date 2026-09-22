@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-sales-order-list-company-sales-orders-filter-salesorderfiltercomponent-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Order_List_-_Company_Sales_Orders_Filter/SalesOrderFilterComponent.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-sales-order-list-company-sales-orders-filter-salesorderservice-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Order_List_-_Company_Sales_Orders_Filter/SalesOrderService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

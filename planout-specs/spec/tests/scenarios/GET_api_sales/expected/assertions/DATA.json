@@ -1,0 +1,39 @@
+[
+  {
+    "id": "data-get-api-sales-salesrepository-md-exists",
+    "category": "structural",
+    "target": "DATA/GET_api_sales/SalesRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"DATA\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-sale",
+    "category": "structural",
+    "target": "DATA/GET_api_sales/SalesRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Sale"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Sale\" entity."
+  },
+  {
+    "id": "schema-declares-company",
+    "category": "structural",
+    "target": "DATA/GET_api_sales/SalesRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Company"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Company\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "DATA/GET_api_sales/SalesRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  }
+]

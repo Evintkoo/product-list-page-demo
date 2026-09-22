@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-new-addresses-modal-newaddressmodal-md-exists",
+    "category": "structural",
+    "target": "Frontend/New_Addresses_Modal/NewAddressModal.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

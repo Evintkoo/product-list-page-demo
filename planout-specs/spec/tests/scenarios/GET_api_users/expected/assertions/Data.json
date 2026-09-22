@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-get-api-users-userrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_users/UserRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-users-userdataservice-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_users/UserDataService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-user",
+    "category": "structural",
+    "target": "Data/GET_api_users/UserRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "User"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"User\" entity."
+  }
+]

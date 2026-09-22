@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend-franchise-purchase-returns-return-details-workflow-status-bar-workflowstatusbar-md-exists",
+    "category": "structural",
+    "target": "Frontend/Franchise_Purchase_Returns_-_Return_Details_Workflow_Status_Bar/WorkflowStatusBar.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-franchise-purchase-returns-return-details-workflow-status-bar-actionbuttons-md-exists",
+    "category": "structural",
+    "target": "Frontend/Franchise_Purchase_Returns_-_Return_Details_Workflow_Status_Bar/ActionButtons.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-franchise-purchase-returns-return-details-workflow-status-bar-statuspill-md-exists",
+    "category": "structural",
+    "target": "Frontend/Franchise_Purchase_Returns_-_Return_Details_Workflow_Status_Bar/StatusPill.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

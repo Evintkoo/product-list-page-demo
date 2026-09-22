@@ -1,0 +1,29 @@
+[
+  {
+    "id": "data-post-api-stock-opname-stockopnamerepository-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_stock-opname/StockOpnameRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockopname",
+    "category": "structural",
+    "target": "Data/POST_api_stock-opname/StockOpnameRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOpname"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOpname\" entity."
+  },
+  {
+    "id": "schema-declares-stockopnameitem",
+    "category": "structural",
+    "target": "Data/POST_api_stock-opname/StockOpnameRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOpnameItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOpnameItem\" entity."
+  }
+]

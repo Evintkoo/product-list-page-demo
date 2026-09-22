@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-new-service-product-type-modal-newserviceproducttypemodal-md-exists",
+    "category": "structural",
+    "target": "Frontend/New_Service_Product_Type_Modal/NewServiceProductTypeModal.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

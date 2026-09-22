@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-customer-wholesale-customer-edit-page-wholesalecustomereditpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Wholesale_Customer_Edit_Page/WholesaleCustomerEditPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-wholesale-customer-edit-page-editaddressmodal-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Wholesale_Customer_Edit_Page/EditAddressModal.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

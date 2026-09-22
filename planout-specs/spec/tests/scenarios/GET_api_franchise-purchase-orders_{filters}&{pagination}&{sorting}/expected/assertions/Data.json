@@ -1,0 +1,29 @@
+[
+  {
+    "id": "data-get-api-franchise-purchase-orders-filters-pagination-sorting-franchisepurchaseorderreposi-exists",
+    "category": "structural",
+    "target": "Data/GET_api_franchise-purchase-orders_{filters}&{pagination}&{sorting}/FranchisePurchaseOrderRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-franchisepurchaseorder",
+    "category": "structural",
+    "target": "Data/GET_api_franchise-purchase-orders_{filters}&{pagination}&{sorting}/FranchisePurchaseOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "FranchisePurchaseOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"FranchisePurchaseOrder\" entity."
+  },
+  {
+    "id": "schema-declares-franchisepurchaseorderline",
+    "category": "structural",
+    "target": "Data/GET_api_franchise-purchase-orders_{filters}&{pagination}&{sorting}/FranchisePurchaseOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "FranchisePurchaseOrderLine"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"FranchisePurchaseOrderLine\" entity."
+  }
+]

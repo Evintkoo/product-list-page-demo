@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-get-api-service-products-serviceproductrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_service_products/ServiceProductRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-serviceproduct",
+    "category": "structural",
+    "target": "Data/GET_api_service_products/ServiceProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ServiceProduct"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ServiceProduct\" entity."
+  }
+]

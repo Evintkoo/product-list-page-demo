@@ -1,0 +1,29 @@
+[
+  {
+    "id": "data-service-product-tag-schema-serviceproducttagschema-md-exists",
+    "category": "structural",
+    "target": "Data/Service_Product_Tag_Schema/ServiceProductTagSchema.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-service_products",
+    "category": "structural",
+    "target": "Data/Service_Product_Tag_Schema/ServiceProductTagSchema.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "service_products"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"service_products\" entity."
+  },
+  {
+    "id": "schema-declares-service_product_tags",
+    "category": "structural",
+    "target": "Data/Service_Product_Tag_Schema/ServiceProductTagSchema.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "service_product_tags"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"service_product_tags\" entity."
+  }
+]

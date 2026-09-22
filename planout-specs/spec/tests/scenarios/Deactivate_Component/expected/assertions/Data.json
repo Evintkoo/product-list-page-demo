@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-deactivate-component-supplierdataservice-md-exists",
+    "category": "structural",
+    "target": "Data/Deactivate_Component/SupplierDataService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-supplier",
+    "category": "structural",
+    "target": "Data/Deactivate_Component/SupplierDataService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Supplier"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Supplier\" entity."
+  }
+]

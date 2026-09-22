@@ -1,0 +1,12 @@
+Canvas: 170×266px
+
+├─ card [1,1 169×265]  fill=white rx=8.5
+├─ card [1,1 169×265]  stroke=#EBEDF1 rx=8.5
+├─ text-path [20,17 123×10]  fill=black
+├─ text-path [20,49 80×10]  fill=black
+├─ text-path [20,81 120×10]  fill=black
+├─ text-path [20,113 95×10]  fill=black
+├─ text-path [20,144 95×10]  fill=black
+├─ text-path [20,177 92×10]  fill=black
+├─ text-path [20,209 86×10]  fill=black
+└─ text-path [20,241 78×12]  fill=black

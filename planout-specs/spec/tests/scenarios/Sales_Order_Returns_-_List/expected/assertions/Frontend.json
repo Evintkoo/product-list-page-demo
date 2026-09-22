@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-sales-order-returns-list-salesorderreturnspage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Order_Returns_-_List/SalesOrderReturnsPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-sales-order-returns-list-hooks-usesalesorderreturns-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Order_Returns_-_List/hooks_useSalesOrderReturns.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

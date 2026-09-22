@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-qr-code-print-qrcodeprintview-md-exists",
+    "category": "structural",
+    "target": "Frontend/QR_Code_Print/QRCodePrintView.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

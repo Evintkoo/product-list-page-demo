@@ -1,0 +1,49 @@
+[
+  {
+    "id": "data-post-api-stock-outgoings-id-approve-stockoutgoingservice-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_stock-outgoings_id_approve/StockOutgoingService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockoutgoing",
+    "category": "structural",
+    "target": "Data/POST_api_stock-outgoings_id_approve/StockOutgoingService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOutgoing"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOutgoing\" entity."
+  },
+  {
+    "id": "schema-declares-stockoutgoingline",
+    "category": "structural",
+    "target": "Data/POST_api_stock-outgoings_id_approve/StockOutgoingService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOutgoingLine"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOutgoingLine\" entity."
+  },
+  {
+    "id": "schema-declares-journal",
+    "category": "structural",
+    "target": "Data/POST_api_stock-outgoings_id_approve/StockOutgoingService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Journal"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Journal\" entity."
+  },
+  {
+    "id": "schema-declares-journalentry",
+    "category": "structural",
+    "target": "Data/POST_api_stock-outgoings_id_approve/StockOutgoingService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "JournalEntry"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"JournalEntry\" entity."
+  }
+]

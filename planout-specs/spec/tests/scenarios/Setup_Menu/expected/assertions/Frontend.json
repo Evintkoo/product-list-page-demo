@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-setup-menu-setupmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Setup_Menu/SetupMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-setup-menu-setupmenu-hooks-md-exists",
+    "category": "structural",
+    "target": "Frontend/Setup_Menu/SetupMenu.hooks.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

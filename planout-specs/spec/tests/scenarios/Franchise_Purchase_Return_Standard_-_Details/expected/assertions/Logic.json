@@ -1,0 +1,26 @@
+[
+  {
+    "id": "logic-franchise-purchase-return-standard-details-purchasereturnservice-md-exists",
+    "category": "structural",
+    "target": "Logic/Franchise_Purchase_Return_Standard_-_Details/PurchaseReturnService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-franchise-purchase-return-standard-details-purchasereturncontroller-md-exists",
+    "category": "structural",
+    "target": "Logic/Franchise_Purchase_Return_Standard_-_Details/PurchaseReturnController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-has-api-payload-block",
+    "category": "behavioural",
+    "target": "Logic/Franchise_Purchase_Return_Standard_-_Details/PurchaseReturnService.md",
+    "check": "source_contains_string",
+    "args": {
+      "needle": "<!-- API_PAYLOAD"
+    },
+    "rationale": "Logic-tier pseudocode must carry an API_PAYLOAD block (plan 23 phase 3)."
+  }
+]

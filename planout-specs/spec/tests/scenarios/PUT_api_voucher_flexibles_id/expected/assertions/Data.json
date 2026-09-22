@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-put-api-voucher-flexibles-id-voucherflexiblerepository-md-exists",
+    "category": "structural",
+    "target": "Data/PUT_api_voucher_flexibles_id/VoucherFlexibleRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-put-api-voucher-flexibles-id-voucherflexibleservice-md-exists",
+    "category": "structural",
+    "target": "Data/PUT_api_voucher_flexibles_id/VoucherFlexibleService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-voucherflexible",
+    "category": "structural",
+    "target": "Data/PUT_api_voucher_flexibles_id/VoucherFlexibleRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "VoucherFlexible"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"VoucherFlexible\" entity."
+  }
+]

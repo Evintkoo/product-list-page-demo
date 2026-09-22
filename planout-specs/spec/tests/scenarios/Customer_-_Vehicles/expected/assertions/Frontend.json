@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-customer-vehicles-vehiclelistpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Vehicles/VehicleListPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-vehicles-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Vehicles/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

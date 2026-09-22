@@ -1,0 +1,39 @@
+[
+  {
+    "id": "data-get-api-sales-deliveries-id-salesdeliveryrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_sales-deliveries_id/SalesDeliveryRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-salesdelivery",
+    "category": "structural",
+    "target": "Data/GET_api_sales-deliveries_id/SalesDeliveryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesDelivery"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesDelivery\" entity."
+  },
+  {
+    "id": "schema-declares-salesdeliveryitem",
+    "category": "structural",
+    "target": "Data/GET_api_sales-deliveries_id/SalesDeliveryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesDeliveryItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesDeliveryItem\" entity."
+  },
+  {
+    "id": "schema-declares-company",
+    "category": "structural",
+    "target": "Data/GET_api_sales-deliveries_id/SalesDeliveryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Company"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Company\" entity."
+  }
+]

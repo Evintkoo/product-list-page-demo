@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-get-api-areas-area-type-province-arearepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_areas_area_type=province/AreaRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-area",
+    "category": "structural",
+    "target": "Data/GET_api_areas_area_type=province/AreaRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Area"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Area\" entity."
+  }
+]

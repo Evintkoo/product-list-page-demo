@@ -1,0 +1,20 @@
+Canvas: 1440×1040px
+
+├─ rect [0,0 1440×1040]  fill=black
+└─ group [440,415 560×210]
+   └─ card-group [440,415 560×210]
+      ├─ card [440,415 560×210]  fill=white rx=16
+      ├─ shape [440,415 560×69]  fill=white
+      ├─ text-path [440,483 560×2]  fill=#EBEDF1
+      ├─ text-path [469,443 56×13]  fill=#252931
+      ├─ card [953,437 25×25]  fill=#F7F8FA rx=8
+      ├─ icon [962,446 7×7]  stroke=#666E78
+      ├─ text-path [468,513 102×15]  fill=#20242D
+      ├─ divider [440,554 560×1]  fill=#EBEDF1
+      ├─ shape [440,555 560×70]  fill=white
+      ├─ text-path [440,554 560×2]  fill=#EBEDF1
+      ├─ card [837,574 74×33]  fill=white rx=7.5
+      ├─ card [837,574 74×33]  stroke=#D9DBE0 rx=7.5
+      ├─ text-path [853,585 41×10]  fill=#383D4A
+      ├─ card [921,573 51×34]  fill=#4A54C4 rx=8
+      └─ icon [938,585 18×10]  fill=white

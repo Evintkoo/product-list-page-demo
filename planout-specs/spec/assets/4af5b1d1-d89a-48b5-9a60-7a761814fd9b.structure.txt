@@ -1,0 +1,51 @@
+Canvas: 1408×304px
+
+└─ card-group [8,6 1392×288]
+   ├─ card [8,6 1392×288]  fill=white rx=12
+   ├─ text-group [34,38 85×11]
+   │  ├─ icon [34,38 10×11]  stroke=#4A54C4
+   │  └─ text-path [52,39 66×9]  fill=#4A54C4
+   ├─ card [1226,29 150×29]  fill=white rx=7.5
+   ├─ card [1226,29 150×29]  stroke=#D9DBE0 rx=7.5
+   ├─ icon [1241,39 9×9]  stroke=#999EA8
+   ├─ text-path [1256,39 90×11]  fill=#6B737D
+   ├─ icon [1353,42 6×3]  stroke=#999EA8
+   ├─ card-group [32,74 1344×131]
+   │  ├─ card [32,74 1344×46]  fill=#FAFAFB rx=8
+   │  ├─ group [45,94 14×8]
+   │  │  └─ icon [45,94 14×8]  fill=#20242D
+   │  ├─ text-group [106,94 41×8]
+   │  │  └─ text-path [106,94 41×8]  fill=#20242D
+   │  ├─ group [643,93 28×8]
+   │  │  └─ icon [643,93 28×8]  fill=#20242D
+   │  ├─ group [730,93 30×8]
+   │  │  └─ icon [730,93 30×8]  fill=#20242D
+   │  ├─ text-group [857,93 90×11]
+   │  │  └─ text-path [857,93 90×11]  fill=#20242D
+   │  ├─ text-group [1024,93 66×10]
+   │  │  └─ text-path [1024,93 66×10]  fill=#20242D
+   │  ├─ text-path [1151,87 71×8]  fill=#20242D
+   │  ├─ divider [32,120 1344×1]  fill=#EBEDF1
+   │  ├─ icon [45,141 3×9]  fill=#20242D
+   │  ├─ card-group [105,131 420×30]
+   │  │  ├─ card [105,131 420×30]  fill=#F7F8FA rx=8
+   │  │  ├─ text-path [116,142 148×11]  fill=#9297A1
+   │  │  └─ icon [507,145 6×3]  stroke=#B0B4BC
+   │  ├─ icon [643,141 6×9]  fill=#20242D
+   │  ├─ card [729,131 90×30]  fill=#F7F8FA rx=8
+   │  ├─ icon [803,142 6×9]  fill=#20242D
+   │  ├─ card [857,131 130×30]  fill=#F7F8FA rx=8
+   │  ├─ icon [953,142 23×11]  fill=#20242D
+   │  ├─ group [1080,142 23×11]
+   │  │  └─ icon [1080,142 23×11]  fill=#20242D
+   │  ├─ card [1151,131 160×30]  fill=#F7F8FA rx=8
+   │  ├─ card [1349,139 15×15]  fill=white rx=7.5
+   │  ├─ card [1349,139 15×15]  stroke=#4A54C4 rx=7.5
+   │  ├─ icon [1354,144 4×4]  stroke=#4A54C4
+   │  ├─ divider [32,171 1344×1]  fill=#EBEDF1
+   │  └─ text-group [1264,191 84×15]
+   │     ├─ text-path [1264,193 36×9]  fill=#595959
+   │     └─ shape [1312,191 35×15]  fill=#1A1A1A
+   ├─ card [32,238 135×34]  fill=#4A54C4 rx=8
+   ├─ icon [51,250 9×9]  stroke=white
+   └─ text-path [72,251 78×10]  fill=white

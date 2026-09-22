@@ -1,0 +1,13 @@
+Canvas: 684×128px
+
+└─ card-group [0,6 684×112]
+   ├─ card [0,6 684×112]  fill=white rx=12
+   ├─ group [26,28 51×11]
+   │  ├─ icon [26,28 9×11]  stroke=#4A54C4
+   │  └─ icon [46,29 32×9]  fill=#4A54C4
+   ├─ text-group [25,57 67×9]
+   │  └─ text-path [25,57 67×9]  fill=#495261
+   └─ group [25,86 302×12]
+      ├─ icon [25,86 31×8]  fill=#495261
+      └─ text-group [215,86 112×12]
+         └─ text-path [215,86 112×12]  fill=#252931

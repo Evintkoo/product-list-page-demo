@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend-product-history-producthistorypage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_History/ProductHistoryPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-history-api-productservice-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_History/api_productService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-history-utils-formatters-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_History/utils_formatters.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

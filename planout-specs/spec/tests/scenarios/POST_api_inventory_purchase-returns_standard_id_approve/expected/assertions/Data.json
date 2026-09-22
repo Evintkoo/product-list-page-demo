@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-post-api-inventory-purchase-returns-standard-id-approve-purchasereturnrepository-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_inventory_purchase-returns_standard_id_approve/PurchaseReturnRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-post-api-inventory-purchase-returns-standard-id-approve-purchasereturnservice-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_inventory_purchase-returns_standard_id_approve/PurchaseReturnService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-purchasereturnstandard",
+    "category": "structural",
+    "target": "Data/POST_api_inventory_purchase-returns_standard_id_approve/PurchaseReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PurchaseReturnStandard"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PurchaseReturnStandard\" entity."
+  },
+  {
+    "id": "schema-declares-purchasereturnitem",
+    "category": "structural",
+    "target": "Data/POST_api_inventory_purchase-returns_standard_id_approve/PurchaseReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PurchaseReturnItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PurchaseReturnItem\" entity."
+  }
+]

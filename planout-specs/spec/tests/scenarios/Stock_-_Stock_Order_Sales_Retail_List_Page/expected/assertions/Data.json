@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-stock-stock-order-sales-retail-list-page-stockorderservice-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_-_Stock_Order_Sales_Retail_List_Page/StockOrderService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-stock-stock-order-sales-retail-list-page-stockordermapper-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_-_Stock_Order_Sales_Retail_List_Page/StockOrderMapper.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockorder",
+    "category": "structural",
+    "target": "Data/Stock_-_Stock_Order_Sales_Retail_List_Page/StockOrderService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrder\" entity."
+  }
+]

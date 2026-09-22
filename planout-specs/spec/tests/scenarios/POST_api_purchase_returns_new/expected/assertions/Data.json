@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-post-api-purchase-returns-new-purchasereturnrepository-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_purchase_returns_new/PurchaseReturnRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-post-api-purchase-returns-new-purchasereturncontroller-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_purchase_returns_new/PurchaseReturnController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-companypurchasereturn",
+    "category": "structural",
+    "target": "Data/POST_api_purchase_returns_new/PurchaseReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "CompanyPurchaseReturn"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"CompanyPurchaseReturn\" entity."
+  },
+  {
+    "id": "schema-declares-companypurchasereturnitem",
+    "category": "structural",
+    "target": "Data/POST_api_purchase_returns_new/PurchaseReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "CompanyPurchaseReturnItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"CompanyPurchaseReturnItem\" entity."
+  }
+]

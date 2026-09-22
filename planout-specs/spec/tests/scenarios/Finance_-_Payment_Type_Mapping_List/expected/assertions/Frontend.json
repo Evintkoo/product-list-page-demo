@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-finance-payment-type-mapping-list-paymenttypemappingpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Finance_-_Payment_Type_Mapping_List/PaymentTypeMappingPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-finance-payment-type-mapping-list-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Finance_-_Payment_Type_Mapping_List/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

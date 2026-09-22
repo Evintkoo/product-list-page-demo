@@ -1,0 +1,46 @@
+[
+  {
+    "id": "data-get-api-products-id-history-producthistoryrepository-md-exists",
+    "category": "structural",
+    "target": "DATA/GET_api_products_id_history/ProductHistoryRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"DATA\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-products-id-history-producthistorycontroller-md-exists",
+    "category": "structural",
+    "target": "DATA/GET_api_products_id_history/ProductHistoryController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"DATA\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "DATA/GET_api_products_id_history/ProductHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  },
+  {
+    "id": "schema-declares-vendor",
+    "category": "structural",
+    "target": "DATA/GET_api_products_id_history/ProductHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Vendor"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Vendor\" entity."
+  },
+  {
+    "id": "schema-declares-purchasepricehistory",
+    "category": "structural",
+    "target": "DATA/GET_api_products_id_history/ProductHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PurchasePriceHistory"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PurchasePriceHistory\" entity."
+  }
+]

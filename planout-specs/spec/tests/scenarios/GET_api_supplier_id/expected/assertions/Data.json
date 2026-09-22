@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-get-api-supplier-id-supplierrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_supplier_id/SupplierRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-supplier-id-supplierservice-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_supplier_id/SupplierService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-supplier",
+    "category": "structural",
+    "target": "Data/GET_api_supplier_id/SupplierRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Supplier"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Supplier\" entity."
+  },
+  {
+    "id": "schema-declares-company",
+    "category": "structural",
+    "target": "Data/GET_api_supplier_id/SupplierRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Company"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Company\" entity."
+  }
+]

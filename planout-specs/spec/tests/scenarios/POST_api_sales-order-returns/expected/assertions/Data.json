@@ -1,0 +1,86 @@
+[
+  {
+    "id": "data-post-api-sales-order-returns-salesorderreturnrepository-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_sales-order-returns/SalesOrderReturnRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-post-api-sales-order-returns-salesorderreturnvalidation-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_sales-order-returns/SalesOrderReturnValidation.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-company",
+    "category": "structural",
+    "target": "Data/POST_api_sales-order-returns/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Company"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Company\" entity."
+  },
+  {
+    "id": "schema-declares-warehouse",
+    "category": "structural",
+    "target": "Data/POST_api_sales-order-returns/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Warehouse"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Warehouse\" entity."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/POST_api_sales-order-returns/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Customer\" entity."
+  },
+  {
+    "id": "schema-declares-salesinvoice",
+    "category": "structural",
+    "target": "Data/POST_api_sales-order-returns/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesInvoice"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesInvoice\" entity."
+  },
+  {
+    "id": "schema-declares-salesinvoiceitem",
+    "category": "structural",
+    "target": "Data/POST_api_sales-order-returns/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesInvoiceItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesInvoiceItem\" entity."
+  },
+  {
+    "id": "schema-declares-salesorderreturn",
+    "category": "structural",
+    "target": "Data/POST_api_sales-order-returns/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrderReturn"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrderReturn\" entity."
+  },
+  {
+    "id": "schema-declares-salesorderreturnitem",
+    "category": "structural",
+    "target": "Data/POST_api_sales-order-returns/SalesOrderReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrderReturnItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrderReturnItem\" entity."
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-customer-add-vehicle-addvehiclepage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Add_Vehicle/AddVehiclePage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-add-vehicle-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Add_Vehicle/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

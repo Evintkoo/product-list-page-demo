@@ -1,0 +1,56 @@
+[
+  {
+    "id": "data-store-new-stock-transfer-stocktransfertypes-md-exists",
+    "category": "structural",
+    "target": "Data/Store_-_New_Stock_Transfer/StockTransferTypes.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-store-new-stock-transfer-stocktransferrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Store_-_New_Stock_Transfer/StockTransferRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stocktransfer",
+    "category": "structural",
+    "target": "Data/Store_-_New_Stock_Transfer/StockTransferTypes.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockTransfer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockTransfer\" entity."
+  },
+  {
+    "id": "schema-declares-stocktransferitem",
+    "category": "structural",
+    "target": "Data/Store_-_New_Stock_Transfer/StockTransferTypes.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockTransferItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockTransferItem\" entity."
+  },
+  {
+    "id": "schema-declares-location",
+    "category": "structural",
+    "target": "Data/Store_-_New_Stock_Transfer/StockTransferTypes.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Location"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Location\" entity."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/Store_-_New_Stock_Transfer/StockTransferTypes.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  }
+]

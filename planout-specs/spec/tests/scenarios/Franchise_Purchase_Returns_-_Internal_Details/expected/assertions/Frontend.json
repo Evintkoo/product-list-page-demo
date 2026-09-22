@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-franchise-purchase-returns-internal-details-franchisepurchasereturndetails-md-exists",
+    "category": "structural",
+    "target": "Frontend/Franchise_Purchase_Returns_-_Internal_Details/FranchisePurchaseReturnDetails.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

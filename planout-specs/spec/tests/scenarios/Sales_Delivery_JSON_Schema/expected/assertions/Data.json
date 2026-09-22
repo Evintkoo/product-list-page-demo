@@ -1,0 +1,49 @@
+[
+  {
+    "id": "data-sales-delivery-json-schema-salesdeliveryrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Sales_Delivery_JSON_Schema/SalesDeliveryRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-sales_deliveries",
+    "category": "structural",
+    "target": "Data/Sales_Delivery_JSON_Schema/SalesDeliveryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "sales_deliveries"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"sales_deliveries\" entity."
+  },
+  {
+    "id": "schema-declares-sales_delivery_items",
+    "category": "structural",
+    "target": "Data/Sales_Delivery_JSON_Schema/SalesDeliveryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "sales_delivery_items"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"sales_delivery_items\" entity."
+  },
+  {
+    "id": "schema-declares-warehouses",
+    "category": "structural",
+    "target": "Data/Sales_Delivery_JSON_Schema/SalesDeliveryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "warehouses"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"warehouses\" entity."
+  },
+  {
+    "id": "schema-declares-users",
+    "category": "structural",
+    "target": "Data/Sales_Delivery_JSON_Schema/SalesDeliveryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "users"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"users\" entity."
+  }
+]

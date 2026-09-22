@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-customer-wholesale-customer-detail-page-customerrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Customer_-_Wholesale_Customer_Detail_Page/CustomerRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-customer-wholesale-customer-detail-page-customercontroller-md-exists",
+    "category": "structural",
+    "target": "Data/Customer_-_Wholesale_Customer_Detail_Page/CustomerController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/Customer_-_Wholesale_Customer_Detail_Page/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Customer\" entity."
+  }
+]

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "data-patch-api-service-products-id-serviceproductcontroller-md-exists",
+    "category": "structural",
+    "target": "Data/PATCH_api_service_products_id/ServiceProductController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-serviceproduct",
+    "category": "structural",
+    "target": "Data/PATCH_api_service_products_id/ServiceProductController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ServiceProduct"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ServiceProduct\" entity."
+  },
+  {
+    "id": "schema-declares-tag",
+    "category": "structural",
+    "target": "Data/PATCH_api_service_products_id/ServiceProductController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Tag"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Tag\" entity."
+  },
+  {
+    "id": "schema-declares-serviceproducttagsmapping",
+    "category": "structural",
+    "target": "Data/PATCH_api_service_products_id/ServiceProductController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ServiceProductTagsMapping"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ServiceProductTagsMapping\" entity."
+  }
+]

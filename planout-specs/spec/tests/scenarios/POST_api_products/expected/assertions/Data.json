@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-post-api-products-productrepository-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_products/ProductRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-post-api-products-productservice-md-exists",
+    "category": "structural",
+    "target": "Data/POST_api_products/ProductService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/POST_api_products/ProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  }
+]

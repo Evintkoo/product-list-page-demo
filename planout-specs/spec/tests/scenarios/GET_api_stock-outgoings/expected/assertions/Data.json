@@ -1,0 +1,56 @@
+[
+  {
+    "id": "data-get-api-stock-outgoings-stockoutgoingrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_stock-outgoings/StockOutgoingRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-stock-outgoings-stockoutgoingvalidation-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_stock-outgoings/StockOutgoingValidation.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockoutgoing",
+    "category": "structural",
+    "target": "Data/GET_api_stock-outgoings/StockOutgoingRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOutgoing"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOutgoing\" entity."
+  },
+  {
+    "id": "schema-declares-company",
+    "category": "structural",
+    "target": "Data/GET_api_stock-outgoings/StockOutgoingRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Company"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Company\" entity."
+  },
+  {
+    "id": "schema-declares-location",
+    "category": "structural",
+    "target": "Data/GET_api_stock-outgoings/StockOutgoingRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Location"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Location\" entity."
+  },
+  {
+    "id": "schema-declares-user",
+    "category": "structural",
+    "target": "Data/GET_api_stock-outgoings/StockOutgoingRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "User"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"User\" entity."
+  }
+]

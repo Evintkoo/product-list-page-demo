@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-store-new-stock-transfer-newstocktransferpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_-_New_Stock_Transfer/NewStockTransferPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-store-new-stock-transfer-productrow-md-exists",
+    "category": "structural",
+    "target": "Frontend/Store_-_New_Stock_Transfer/ProductRow.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

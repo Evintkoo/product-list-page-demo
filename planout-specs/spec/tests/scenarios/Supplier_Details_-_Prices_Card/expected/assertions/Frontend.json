@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-supplier-details-prices-card-supplierpricescard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Supplier_Details_-_Prices_Card/SupplierPricesCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-supplier-details-prices-card-supplierpricescard-test-md-exists",
+    "category": "structural",
+    "target": "Frontend/Supplier_Details_-_Prices_Card/SupplierPricesCard.test.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

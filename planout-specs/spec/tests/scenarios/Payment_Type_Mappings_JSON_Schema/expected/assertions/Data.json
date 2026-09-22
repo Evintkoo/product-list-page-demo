@@ -1,0 +1,39 @@
+[
+  {
+    "id": "data-payment-type-mappings-json-schema-paymenttypemappingrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Payment_Type_Mappings_JSON_Schema/PaymentTypeMappingRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-paymenttypemapping",
+    "category": "structural",
+    "target": "Data/Payment_Type_Mappings_JSON_Schema/PaymentTypeMappingRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PaymentTypeMapping"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PaymentTypeMapping\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/Payment_Type_Mappings_JSON_Schema/PaymentTypeMappingRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  },
+  {
+    "id": "schema-declares-paymenttype",
+    "category": "structural",
+    "target": "Data/Payment_Type_Mappings_JSON_Schema/PaymentTypeMappingRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PaymentType"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PaymentType\" entity."
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-stock-stock-order-sales-retail-search-and-filter-toolbar-stockordertoolbar-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_Stock_Order_Sales_Retail_Search_and_Filter_Toolbar/StockOrderToolbar.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

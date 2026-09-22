@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-patch-api-franchise-purchase-orders-id-reset-franchisepurchaseorderrepository-md-exists",
+    "category": "structural",
+    "target": "Data/PATCH_api_franchise-purchase-orders_id_reset/FranchisePurchaseOrderRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-franchisepurchaseorder",
+    "category": "structural",
+    "target": "Data/PATCH_api_franchise-purchase-orders_id_reset/FranchisePurchaseOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "FranchisePurchaseOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"FranchisePurchaseOrder\" entity."
+  }
+]

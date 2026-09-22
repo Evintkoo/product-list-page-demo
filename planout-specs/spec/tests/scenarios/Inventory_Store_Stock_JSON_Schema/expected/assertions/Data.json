@@ -1,0 +1,73 @@
+[
+  {
+    "id": "data-inventory-store-stock-json-schema-stockorderservice-md-exists",
+    "category": "structural",
+    "target": "Data/Inventory_Store_Stock_JSON_Schema/StockOrderService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-inventory-store-stock-json-schema-stockopnameservice-md-exists",
+    "category": "structural",
+    "target": "Data/Inventory_Store_Stock_JSON_Schema/StockOpnameService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-inventory-store-stock-json-schema-stockreturnservice-md-exists",
+    "category": "structural",
+    "target": "Data/Inventory_Store_Stock_JSON_Schema/StockReturnService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockorder",
+    "category": "structural",
+    "target": "Data/Inventory_Store_Stock_JSON_Schema/StockOrderService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrder\" entity."
+  },
+  {
+    "id": "schema-declares-stockorderitem",
+    "category": "structural",
+    "target": "Data/Inventory_Store_Stock_JSON_Schema/StockOrderService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrderItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrderItem\" entity."
+  },
+  {
+    "id": "schema-declares-stockreturn",
+    "category": "structural",
+    "target": "Data/Inventory_Store_Stock_JSON_Schema/StockOrderService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockReturn"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockReturn\" entity."
+  },
+  {
+    "id": "schema-declares-stockopname",
+    "category": "structural",
+    "target": "Data/Inventory_Store_Stock_JSON_Schema/StockOrderService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOpname"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOpname\" entity."
+  },
+  {
+    "id": "schema-declares-stockopnameitem",
+    "category": "structural",
+    "target": "Data/Inventory_Store_Stock_JSON_Schema/StockOrderService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOpnameItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOpnameItem\" entity."
+  }
+]

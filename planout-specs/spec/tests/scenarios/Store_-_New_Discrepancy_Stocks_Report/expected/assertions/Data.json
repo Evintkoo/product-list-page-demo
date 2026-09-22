@@ -1,0 +1,66 @@
+[
+  {
+    "id": "data-store-new-discrepancy-stocks-report-discrepancystockcontroller-md-exists",
+    "category": "structural",
+    "target": "Data/Store_-_New_Discrepancy_Stocks_Report/DiscrepancyStockController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-store-new-discrepancy-stocks-report-sequencegenerator-md-exists",
+    "category": "structural",
+    "target": "Data/Store_-_New_Discrepancy_Stocks_Report/SequenceGenerator.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-discrepancystock",
+    "category": "structural",
+    "target": "Data/Store_-_New_Discrepancy_Stocks_Report/DiscrepancyStockController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "DiscrepancyStock"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"DiscrepancyStock\" entity."
+  },
+  {
+    "id": "schema-declares-discrepancystockitem",
+    "category": "structural",
+    "target": "Data/Store_-_New_Discrepancy_Stocks_Report/DiscrepancyStockController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "DiscrepancyStockItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"DiscrepancyStockItem\" entity."
+  },
+  {
+    "id": "schema-declares-entity",
+    "category": "structural",
+    "target": "Data/Store_-_New_Discrepancy_Stocks_Report/DiscrepancyStockController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Entity"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Entity\" entity."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/Store_-_New_Discrepancy_Stocks_Report/DiscrepancyStockController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  },
+  {
+    "id": "schema-declares-user",
+    "category": "structural",
+    "target": "Data/Store_-_New_Discrepancy_Stocks_Report/DiscrepancyStockController.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "User"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"User\" entity."
+  }
+]

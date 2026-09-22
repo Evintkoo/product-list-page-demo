@@ -1,0 +1,43 @@
+[
+  {
+    "id": "data-stock-new-order-warehouse-form-card-usewarehouseoptions-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Order_Warehouse_Form_Card/useWarehouseOptions.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-stock-new-order-warehouse-form-card-usecreatestockorder-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Order_Warehouse_Form_Card/useCreateStockOrder.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-stock-new-order-warehouse-form-card-warehouseorderform-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Order_Warehouse_Form_Card/WarehouseOrderForm.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-warehouse",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Order_Warehouse_Form_Card/useWarehouseOptions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Warehouse"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Warehouse\" entity."
+  },
+  {
+    "id": "schema-declares-stockorder",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Order_Warehouse_Form_Card/useWarehouseOptions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrder\" entity."
+  }
+]

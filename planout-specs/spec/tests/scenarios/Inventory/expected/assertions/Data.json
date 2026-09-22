@@ -1,0 +1,56 @@
+[
+  {
+    "id": "data-inventory-inventorymovementservice-md-exists",
+    "category": "structural",
+    "target": "Data/Inventory/InventoryMovementService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-inventory-stockopnameservice-md-exists",
+    "category": "structural",
+    "target": "Data/Inventory/StockOpnameService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-warehousestock",
+    "category": "structural",
+    "target": "Data/Inventory/InventoryMovementService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "WarehouseStock"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"WarehouseStock\" entity."
+  },
+  {
+    "id": "schema-declares-warehousestockhistory",
+    "category": "structural",
+    "target": "Data/Inventory/InventoryMovementService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "WarehouseStockHistory"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"WarehouseStockHistory\" entity."
+  },
+  {
+    "id": "schema-declares-storestocks",
+    "category": "structural",
+    "target": "Data/Inventory/InventoryMovementService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StoreStocks"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StoreStocks\" entity."
+  },
+  {
+    "id": "schema-declares-storestockhistory",
+    "category": "structural",
+    "target": "Data/Inventory/InventoryMovementService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StoreStockHistory"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StoreStockHistory\" entity."
+  }
+]

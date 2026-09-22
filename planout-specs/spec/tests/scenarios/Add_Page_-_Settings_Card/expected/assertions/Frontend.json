@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-add-page-settings-card-servicesettingscard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Add_Page_-_Settings_Card/ServiceSettingsCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

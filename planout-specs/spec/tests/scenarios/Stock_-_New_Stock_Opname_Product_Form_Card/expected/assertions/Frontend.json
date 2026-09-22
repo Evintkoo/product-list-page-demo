@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-stock-new-stock-opname-product-form-card-stockopnameproductform-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_New_Stock_Opname_Product_Form_Card/StockOpnameProductForm.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

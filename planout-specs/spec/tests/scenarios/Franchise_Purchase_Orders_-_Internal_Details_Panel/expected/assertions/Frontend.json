@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-franchise-purchase-orders-internal-details-panel-franchisepurchaseorderdetails-md-exists",
+    "category": "structural",
+    "target": "Frontend/Franchise_Purchase_Orders_-_Internal_Details_Panel/FranchisePurchaseOrderDetails.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

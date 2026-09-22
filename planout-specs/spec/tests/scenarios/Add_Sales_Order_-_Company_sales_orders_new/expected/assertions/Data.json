@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-add-sales-order-company-sales-orders-new-salesorderrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Add_Sales_Order_-_Company_sales_orders_new/SalesOrderRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-add-sales-order-company-sales-orders-new-salesordercontroller-md-exists",
+    "category": "structural",
+    "target": "Data/Add_Sales_Order_-_Company_sales_orders_new/SalesOrderController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-salesorder",
+    "category": "structural",
+    "target": "Data/Add_Sales_Order_-_Company_sales_orders_new/SalesOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrder\" entity."
+  },
+  {
+    "id": "schema-declares-salesorderitem",
+    "category": "structural",
+    "target": "Data/Add_Sales_Order_-_Company_sales_orders_new/SalesOrderRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrderItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrderItem\" entity."
+  }
+]

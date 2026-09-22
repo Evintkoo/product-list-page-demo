@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-service-product-add-page-serviceproductaddpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Service_Product_Add_Page/ServiceProductAddPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

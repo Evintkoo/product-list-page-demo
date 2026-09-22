@@ -1,0 +1,46 @@
+[
+  {
+    "id": "data-store-stock-history-schema-storestockhistoryrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Store_Stock_History_Schema/StoreStockHistoryRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-store-stock-history-schema-storestockrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Store_Stock_History_Schema/StoreStockRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/Store_Stock_History_Schema/StoreStockHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"store\" entity."
+  },
+  {
+    "id": "schema-declares-store_stock",
+    "category": "structural",
+    "target": "Data/Store_Stock_History_Schema/StoreStockHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "store_stock"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"store_stock\" entity."
+  },
+  {
+    "id": "schema-declares-store_stock_history",
+    "category": "structural",
+    "target": "Data/Store_Stock_History_Schema/StoreStockHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "store_stock_history"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"store_stock_history\" entity."
+  }
+]

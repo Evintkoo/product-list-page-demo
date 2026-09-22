@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-put-api-sales-id-status-salesrepository-md-exists",
+    "category": "structural",
+    "target": "Data/PUT_api_sales_id_{status}/SalesRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-put-api-sales-id-status-salesdatahandler-md-exists",
+    "category": "structural",
+    "target": "Data/PUT_api_sales_id_{status}/SalesDataHandler.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-salesretail",
+    "category": "structural",
+    "target": "Data/PUT_api_sales_id_{status}/SalesRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesRetail"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesRetail\" entity."
+  }
+]

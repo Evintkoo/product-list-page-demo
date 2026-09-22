@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-product-detail-page-dimensions-card-dimensionscard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page_-_Dimensions_Card/DimensionsCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-page-dimensions-card-useproductdimensions-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page_-_Dimensions_Card/useProductDimensions.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

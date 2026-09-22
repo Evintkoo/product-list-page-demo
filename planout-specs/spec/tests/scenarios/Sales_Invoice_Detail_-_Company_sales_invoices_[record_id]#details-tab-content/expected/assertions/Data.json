@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-sales-invoice-detail-company-sales-invoices-record-id-details-tab-content-salesinvoiceservi-exists",
+    "category": "structural",
+    "target": "Data/Sales_Invoice_Detail_-_Company_sales_invoices_[record_id]#details-tab-content/SalesInvoiceService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-sales-invoice-detail-company-sales-invoices-record-id-details-tab-content-salesinvoicemappe-exists",
+    "category": "structural",
+    "target": "Data/Sales_Invoice_Detail_-_Company_sales_invoices_[record_id]#details-tab-content/SalesInvoiceMapper.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-salesinvoice",
+    "category": "structural",
+    "target": "Data/Sales_Invoice_Detail_-_Company_sales_invoices_[record_id]#details-tab-content/SalesInvoiceService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesInvoice"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesInvoice\" entity."
+  },
+  {
+    "id": "schema-declares-salesinvoiceitem",
+    "category": "structural",
+    "target": "Data/Sales_Invoice_Detail_-_Company_sales_invoices_[record_id]#details-tab-content/SalesInvoiceService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesInvoiceItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesInvoiceItem\" entity."
+  }
+]

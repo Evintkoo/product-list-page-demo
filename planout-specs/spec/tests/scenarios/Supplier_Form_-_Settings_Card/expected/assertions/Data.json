@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-supplier-form-settings-card-useaccountoptions-md-exists",
+    "category": "structural",
+    "target": "Data/Supplier_Form_-_Settings_Card/useAccountOptions.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-supplier-form-settings-card-suppliersettingscard-md-exists",
+    "category": "structural",
+    "target": "Data/Supplier_Form_-_Settings_Card/SupplierSettingsCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-account",
+    "category": "structural",
+    "target": "Data/Supplier_Form_-_Settings_Card/useAccountOptions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Account"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Account\" entity."
+  },
+  {
+    "id": "schema-declares-suppliersettings",
+    "category": "structural",
+    "target": "Data/Supplier_Form_-_Settings_Card/useAccountOptions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SupplierSettings"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SupplierSettings\" entity."
+  }
+]

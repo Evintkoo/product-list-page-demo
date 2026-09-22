@@ -1,0 +1,26 @@
+[
+  {
+    "id": "logic-customer-add-vehicle-vehicleservice-md-exists",
+    "category": "structural",
+    "target": "Logic/Customer_-_Add_Vehicle/VehicleService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-customer-add-vehicle-addvehiclecontroller-md-exists",
+    "category": "structural",
+    "target": "Logic/Customer_-_Add_Vehicle/AddVehicleController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-has-api-payload-block",
+    "category": "behavioural",
+    "target": "Logic/Customer_-_Add_Vehicle/VehicleService.md",
+    "check": "source_contains_string",
+    "args": {
+      "needle": "<!-- API_PAYLOAD"
+    },
+    "rationale": "Logic-tier pseudocode must carry an API_PAYLOAD block (plan 23 phase 3)."
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-product-details-productdetailspage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Details/ProductDetailsPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-details-hooks-useproductdetails-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Details/hooks_useProductDetails.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

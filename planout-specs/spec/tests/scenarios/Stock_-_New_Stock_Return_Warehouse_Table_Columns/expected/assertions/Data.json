@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-stock-new-stock-return-warehouse-table-columns-stockreturntable-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Stock_Return_Warehouse_Table_Columns/StockReturnTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-stock-new-stock-return-warehouse-table-columns-productservice-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Stock_Return_Warehouse_Table_Columns/ProductService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockreturnitem",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Stock_Return_Warehouse_Table_Columns/StockReturnTable.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockReturnItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockReturnItem\" entity."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/Stock_-_New_Stock_Return_Warehouse_Table_Columns/StockReturnTable.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  }
+]

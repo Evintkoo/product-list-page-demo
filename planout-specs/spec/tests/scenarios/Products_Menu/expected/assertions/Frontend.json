@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-products-menu-productsmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Products_Menu/ProductsMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-products-menu-productsubmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Products_Menu/ProductSubMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

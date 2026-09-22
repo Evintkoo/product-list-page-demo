@@ -1,0 +1,33 @@
+[
+  {
+    "id": "data-account-dropdown-list-response-json-schema-accountrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Account_Dropdown_List_Response_JSON_Schema/AccountRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-account-dropdown-list-response-json-schema-accountservice-md-exists",
+    "category": "structural",
+    "target": "Data/Account_Dropdown_List_Response_JSON_Schema/AccountService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-account-dropdown-list-response-json-schema-accountcontroller-md-exists",
+    "category": "structural",
+    "target": "Data/Account_Dropdown_List_Response_JSON_Schema/AccountController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-chartofaccount",
+    "category": "structural",
+    "target": "Data/Account_Dropdown_List_Response_JSON_Schema/AccountRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ChartOfAccount"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ChartOfAccount\" entity."
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-finance-payment-types-list-paymenttypeslist-md-exists",
+    "category": "structural",
+    "target": "Frontend/Finance_-_Payment_Types_List/PaymentTypesList.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-finance-payment-types-list-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Finance_-_Payment_Types_List/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

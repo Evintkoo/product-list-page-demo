@@ -1,0 +1,49 @@
+[
+  {
+    "id": "data-get-api-service-products-utf8-q-attribute-predicate-value-page-rows-serviceproductrepos-exists",
+    "category": "structural",
+    "target": "Data/GET_api_service_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ServiceProductRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-serviceproduct",
+    "category": "structural",
+    "target": "Data/GET_api_service_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ServiceProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ServiceProduct"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ServiceProduct\" entity."
+  },
+  {
+    "id": "schema-declares-serviceproducttype",
+    "category": "structural",
+    "target": "Data/GET_api_service_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ServiceProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ServiceProductType"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ServiceProductType\" entity."
+  },
+  {
+    "id": "schema-declares-serviceproducttag",
+    "category": "structural",
+    "target": "Data/GET_api_service_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ServiceProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ServiceProductTag"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ServiceProductTag\" entity."
+  },
+  {
+    "id": "schema-declares-serviceproducttagging",
+    "category": "structural",
+    "target": "Data/GET_api_service_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ServiceProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ServiceProductTagging"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ServiceProductTagging\" entity."
+  }
+]

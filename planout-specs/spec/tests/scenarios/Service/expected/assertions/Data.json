@@ -1,0 +1,29 @@
+[
+  {
+    "id": "data-service-servicedomainschema-md-exists",
+    "category": "structural",
+    "target": "Data/Service/ServiceDomainSchema.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-serviceorder",
+    "category": "structural",
+    "target": "Data/Service/ServiceDomainSchema.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ServiceOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ServiceOrder\" entity."
+  },
+  {
+    "id": "schema-declares-serviceworkorder",
+    "category": "structural",
+    "target": "Data/Service/ServiceDomainSchema.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ServiceWorkOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ServiceWorkOrder\" entity."
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "id": "data-detail-customer-schema-customerrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Detail_Customer_Schema/CustomerRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/Detail_Customer_Schema/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"customer\" entity."
+  },
+  {
+    "id": "schema-declares-customer_address",
+    "category": "structural",
+    "target": "Data/Detail_Customer_Schema/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "customer_address"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"customer_address\" entity."
+  },
+  {
+    "id": "schema-declares-customer_group",
+    "category": "structural",
+    "target": "Data/Detail_Customer_Schema/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "customer_group"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"customer_group\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/Detail_Customer_Schema/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"store\" entity."
+  },
+  {
+    "id": "schema-declares-occupation",
+    "category": "structural",
+    "target": "Data/Detail_Customer_Schema/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "occupation"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"occupation\" entity."
+  },
+  {
+    "id": "schema-declares-user",
+    "category": "structural",
+    "target": "Data/Detail_Customer_Schema/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "user"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"user\" entity."
+  }
+]

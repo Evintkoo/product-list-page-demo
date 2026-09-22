@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-franchise-purchase-orders-workflow-internal-status-component-workflowstatuscomponent-md-exists",
+    "category": "structural",
+    "target": "Frontend/Franchise_Purchase_Orders_-_Workflow_Internal_Status_Component/WorkflowStatusComponent.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

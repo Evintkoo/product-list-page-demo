@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-supplier-form-credit-terms-card-credittermscard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Supplier_Form_-_Credit_Terms_Card/CreditTermsCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

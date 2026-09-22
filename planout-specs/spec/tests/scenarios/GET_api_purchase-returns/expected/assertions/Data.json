@@ -1,0 +1,39 @@
+[
+  {
+    "id": "data-get-api-purchase-returns-purchasereturnrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_purchase-returns/PurchaseReturnRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-purchasereturn",
+    "category": "structural",
+    "target": "Data/GET_api_purchase-returns/PurchaseReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PurchaseReturn"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PurchaseReturn\" entity."
+  },
+  {
+    "id": "schema-declares-purchaseorder",
+    "category": "structural",
+    "target": "Data/GET_api_purchase-returns/PurchaseReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PurchaseOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PurchaseOrder\" entity."
+  },
+  {
+    "id": "schema-declares-purchasereturnitem",
+    "category": "structural",
+    "target": "Data/GET_api_purchase-returns/PurchaseReturnRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PurchaseReturnItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PurchaseReturnItem\" entity."
+  }
+]

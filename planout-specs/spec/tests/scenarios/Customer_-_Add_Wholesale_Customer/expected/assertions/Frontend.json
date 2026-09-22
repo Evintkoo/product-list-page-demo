@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-customer-add-wholesale-customer-addwholesalecustomerpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Add_Wholesale_Customer/AddWholesaleCustomerPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-add-wholesale-customer-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Add_Wholesale_Customer/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

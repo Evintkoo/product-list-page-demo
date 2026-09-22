@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-get-api-vouchers-voucherrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_vouchers/VoucherRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-vouchers-voucherdatamapper-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_vouchers/VoucherDataMapper.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-voucher",
+    "category": "structural",
+    "target": "Data/GET_api_vouchers/VoucherRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Voucher"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Voucher\" entity."
+  }
+]

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-customer-return-list-customerreturnservice-md-exists",
+    "category": "structural",
+    "target": "Data/Customer_-_Return_List/CustomerReturnService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-customer-return-list-usecustomerreturns-md-exists",
+    "category": "structural",
+    "target": "Data/Customer_-_Return_List/useCustomerReturns.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/Customer_-_Return_List/CustomerReturnService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Customer\" entity."
+  },
+  {
+    "id": "schema-declares-customerreturn",
+    "category": "structural",
+    "target": "Data/Customer_-_Return_List/CustomerReturnService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "CustomerReturn"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"CustomerReturn\" entity."
+  }
+]

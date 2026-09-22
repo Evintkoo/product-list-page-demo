@@ -1,0 +1,56 @@
+[
+  {
+    "id": "data-get-api-sales-invoices-id-salesinvoicerepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_sales-invoices_id/SalesInvoiceRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-sales-invoices-id-salesinvoicecontroller-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_sales-invoices_id/SalesInvoiceController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-salesinvoice",
+    "category": "structural",
+    "target": "Data/GET_api_sales-invoices_id/SalesInvoiceRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesInvoice"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesInvoice\" entity."
+  },
+  {
+    "id": "schema-declares-salesinvoiceitem",
+    "category": "structural",
+    "target": "Data/GET_api_sales-invoices_id/SalesInvoiceRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesInvoiceItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesInvoiceItem\" entity."
+  },
+  {
+    "id": "schema-declares-salesorder",
+    "category": "structural",
+    "target": "Data/GET_api_sales-invoices_id/SalesInvoiceRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrder\" entity."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/GET_api_sales-invoices_id/SalesInvoiceRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Customer\" entity."
+  }
+]

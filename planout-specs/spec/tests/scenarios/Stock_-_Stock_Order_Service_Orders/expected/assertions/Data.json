@@ -1,0 +1,26 @@
+[
+  {
+    "id": "data-stock-stock-order-service-orders-stockorderservice-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_-_Stock_Order_Service_Orders/StockOrderService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-stock-stock-order-service-orders-stockordertypes-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_-_Stock_Order_Service_Orders/StockOrderTypes.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-stockorder",
+    "category": "structural",
+    "target": "Data/Stock_-_Stock_Order_Service_Orders/StockOrderService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockOrder\" entity."
+  }
+]

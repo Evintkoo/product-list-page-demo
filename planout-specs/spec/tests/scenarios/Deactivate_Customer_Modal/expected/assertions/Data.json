@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-deactivate-customer-modal-customerdatastore-md-exists",
+    "category": "structural",
+    "target": "Data/Deactivate_Customer_Modal/CustomerDataStore.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/Deactivate_Customer_Modal/CustomerDataStore.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Customer\" entity."
+  }
+]

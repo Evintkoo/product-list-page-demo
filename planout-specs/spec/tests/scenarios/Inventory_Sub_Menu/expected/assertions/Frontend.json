@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-inventory-sub-menu-inventorysubmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Inventory_Sub_Menu/InventorySubMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-inventory-sub-menu-inventorynavigationhook-md-exists",
+    "category": "structural",
+    "target": "Frontend/Inventory_Sub_Menu/InventoryNavigationHook.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

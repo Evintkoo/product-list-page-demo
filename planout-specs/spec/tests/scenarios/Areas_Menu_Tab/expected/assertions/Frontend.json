@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-areas-menu-tab-areasmenutab-md-exists",
+    "category": "structural",
+    "target": "Frontend/Areas_Menu_Tab/AreasMenuTab.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

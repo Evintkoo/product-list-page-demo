@@ -1,0 +1,259 @@
+Canvas: 1440×1269px
+
+├─ card-group [0,0 1440×1269]
+│  ├─ rect [0,0 1440×1269]  fill=#F7F8FA
+│  ├─ shape [0,0 1440×64]  fill=white
+│  ├─ text-path [0,63 1440×2]  fill=#EBEDF1
+│  ├─ card-group [29,18 1128×29]
+│  │  ├─ icon [29,21 23×23]  fill=#4A54C4
+│  │  ├─ icon [43,22 10×13]  fill=#4A54C4
+│  │  ├─ card [68,18 107×29]  fill=white rx=8
+│  │  ├─ icon [80,26 4×4]  stroke=#9297A1
+│  │  ├─ icon [87,26 4×4]  stroke=#9297A1
+│  │  ├─ icon [87,33 4×4]  stroke=#9297A1
+│  │  ├─ icon [80,33 4×4]  stroke=#9297A1
+│  │  ├─ text-path [100,27 63×9]  fill=#565B66
+│  │  ├─ card [179,18 74×29]  fill=#EEF0FE rx=8
+│  │  ├─ icon [193,26 8×13]  stroke=#4A54C4
+│  │  ├─ icon [211,27 32×9]  fill=#4A54C4
+│  │  ├─ card [257,18 107×29]  fill=white rx=8
+│  │  ├─ icon [268,26 13×11]  stroke=#9297A1
+│  │  ├─ text-path [289,27 64×9]  fill=#565B66
+│  │  ├─ card [368,18 97×29]  fill=white rx=8
+│  │  ├─ icon [379,27 13×10]  stroke=#9297A1
+│  │  ├─ text-path [400,27 55×12]  fill=#565B66
+│  │  ├─ card [469,18 95×29]  fill=white rx=8
+│  │  ├─ icon [481,26 11×12]  stroke=#9297A1
+│  │  ├─ text-path [501,27 52×9]  fill=#565B66
+│  │  ├─ card [568,18 98×29]  fill=white rx=8
+│  │  ├─ icon [580,26 11×11]  stroke=#9297A1
+│  │  ├─ text-path [600,27 55×12]  fill=#565B66
+│  │  ├─ card [670,18 88×29]  fill=white rx=8
+│  │  ├─ icon [682,26 12×11]  stroke=#9297A1
+│  │  ├─ text-path [702,27 45×10]  fill=#565B66
+│  │  ├─ card [762,18 110×29]  fill=white rx=8
+│  │  ├─ icon [775,26 10×13]  stroke=#9297A1
+│  │  ├─ text-path [793,27 67×12]  fill=#565B66
+│  │  ├─ card [876,18 88×29]  fill=white rx=8
+│  │  ├─ icon [889,26 10×13]  stroke=#9297A1
+│  │  ├─ text-path [908,27 45×12]  fill=#565B66
+│  │  ├─ card [968,18 77×29]  fill=white rx=8
+│  │  ├─ icon [980,26 11×11]  stroke=#9297A1
+│  │  ├─ shape [1000,27 34×12]  fill=#565B66
+│  │  ├─ card [1049,18 108×29]  fill=white rx=8
+│  │  ├─ icon [1060,26 13×11]  stroke=#9297A1
+│  │  └─ text-path [1081,27 65×10]  fill=#565B66
+│  ├─ card-group [1195,15 221×35]
+│  │  ├─ card [1195,19 72×26]  fill=#F4F5F7 rx=8
+│  │  ├─ icon [1207,27 10×10]  stroke=#9297A1
+│  │  ├─ icon [1227,28 29×9]  fill=#9297A1
+│  │  ├─ icon [1287,25 13×14]  stroke=#565B66
+│  │  ├─ card [1320,15 96×35]  fill=#F4F5F7 rx=17.5
+│  │  ├─ card [1326,20 24×24]  fill=#D8DCFC rx=12
+│  │  ├─ icon [1335,28 6×8]  fill=#4A54C4
+│  │  ├─ group [1358,22 27×21]
+│  │  │  ├─ icon [1358,22 20×8]  fill=#20242D
+│  │  │  └─ icon [1359,36 27×7]  fill=#9297A1
+│  │  └─ icon [1398,30 7×3]  stroke=#9297A1
+│  ├─ rect [0,0 1440×44]  fill=white
+│  ├─ text-path [25,81 38×9]  fill=#565B66
+│  ├─ icon [72,85 6×3]  stroke=#565B66
+│  ├─ text-path [106,81 57×12]  fill=#4A54C4
+│  ├─ icon [172,85 6×3]  stroke=#4A54C4
+│  ├─ text-path [206,81 44×10]  fill=#565B66
+│  ├─ icon [260,85 6×3]  stroke=#565B66
+│  ├─ card [25,131 1391×38]  fill=#E7F4EC rx=7.5
+│  ├─ card [25,131 1391×38]  stroke=#C8E9D4 rx=7.5
+│  ├─ text-path [41,145 168×10]  fill=#149042
+│  ├─ icon [1390,146 7×7]  stroke=#149042
+│  ├─ text-group [25,190 224×14]
+│  │  └─ text-path [25,190 224×14]  fill=#20242D
+│  ├─ card [24,224 1392×54]  fill=white rx=12
+│  ├─ icon [47,248 9×5]  stroke=#4A54C4
+│  ├─ text-path [68,247 74×9]  fill=#4A54C4
+│  ├─ card [159,238 83×27]  fill=#E8EBF9 rx=13.5
+│  ├─ icon [175,248 8×6]  stroke=#4A54C4
+│  ├─ text-path [192,248 36×8]  fill=#4A54C4
+│  ├─ icon [255,248 4×7]  stroke=#C7CDF9
+│  ├─ card [272,238 95×27]  fill=#4A54C4 rx=13.5
+│  ├─ icon-shape [286,248 6×6]  fill=white
+│  ├─ text-path [299,247 53×8]  fill=white
+│  ├─ icon [380,248 4×7]  stroke=#C7CDF9
+│  ├─ card [397,238 100×27]  fill=#EEF0FE rx=13.5
+│  ├─ icon-shape [412,249 5×5]  stroke=#A2A6C3
+│  ├─ text-path [423,247 59×8]  fill=#A2A6C3
+│  ├─ card-group [1128,237 268×29]
+│  │  ├─ card [1128,237 72×29]  fill=white rx=7.5
+│  │  ├─ card [1128,237 72×29]  stroke=#D9DBE0 rx=7.5
+│  │  ├─ icon [1142,246 11×11]  stroke=#383D4A
+│  │  ├─ icon [1161,246 24×9]  fill=#383D4A
+│  │  ├─ card [1209,237 93×29]  fill=white rx=7.5
+│  │  ├─ card [1209,237 93×29]  stroke=#D9DBE0 rx=7.5
+│  │  ├─ icon [1223,247 11×9]  stroke=#4A54C4
+│  │  ├─ text-path [1241,247 45×11]  fill=#4A54C4
+│  │  ├─ card [1311,237 85×29]  fill=white rx=7.5
+│  │  ├─ card [1311,237 85×29]  stroke=#D9DBE0 rx=7.5
+│  │  ├─ icon [1327,248 7×7]  stroke=#D14040
+│  │  └─ text-path [1344,247 37×9]  fill=#D14040
+│  ├─ text-path [24,319 1392×2]  fill=#E5E8ED
+│  ├─ text-group [24,297 44×23]
+│  │  ├─ text-path [25,297 42×10]  fill=#4A54C4
+│  │  └─ divider [24,318 44×2]  fill=#4A54C4 rx=1
+│  ├─ card [24,336 1392×407]  fill=white rx=12
+│  ├─ group [48,360 1344×357]
+│  │  ├─ group [48,360 267×357]
+│  │  │  ├─ text-group [49,360 231×11]
+│  │  │  │  ├─ text-path [49,361 103×8]  fill=#20242D
+│  │  │  │  └─ text-group [177,360 103×11]
+│  │  │  │     └─ text-path [177,360 103×11]  fill=#20242D
+│  │  │  ├─ text-group [49,389 231×11]
+│  │  │  │  ├─ text-path [49,390 63×9]  fill=#20242D
+│  │  │  │  └─ text-group [177,389 103×11]
+│  │  │  │     └─ text-path [177,389 103×11]  fill=#4A54C4
+│  │  │  ├─ text-group [49,418 225×11]
+│  │  │  │  ├─ text-path [49,418 38×9]  fill=#20242D
+│  │  │  │  └─ text-group [177,418 97×11]
+│  │  │  │     └─ text-path [177,418 97×11]  fill=#4A54C4
+│  │  │  ├─ text-group [49,448 260×12]
+│  │  │  │  ├─ text-path [49,448 72×9]  fill=#20242D
+│  │  │  │  └─ text-group [177,448 132×12]
+│  │  │  │     └─ text-path [177,448 132×12]  fill=#20242D
+│  │  │  ├─ text-group [49,476 262×12]
+│  │  │  │  ├─ text-path [49,476 78×9]  fill=#20242D
+│  │  │  │  └─ text-group [177,477 134×12]
+│  │  │  │     └─ text-path [177,477 134×12]  fill=#20242D
+│  │  │  ├─ text-group [48,506 81×11]
+│  │  │  │  └─ text-path [48,506 81×11]  fill=#20242D
+│  │  │  ├─ text-group [49,535 182×10]
+│  │  │  │  ├─ text-path [49,535 84×9]  fill=#20242D
+│  │  │  │  └─ text-group [177,535 54×9]
+│  │  │  │     ├─ icon [177,535 11×9]  stroke=#4A54C4
+│  │  │  │     └─ text-path [196,535 35×9]  fill=#4A54C4
+│  │  │  ├─ text-group [49,563 220×10]
+│  │  │  │  ├─ text-path [49,564 77×9]  fill=#20242D
+│  │  │  │  └─ text-group [178,563 91×10]
+│  │  │  │     ├─ icon [178,563 10×10]  stroke=#4A54C4
+│  │  │  │     └─ text-path [195,564 73×9]  fill=#4A54C4
+│  │  │  ├─ text-group [49,593 267×11]
+│  │  │  │  ├─ text-path [49,593 60×11]  fill=#20242D
+│  │  │  │  └─ text-group [178,593 137×10]
+│  │  │  │     ├─ icon [178,593 9×10]  stroke=#20242D
+│  │  │  │     └─ text-path [194,593 122×9]  fill=#20242D
+│  │  │  ├─ text-group [49,622 267×11]
+│  │  │  │  ├─ text-path [49,622 63×11]  fill=#20242D
+│  │  │  │  └─ text-group [178,622 137×10]
+│  │  │  │     ├─ icon [178,622 9×10]  stroke=#20242D
+│  │  │  │     └─ text-path [194,622 122×9]  fill=#20242D
+│  │  │  ├─ group [49,651 31×8]
+│  │  │  │  └─ icon [49,651 31×8]  fill=#20242D
+│  │  │  ├─ text-group [49,680 262×12]
+│  │  │  │  ├─ text-path [49,680 61×11]  fill=#20242D
+│  │  │  │  └─ text-group [177,680 134×12]
+│  │  │  │     └─ text-path [177,680 134×12]  fill=#20242D
+│  │  │  └─ text-group [48,709 40×9]
+│  │  │     └─ text-path [48,709 40×9]  fill=#20242D
+│  │  └─ group [744,361 648×320]
+│  │     ├─ card-group [744,361 648×234]
+│  │     │  ├─ text-group [745,361 63×8]
+│  │     │  │  ├─ icon [745,362 11×7]  stroke=#4A54C4
+│  │     │  │  └─ text-path [763,361 45×8]  fill=#4A54C4
+│  │     │  ├─ text-path [757,395 50×9]  fill=#252931
+│  │     │  ├─ text-path [1313,395 66×11]  fill=#252931
+│  │     │  ├─ divider [756,415 624×1]  fill=#EBEDF1
+│  │     │  ├─ text-path [757,427 50×10]  fill=#252931
+│  │     │  ├─ shape [1345,426 33×12]  fill=#252931
+│  │     │  ├─ divider [756,447 624×1]  fill=#EBEDF1
+│  │     │  ├─ text-path [757,459 112×10]  fill=#252931
+│  │     │  ├─ shape [1345,458 33×12]  fill=#252931
+│  │     │  ├─ divider [756,479 624×1]  fill=#EBEDF1
+│  │     │  ├─ text-path [757,491 72×9]  fill=#252931
+│  │     │  ├─ text-path [1313,491 66×11]  fill=#252931
+│  │     │  ├─ divider [756,511 624×1]  fill=#EBEDF1
+│  │     │  ├─ icon [757,523 20×9]  fill=#252931
+│  │     │  ├─ text-path [1320,523 59×11]  fill=#252931
+│  │     │  ├─ divider [756,543 624×1]  fill=#EBEDF1
+│  │     │  ├─ card [744,556 648×39]  fill=#EEF0FB rx=8
+│  │     │  ├─ icon [756,571 29×9]  fill=#4A54C4
+│  │     │  └─ text-path [1301,571 79×12]  fill=#4A54C4
+│  │     └─ text-group [745,626 635×55]
+│  │        ├─ text-group [745,626 76×11]
+│  │        │  ├─ icon [745,626 11×8]  stroke=#4A54C4
+│  │        │  └─ text-path [764,626 57×11]  fill=#4A54C4
+│  │        ├─ text-path [756,660 144×10]  fill=#252931
+│  │        ├─ icon [1354,660 25×11]  fill=#252931
+│  │        └─ divider [756,680 624×1]  fill=#EBEDF1
+│  ├─ group [26,760 1389×29]
+│  │  └─ card-group [26,760 1389×29]
+│  │     ├─ icon [26,769 9×11]  stroke=#4A54C4
+│  │     ├─ text-path [44,770 70×9]  fill=#4A54C4
+│  │     ├─ card [1332,760 84×29]  fill=white rx=7.5
+│  │     ├─ card [1332,760 84×29]  stroke=#D9DBE0 rx=7.5
+│  │     ├─ text-path [1346,770 35×11]  fill=#383D4A
+│  │     └─ icon [1392,772 7×4]  stroke=#666666
+│  ├─ card-group [0,0 1416×933]
+│  │  ├─ card [24,805 1392×128]  fill=#FDFEFF rx=12
+│  │  ├─ rect [0,0 1392×37]  fill=#FAFAFB
+│  │  ├─ group [41,819 15×9]
+│  │  │  └─ icon [41,819 15×9]  fill=#20242D
+│  │  ├─ group [107,819 23×9]
+│  │  │  └─ icon [107,819 23×9]  fill=#20242D
+│  │  ├─ text-group [243,819 45×9]
+│  │  │  └─ text-path [243,819 45×9]  fill=#20242D
+│  │  ├─ text-group [659,819 33×9]
+│  │  │  └─ text-path [659,819 33×9]  fill=#20242D
+│  │  ├─ text-path [777,819 37×9]  fill=#20242D
+│  │  ├─ text-group [887,819 77×12]
+│  │  │  └─ text-path [887,819 77×12]  fill=#20242D
+│  │  ├─ text-group [1029,819 51×9]
+│  │  │  └─ text-path [1029,819 51×9]  fill=#20242D
+│  │  ├─ text-group [1180,819 55×12]
+│  │  │  └─ text-path [1180,819 55×12]  fill=#20242D
+│  │  ├─ text-group [1253,819 41×9]
+│  │  │  └─ text-path [1253,819 41×9]  fill=#20242D
+│  │  ├─ divider [24,842 1392×1]  fill=#EBEDF1
+│  │  ├─ group [41,856 3×9]
+│  │  │  └─ icon [41,856 3×9]  fill=#20242D
+│  │  ├─ text-group [107,856 75×9]
+│  │  │  └─ text-path [107,856 75×9]  fill=#4A54C4
+│  │  ├─ text-group [243,856 111×9]
+│  │  │  └─ text-path [243,856 111×9]  fill=#4A54C4
+│  │  ├─ group [663,856 29×9]
+│  │  │  └─ icon [663,856 29×9]  fill=#20242D
+│  │  ├─ icon [809,856 6×9]  fill=#20242D
+│  │  ├─ text-group [901,856 62×11]
+│  │  │  └─ text-path [901,856 62×11]  fill=#20242D
+│  │  ├─ group [1053,856 26×11]
+│  │  │  └─ icon [1053,856 26×11]  fill=#20242D
+│  │  ├─ text-group [1173,856 62×11]
+│  │  │  └─ text-path [1173,856 62×11]  fill=#20242D
+│  │  ├─ text-group [1253,856 98×12]
+│  │  │  └─ text-path [1253,856 98×12]  fill=#20242D
+│  │  ├─ card [32,886 1376×39]  fill=#EEF0FB rx=8
+│  │  ├─ icon [660,901 29×9]  fill=#4A54C4
+│  │  └─ icon [808,901 6×9]  fill=#4A54C4
+│  ├─ card-group [25,950 156×29]
+│  │  ├─ card [25,950 156×29]  fill=white rx=7.5
+│  │  ├─ card [25,950 156×29]  stroke=#D9DBE0 rx=7.5
+│  │  ├─ icon [43,961 3×7]  stroke=#59616E
+│  │  └─ text-path [58,960 109×9]  fill=#383D4A
+│  ├─ rect [0,0 1440×40]  fill=white
+│  ├─ text-path [33,1245 100×8]  fill=#B7BBC4
+│  └─ text-path [1342,1245 65×8]  fill=#B7BBC4
+├─ rect [0,0 1440×1269]  fill=black
+└─ group [440,530 560×210]
+   └─ card-group [440,530 560×210]
+      ├─ card [440,530 560×210]  fill=white rx=16
+      ├─ shape [440,530 560×69]  fill=white
+      ├─ text-path [440,598 560×2]  fill=#EBEDF1
+      ├─ text-path [468,558 70×16]  fill=#252931
+      ├─ card [953,552 25×25]  fill=#F7F8FA rx=8
+      ├─ icon [962,561 7×7]  stroke=#666E78
+      ├─ text-path [468,628 102×15]  fill=#20242D
+      ├─ divider [440,669 560×1]  fill=#EBEDF1
+      ├─ shape [440,670 560×70]  fill=white
+      ├─ text-path [440,669 560×2]  fill=#EBEDF1
+      ├─ card [837,689 74×33]  fill=white rx=7.5
+      ├─ card [837,689 74×33]  stroke=#D9DBE0 rx=7.5
+      ├─ text-path [853,700 41×10]  fill=#383D4A
+      ├─ card [921,688 51×34]  fill=#4A54C4 rx=8
+      └─ icon [938,700 18×10]  fill=white

@@ -1,0 +1,33 @@
+[
+  {
+    "id": "logic-finance-payment-types-list-paymenttypeservice-md-exists",
+    "category": "structural",
+    "target": "Logic/Finance_-_Payment_Types_List/PaymentTypeService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-finance-payment-types-list-paymenttypecontroller-md-exists",
+    "category": "structural",
+    "target": "Logic/Finance_-_Payment_Types_List/PaymentTypeController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-finance-payment-types-list-paymenttypelogic-md-exists",
+    "category": "structural",
+    "target": "Logic/Finance_-_Payment_Types_List/PaymentTypeLogic.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
+  },
+  {
+    "id": "logic-has-api-payload-block",
+    "category": "behavioural",
+    "target": "Logic/Finance_-_Payment_Types_List/PaymentTypeService.md",
+    "check": "source_contains_string",
+    "args": {
+      "needle": "<!-- API_PAYLOAD"
+    },
+    "rationale": "Logic-tier pseudocode must carry an API_PAYLOAD block (plan 23 phase 3)."
+  }
+]

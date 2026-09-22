@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-customer-add-wholesale-page-tax-info-card-taxinfocard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_Add_Wholesale_Page_-_Tax_Info_Card/TaxInfoCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

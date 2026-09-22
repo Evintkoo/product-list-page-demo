@@ -1,0 +1,14 @@
+Canvas: 400×520px
+
+├─ card [1,1 398×518]  fill=#ffffff stroke=#d6d6d6 rx=10
+├─ text [24,46 0×0] "Taxes"
+├─ divider [16,78 368×0]  stroke=#e4e4e4
+├─ text [24,116 0×0] "Tax Product Codes"
+├─ text [24,166 0×0] "Tax Unit of Measures"
+├─ divider [16,206 368×0]  stroke=#e4e4e4
+├─ text [24,244 0×0] "Payment Types"
+├─ text [24,294 0×0] "Payment Type Mappings"
+├─ divider [16,334 368×0]  stroke=#e4e4e4
+├─ text [24,372 0×0] "Banks&Payment Gateways"
+├─ text [24,422 0×0] "Bank Identification Numbers (BIN)"
+└─ text [24,472 0×0] "EDC"

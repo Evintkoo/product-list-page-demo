@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="345" height="452" viewBox="0 0 345 452">
+  <rect x="1" y="1" width="343" height="450" fill="#ffffff" stroke="#2452a8" stroke-width="1"/>
+
+  <rect x="1" y="1" width="343" height="49" fill="#1f4faa"/>
+  <text x="24" y="32" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#ffffff">Stock Orders</text>
+
+  <line x1="1" y1="50" x2="344" y2="50" stroke="#d9d9d9" stroke-width="1"/>
+  <text x="24" y="82" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1a1a1a">Stock Returns</text>
+
+  <line x1="1" y1="100" x2="344" y2="100" stroke="#d9d9d9" stroke-width="1"/>
+  <text x="24" y="132" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1a1a1a">Franchise Purchase Orders</text>
+
+  <line x1="1" y1="150" x2="344" y2="150" stroke="#d9d9d9" stroke-width="1"/>
+  <text x="24" y="182" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1a1a1a">Franchise Purchase Returns</text>
+
+  <line x1="1" y1="200" x2="344" y2="200" stroke="#d9d9d9" stroke-width="1"/>
+  <text x="24" y="232" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1a1a1a">Stock Transfers</text>
+
+  <line x1="1" y1="250" x2="344" y2="250" stroke="#d9d9d9" stroke-width="1"/>
+  <text x="24" y="282" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1a1a1a">Stock Opname</text>
+
+  <line x1="1" y1="300" x2="344" y2="300" stroke="#d9d9d9" stroke-width="1"/>
+  <text x="24" y="332" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1a1a1a">Stock Histories</text>
+
+  <line x1="1" y1="350" x2="344" y2="350" stroke="#d9d9d9" stroke-width="1"/>
+  <text x="24" y="382" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1a1a1a">Stock Reservations</text>
+
+  <line x1="1" y1="400" x2="344" y2="400" stroke="#d9d9d9" stroke-width="1"/>
+  <text x="24" y="432" font-family="Helvetica, Arial, sans-serif" font-size="19" fill="#1a1a1a">Discrepancy Stocks</text>
+</svg>

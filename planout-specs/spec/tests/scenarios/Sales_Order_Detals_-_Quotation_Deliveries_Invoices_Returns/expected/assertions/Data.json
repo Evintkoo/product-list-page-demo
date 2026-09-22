@@ -1,0 +1,69 @@
+[
+  {
+    "id": "data-sales-order-detals-quotation-deliveries-invoices-returns-salesorderdataservice-md-exists",
+    "category": "structural",
+    "target": "Data/Sales_Order_Detals_-_Quotation_Deliveries_Invoices_Returns/SalesOrderDataService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-salesorder",
+    "category": "structural",
+    "target": "Data/Sales_Order_Detals_-_Quotation_Deliveries_Invoices_Returns/SalesOrderDataService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrder"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrder\" entity."
+  },
+  {
+    "id": "schema-declares-salesorderitem",
+    "category": "structural",
+    "target": "Data/Sales_Order_Detals_-_Quotation_Deliveries_Invoices_Returns/SalesOrderDataService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesOrderItem"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesOrderItem\" entity."
+  },
+  {
+    "id": "schema-declares-salesdelivery",
+    "category": "structural",
+    "target": "Data/Sales_Order_Detals_-_Quotation_Deliveries_Invoices_Returns/SalesOrderDataService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesDelivery"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesDelivery\" entity."
+  },
+  {
+    "id": "schema-declares-salesinvoice",
+    "category": "structural",
+    "target": "Data/Sales_Order_Detals_-_Quotation_Deliveries_Invoices_Returns/SalesOrderDataService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesInvoice"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesInvoice\" entity."
+  },
+  {
+    "id": "schema-declares-salesreturn",
+    "category": "structural",
+    "target": "Data/Sales_Order_Detals_-_Quotation_Deliveries_Invoices_Returns/SalesOrderDataService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesReturn"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesReturn\" entity."
+  },
+  {
+    "id": "schema-declares-salesquotation",
+    "category": "structural",
+    "target": "Data/Sales_Order_Detals_-_Quotation_Deliveries_Invoices_Returns/SalesOrderDataService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "SalesQuotation"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"SalesQuotation\" entity."
+  }
+]

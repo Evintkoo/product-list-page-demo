@@ -1,0 +1,30 @@
+[
+  {
+    "id": "frontend-stock-new-stock-order-warehouse-newstockorderpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_New_Stock_Order_Warehouse/NewStockOrderPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-new-stock-order-warehouse-neworderwarehouseform-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_New_Stock_Order_Warehouse/NewOrderWarehouseForm.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-new-stock-order-warehouse-orderproductlist-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_New_Stock_Order_Warehouse/OrderProductList.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-new-stock-order-warehouse-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_-_New_Stock_Order_Warehouse/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

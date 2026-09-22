@@ -1,0 +1,39 @@
+[
+  {
+    "id": "data-customer-retail-customer-edit-page-customerdataservice-md-exists",
+    "category": "structural",
+    "target": "Data/Customer_-_Retail_Customer_Edit_Page/CustomerDataService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/Customer_-_Retail_Customer_Edit_Page/CustomerDataService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Customer\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/Customer_-_Retail_Customer_Edit_Page/CustomerDataService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  },
+  {
+    "id": "schema-declares-servicetax",
+    "category": "structural",
+    "target": "Data/Customer_-_Retail_Customer_Edit_Page/CustomerDataService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ServiceTax"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ServiceTax\" entity."
+  }
+]

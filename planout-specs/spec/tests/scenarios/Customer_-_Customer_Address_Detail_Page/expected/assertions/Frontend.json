@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend-customer-customer-address-detail-page-customeraddressdetailpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Customer_Address_Detail_Page/CustomerAddressDetailPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-customer-address-detail-page-addresscard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Customer_Address_Detail_Page/AddressCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-customer-address-detail-page-customerdetailmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Customer_Address_Detail_Page/CustomerDetailMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

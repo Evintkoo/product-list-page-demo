@@ -1,0 +1,37 @@
+[
+  {
+    "id": "frontend-sales-details-store-salesdetailspage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Details_-_Store/SalesDetailsPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-sales-details-store-hooks-usesalesdata-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Details_-_Store/hooks_useSalesData.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-sales-details-store-components-workflowstatusbar-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Details_-_Store/components_WorkflowStatusBar.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-sales-details-store-components-confirmationmodal-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Details_-_Store/components_ConfirmationModal.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-sales-details-store-components-salesdetailsview-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Details_-_Store/components_SalesDetailsView.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

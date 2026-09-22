@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-get-api-taxes-taxrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_taxes/TaxRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-tax",
+    "category": "structural",
+    "target": "Data/GET_api_taxes/TaxRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "TAX"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"TAX\" entity."
+  }
+]

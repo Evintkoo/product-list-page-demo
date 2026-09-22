@@ -1,0 +1,46 @@
+[
+  {
+    "id": "data-customer-franchisee-customers-detail-page-customerrepository-md-exists",
+    "category": "structural",
+    "target": "Data/Customer_-_Franchisee_Customers_Detail_Page/CustomerRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-customer-franchisee-customers-detail-page-customercontroller-md-exists",
+    "category": "structural",
+    "target": "Data/Customer_-_Franchisee_Customers_Detail_Page/CustomerController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/Customer_-_Franchisee_Customers_Detail_Page/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Customer\" entity."
+  },
+  {
+    "id": "schema-declares-user",
+    "category": "structural",
+    "target": "Data/Customer_-_Franchisee_Customers_Detail_Page/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "User"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"User\" entity."
+  },
+  {
+    "id": "schema-declares-pricelist",
+    "category": "structural",
+    "target": "Data/Customer_-_Franchisee_Customers_Detail_Page/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Pricelist"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Pricelist\" entity."
+  }
+]

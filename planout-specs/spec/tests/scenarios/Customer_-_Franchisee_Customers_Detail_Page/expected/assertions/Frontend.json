@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend-customer-franchisee-customers-detail-page-franchiseecustomerdetailpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Franchisee_Customers_Detail_Page/FranchiseeCustomerDetailPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-franchisee-customers-detail-page-api-customerservice-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Franchisee_Customers_Detail_Page/api_customerService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-customer-franchisee-customers-detail-page-components-customercards-md-exists",
+    "category": "structural",
+    "target": "Frontend/Customer_-_Franchisee_Customers_Detail_Page/components_CustomerCards.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

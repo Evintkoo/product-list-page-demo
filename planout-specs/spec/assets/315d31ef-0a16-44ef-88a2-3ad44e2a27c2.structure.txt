@@ -1,0 +1,15 @@
+Canvas: 1266×40px
+
+├─ rect [0,0 1266×40]  fill=#ffffff
+├─ divider [0,39 1266×0]  stroke=#e0e0e0
+├─ text [14,20 0×0] "Product"  fill=#5b5fc7 bold
+├─ divider [14,30 58×0]  stroke=#5b5fc7
+├─ text [99,20 0×0] "Store Stocks"  fill=#8a8a8a
+├─ text [208,20 0×0] "Warehouse Stocks"  fill=#8a8a8a
+├─ text [349,20 0×0] "Reservation"  fill=#8a8a8a
+├─ text [453,20 0×0] "In Transit"  fill=#8a8a8a
+├─ text [545,20 0×0] "Stock History"  fill=#8a8a8a
+├─ text [656,20 0×0] "Warehouse History"  fill=#8a8a8a
+├─ text [805,20 0×0] "Product History"  fill=#8a8a8a
+├─ text [944,20 0×0] "Purchase History"  fill=#8a8a8a
+└─ text [1086,20 0×0] "Substitutes"  fill=#8a8a8a

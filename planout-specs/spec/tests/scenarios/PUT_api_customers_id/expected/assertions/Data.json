@@ -1,0 +1,39 @@
+[
+  {
+    "id": "data-put-api-customers-id-customerrepository-md-exists",
+    "category": "structural",
+    "target": "Data/PUT_api_customers_id/CustomerRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/PUT_api_customers_id/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "CUSTOMER"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"CUSTOMER\" entity."
+  },
+  {
+    "id": "schema-declares-address",
+    "category": "structural",
+    "target": "Data/PUT_api_customers_id/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ADDRESS"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ADDRESS\" entity."
+  },
+  {
+    "id": "schema-declares-company",
+    "category": "structural",
+    "target": "Data/PUT_api_customers_id/CustomerRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "COMPANY"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"COMPANY\" entity."
+  }
+]

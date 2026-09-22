@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-sales-order-detals-quotation-deliveries-invoices-returns-salesorderrelateddocspage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Sales_Order_Detals_-_Quotation_Deliveries_Invoices_Returns/SalesOrderRelatedDocsPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]
