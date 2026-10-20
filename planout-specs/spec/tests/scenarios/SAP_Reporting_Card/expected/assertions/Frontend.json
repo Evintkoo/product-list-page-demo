@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-sap-reporting-card-sapreportingcard-md-exists",
-    "category": "structural",
-    "target": "Frontend/SAP_Reporting_Card/SapReportingCard.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

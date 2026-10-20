@@ -1,42 +1,27 @@
-/**
- * Component: ProductsSubMenu
- * Description: An accordion-style navigation menu for the Products section.
- * Manages active state for navigation items and handles routing to specific pages.
- * Asset: assets/cc78e296-781a-4513-833b-16dccbb06c20.svg
- */
+.products-sub-menu-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+.menu-header {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+}
 
-export const ProductsSubMenu = () => {
-  // State to track the currently active navigation item.
-  // Default state is set to "Products" as per requirements.
-  const [activeItem, setActiveItem] = useState<string>('Products');
-  const navigate = useNavigate();
+.sub-menu-list {
+  list-style: none;
+  padding-left: 20px;
+}
 
-  // Navigation handler for menu items
-  const handleNavigation = (item: string, path: string) => {
-    setActiveItem(item);
-    navigate(path);
-  };
+.sub-menu-list li {
+  cursor: pointer;
+  padding: 8px;
+}
 
-  return (
-    <nav className="products-sub-menu-accordion">
-      {/* Products Menu Item */}
-      <div 
-        className={`menu-item ${activeItem === 'Products' ? 'active' : ''}`}
-        onClick={() => handleNavigation('Products', '/products')}
-      >
-        Products
-      </div>
-
-      {/* Service Products Menu Item */}
-      <div 
-        className={`menu-item ${activeItem === 'Service Products' ? 'active' : ''}`}
-        onClick={() => handleNavigation('Service Products', '/service-products')}
-      >
-        Service Products
-      </div>
-    </nav>
-  );
-};
+.sub-menu-list li.active {
+  background-color: #e0e0e0;
+  font-weight: bold;
+  border-left: 4px solid #007bff;
+}

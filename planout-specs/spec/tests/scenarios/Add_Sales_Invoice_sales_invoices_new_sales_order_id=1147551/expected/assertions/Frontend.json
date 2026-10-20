@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-add-sales-invoice-sales-invoices-new-sales-order-id-1147551-newsalesinvoicepage-md-exists",
-    "category": "structural",
-    "target": "Frontend/Add_Sales_Invoice_sales_invoices_new_sales_order_id=1147551/NewSalesInvoicePage.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

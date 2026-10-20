@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-tax-modal-taxmodal-md-exists",
-    "category": "structural",
-    "target": "Frontend/TAX_Modal/TaxModal.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

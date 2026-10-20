@@ -1,26 +1,39 @@
 /**
- * Service layer to interact with the database schema.
+ * Service for executing complex queries against the Product entity.
  */
-function search(criteria) {
-    // Build query dynamically based on provided criteria
-    let query = Database.table('Product');
-
-    if (criteria.sku) query.where('sku', 'LIKE', `%${criteria.sku}%`);
-    if (criteria.name) query.where('name', 'LIKE', `%${criteria.name}%`);
-    if (criteria.product_code) query.where('product_code', 'LIKE', `%${criteria.product_code}%`);
-    if (criteria.product_brand_id) query.where('product_brand_id', '=', criteria.product_brand_id);
-    if (criteria.product_type_id) query.where('product_type_id', '=', criteria.product_type_id);
-    if (criteria.tax_id) query.where('tax_id', '=', criteria.tax_id);
+function search(filters) {
+    // Verify existence of foreign keys if provided
+    if (filters.brand_id && !ProductBrand.exists(filters.brand_id)) throw new NotFoundError("Brand not found");
+    if (filters.type_id && !ProductType.exists(filters.type_id)) throw new NotFoundError("Type not found");
+    if (filters.tax_id && !Tax.exists(filters.tax_id)) throw new NotFoundError("Tax not found");
     
-    // Handle Tag filtering via join
-    if (criteria.tag_ids) {
-        query.join('ProductTag', 'Product.id', '=', 'ProductTag.product_id')
-             .whereIn('ProductTag.tag_id', criteria.tag_ids);
+    if (filters.tag_ids) {
+        filters.tag_ids.forEach(id => {
+            if (!Tag.exists(id)) throw new NotFoundError("Tag not found");
+        });
     }
 
-    if (criteria.info_1) query.where('info_1', 'LIKE', `%${criteria.info_1}%`);
-    if (criteria.info_2) query.where('info_2', 'LIKE', `%${criteria.info_2}%`);
-    if (criteria.info_3) query.where('info_3', 'LIKE', `%${criteria.info_3}%`);
+    // Build Query
+    let query = Product.query();
 
-    return query.orderBy(criteria.sort).limit(criteria.limit).fetchAll();
+    if (filters.sku) query.where("sku", "LIKE", `%${filters.sku}%`);
+    if (filters.name) query.where("name", "LIKE", `%${filters.name}%`);
+    if (filters.product_code) query.where("product_code", "LIKE", `%${filters.product_code}%`);
+    if (filters.brand_id) query.where("product_brand_id", filters.brand_id);
+    if (filters.type_id) query.where("product_type_id", filters.type_id);
+    if (filters.tax_id) query.where("tax_id", filters.tax_id);
+    
+    if (filters.tag_ids) {
+        query.whereIn("id", ProductTag.select("product_id").whereIn("tag_id", filters.tag_ids));
+    }
+
+    if (filters.info_1) query.where("info_1", "LIKE", `%${filters.info_1}%`);
+    if (filters.info_2) query.where("info_2", "LIKE", `%${filters.info_2}%`);
+    if (filters.info_3) query.where("info_3", "LIKE", `%${filters.info_3}%`);
+
+    // Apply Sorting and Pagination
+    if (filters.sort) query.orderBy(filters.sort);
+    if (filters.limit) query.limit(filters.limit);
+
+    return query.execute();
 }

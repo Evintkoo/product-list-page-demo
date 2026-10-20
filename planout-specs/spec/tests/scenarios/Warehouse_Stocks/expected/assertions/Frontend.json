@@ -5,5 +5,19 @@
     "target": "Frontend/Warehouse_Stocks/WarehouseStockPage.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-warehouse-stocks-api-md-exists",
+    "category": "structural",
+    "target": "Frontend/Warehouse_Stocks/api.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-warehouse-stocks-validation-md-exists",
+    "category": "structural",
+    "target": "Frontend/Warehouse_Stocks/validation.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }
 ]

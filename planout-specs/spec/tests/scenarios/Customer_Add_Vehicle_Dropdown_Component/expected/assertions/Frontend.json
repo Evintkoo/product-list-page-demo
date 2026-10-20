@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-customer-add-vehicle-dropdown-component-vehicledropdowncomponent-md-exists",
-    "category": "structural",
-    "target": "Frontend/Customer_Add_Vehicle_Dropdown_Component/VehicleDropdownComponent.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

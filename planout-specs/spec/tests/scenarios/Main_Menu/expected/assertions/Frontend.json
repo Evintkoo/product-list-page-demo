@@ -7,16 +7,16 @@
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-main-menu-submenurenderer-md-exists",
+    "id": "frontend-main-menu-mainheaderlogic-md-exists",
     "category": "structural",
-    "target": "Frontend/Main_Menu/SubMenuRenderer.md",
+    "target": "Frontend/Main_Menu/MainHeaderLogic.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-main-menu-hooks-usedebounce-md-exists",
+    "id": "frontend-main-menu-productsmenu-md-exists",
     "category": "structural",
-    "target": "Frontend/Main_Menu/hooks_useDebounce.md",
+    "target": "Frontend/Main_Menu/ProductsMenu.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }

@@ -1,9 +1,0 @@
-[
-  {
-    "id": "feature-has-files",
-    "category": "cross-swimlane",
-    "target": "Data/PATCH_api_stock-outgoings_id/StockOutgoingController.md",
-    "check": "file_exists",
-    "rationale": "Feature must produce at least one file across all swimlanes."
-  }
-]

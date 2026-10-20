@@ -7,9 +7,9 @@
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
-    "id": "data-get-api-products-id-productmapper-md-exists",
+    "id": "data-get-api-products-id-errorschemas-md-exists",
     "category": "structural",
-    "target": "Data/GET_api_products_id/ProductMapper.md",
+    "target": "Data/GET_api_products_id/ErrorSchemas.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },

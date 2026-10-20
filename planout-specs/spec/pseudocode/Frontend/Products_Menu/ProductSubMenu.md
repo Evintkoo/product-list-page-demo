@@ -1,28 +1,19 @@
-import React from 'react';
-
 /**
- * Product Sub Menu Shared Component
- * Sticky positioning ensures it stays below the Main menu Header
+ * Component: ProductSubMenu
+ * Description: Accordion sub-menu for Products navigation.
  */
+
 export const ProductSubMenu = () => {
   return (
-    <div className="product-sub-menu-container" style={{ position: 'sticky', top: 'var(--main-header-height)' }}>
-      <ul className="sub-menu-list">
-        <li onClick={() => navigateTo('StandardVoucherList')}>Standard</li>
-        <li onClick={() => navigateTo('BatchVoucherList')}>Batch</li>
-        <li onClick={() => navigateTo('FlexibleVouchersPage')}>Flexible</li>
-      </ul>
-    </div>
+    <ul className="sub-menu-list">
+      {/* 
+         Navigation items within the sub-menu.
+         ORPHAN_FIELD: sub_menu_link_path 
+         ORPHAN_FIELD: sub_menu_link_label 
+      */}
+      <li className="sub-menu-item">Inventory</li>
+      <li className="sub-menu-item">Categories</li>
+      <li className="sub-menu-item">Pricing</li>
+    </ul>
   );
 };
-
-// Helper function for navigation
-const navigateTo = (pageId: string) => {
-  // Implementation for routing to specific page
-  console.log(`Navigating to: ${pageId}`);
-};
-
-// ORPHAN_FIELD: StandardVoucherList
-// ORPHAN_FIELD: BatchVoucherList
-// ORPHAN_FIELD: FlexibleVouchersPage
-// ORPHAN_FIELD: main-header-height

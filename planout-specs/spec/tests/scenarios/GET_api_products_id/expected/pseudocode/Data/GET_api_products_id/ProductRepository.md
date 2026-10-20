@@ -6,15 +6,16 @@
 FUNCTION findProductById(productId):
     // Validate that the provided ID is a valid UUID format
     IF NOT isValidUuid(productId) THEN
-        THROW Error("400", "Invalid product ID format")
+        THROW Error("Invalid ID format", "400")
     END IF
 
-    // Query the database for the product record
-    SET productRecord = DB.table("Product").select("*").where("id", "=", productId).first()
+    // Query the Product table for the specific record
+    SET product = DATABASE.query("SELECT * FROM Product WHERE id = ?", [productId])
 
     // If no record is found, return null to trigger a 404 in the controller
-    IF productRecord IS NULL THEN
+    IF product IS EMPTY THEN
         RETURN NULL
     END IF
 
-    RETURN productRecord
+    RETURN product
+END FUNCTION

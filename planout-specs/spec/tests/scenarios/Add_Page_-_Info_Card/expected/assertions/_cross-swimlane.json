@@ -1,9 +1,0 @@
-[
-  {
-    "id": "feature-has-files",
-    "category": "cross-swimlane",
-    "target": "Frontend/Add_Page_-_Info_Card/ServiceInfoCard.md",
-    "check": "file_exists",
-    "rationale": "Feature must produce at least one file across all swimlanes."
-  }
-]

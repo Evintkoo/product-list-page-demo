@@ -3,22 +3,24 @@
  * Handles database interaction for the GET /api/products endpoint.
  */
 
-FUNCTION getProducts(page: integer, limit: integer):
+FUNCTION getProducts(page, limit):
     // Calculate offset for SQL pagination
     SET offset = (page - 1) * limit
 
     // Fetch total count for metadata
-    SET totalCount = SELECT COUNT(*) FROM Product
+    SET totalCount = DATABASE.query("SELECT COUNT(*) FROM Product")
 
     // Fetch paginated records
-    SET productList = SELECT id, name, sku, price, stock_quantity, created_at 
-                      FROM Product 
-                      ORDER BY created_at DESC 
-                      LIMIT limit 
-                      OFFSET offset
+    SET products = DATABASE.query(
+        "SELECT id, name, sku, price, stock_quantity, created_at 
+         FROM Product 
+         ORDER BY created_at DESC 
+         LIMIT :limit OFFSET :offset",
+        { limit: limit, offset: offset }
+    )
 
     RETURN {
-        data: productList,
+        data: products,
         meta: {
             total: totalCount,
             page: page,
@@ -26,17 +28,13 @@ FUNCTION getProducts(page: integer, limit: integer):
         }
     }
 
-// Handle potential database connection errors or query failures
-ON DATABASE_ERROR:
-    THROW InternalServerError("Database query failed")
+FUNCTION getProductById(id):
+    // Fetch a single product record
+    SET product = DATABASE.query(
+        "SELECT id, name, sku, price, stock_quantity, created_at 
+         FROM Product 
+         WHERE id = :id",
+        { id: id }
+    )
 
-// Handle cases where no products exist (empty set is valid, not 404)
-ON EMPTY_RESULT:
-    RETURN {
-        data: [],
-        meta: {
-            total: 0,
-            page: page,
-            limit: limit
-        }
-    }
+    RETURN product // Returns null if not found, handled by service layer

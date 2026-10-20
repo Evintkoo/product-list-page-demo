@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-detail-page-changes-card-changescard-md-exists",
-    "category": "structural",
-    "target": "Frontend/Detail_Page_-_Changes_Card/ChangesCard.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

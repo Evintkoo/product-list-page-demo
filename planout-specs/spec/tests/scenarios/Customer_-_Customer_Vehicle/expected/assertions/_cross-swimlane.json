@@ -1,9 +1,0 @@
-[
-  {
-    "id": "feature-has-files",
-    "category": "cross-swimlane",
-    "target": "Logic/Customer_-_Customer_Vehicle/useCustomerVehicles.md",
-    "check": "file_exists",
-    "rationale": "Feature must produce at least one file across all swimlanes."
-  }
-]

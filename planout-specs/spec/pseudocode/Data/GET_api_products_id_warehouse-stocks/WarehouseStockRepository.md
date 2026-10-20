@@ -1,7 +1,7 @@
 /**
  * Data access layer for retrieving stock levels.
  * This repository handles the join between WarehouseStock and Warehouse 
- * to provide human-readable warehouse information alongside stock counts.
+ * to provide human-readable warehouse details alongside stock quantities.
  */
 
 FUNCTION getStocksByProductId(productId: uuid):
@@ -10,13 +10,13 @@ FUNCTION getStocksByProductId(productId: uuid):
     // Return a list of objects containing:
     // - warehouse_name (from Warehouse.name)
     // - quantity_on_hand (from WarehouseStock.quantity_on_hand)
-    // - updated_at (from WarehouseStock.updated_at)
+    // - last_updated (from WarehouseStock.last_updated)
     
     RETURN DB.query(
         SELECT 
             w.name AS warehouse_name, 
             ws.quantity_on_hand, 
-            ws.updated_at
+            ws.last_updated
         FROM WarehouseStock ws
         JOIN Warehouse w ON ws.warehouse_id = w.id
         WHERE ws.product_id = productId

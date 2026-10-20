@@ -1,9 +1,0 @@
-[
-  {
-    "id": "feature-has-files",
-    "category": "cross-swimlane",
-    "target": "Data/Sales_Invoice_JSON_Schema/SalesInvoiceRepository.md",
-    "check": "file_exists",
-    "rationale": "Feature must produce at least one file across all swimlanes."
-  }
-]

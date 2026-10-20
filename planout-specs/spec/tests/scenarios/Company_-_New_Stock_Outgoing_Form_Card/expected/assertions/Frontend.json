@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-company-new-stock-outgoing-form-card-stockoutgoingformcard-md-exists",
-    "category": "structural",
-    "target": "Frontend/Company_-_New_Stock_Outgoing_Form_Card/StockOutgoingFormCard.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

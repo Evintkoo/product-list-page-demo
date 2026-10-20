@@ -1,5 +1,0 @@
-Canvas: 220×106px
-
-├─ card [1,1 218×104]  fill=#ffffff stroke=#d9d9d9 rx=10
-├─ text [20,38 0×0] "Internal"  fill=#1a1a1a 16px
-└─ text [20,76 0×0] "Standard (External)"  fill=#1a1a1a 16px

@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-new-franchise-purchase-return-dropdown-franchisepurchasereturndropdown-md-exists",
-    "category": "structural",
-    "target": "Frontend/New_Franchise_Purchase_Return_Dropdown/FranchisePurchaseReturnDropdown.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

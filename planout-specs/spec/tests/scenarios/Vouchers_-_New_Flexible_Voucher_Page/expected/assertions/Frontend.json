@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-vouchers-new-flexible-voucher-page-newflexiblevoucherpage-md-exists",
-    "category": "structural",
-    "target": "Frontend/Vouchers_-_New_Flexible_Voucher_Page/NewFlexibleVoucherPage.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

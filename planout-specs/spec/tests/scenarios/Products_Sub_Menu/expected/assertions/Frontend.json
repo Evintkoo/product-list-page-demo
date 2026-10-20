@@ -7,9 +7,9 @@
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-products-sub-menu-useproductnavigation-md-exists",
+    "id": "frontend-products-sub-menu-productssubmenu-md-exists",
     "category": "structural",
-    "target": "Frontend/Products_Sub_Menu/useProductNavigation.md",
+    "target": "Frontend/Products_Sub_Menu/ProductsSubMenu.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }

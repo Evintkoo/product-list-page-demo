@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-supplier-detail-menu-supplierdetailmenu-md-exists",
-    "category": "structural",
-    "target": "Frontend/Supplier_Detail_Menu/SupplierDetailMenu.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

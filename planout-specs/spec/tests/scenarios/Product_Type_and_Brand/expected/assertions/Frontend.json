@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-product-type-and-brand-producttypebrandselector-md-exists",
-    "category": "structural",
-    "target": "Frontend/Product_Type_and_Brand/ProductTypeBrandSelector.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

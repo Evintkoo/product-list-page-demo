@@ -1,20 +1,30 @@
 /**
- * Handles UI events for the Product List Page
+ * Handles the logic for the Product List Page.
+ * Orchestrates data fetching and mapping for the UI.
  */
 class ProductController {
     
-    // Triggered on initial page load
-    async onPageLoad() {
-        return await getProducts({ status: 'active', page: 1, limit: 20 });
-    }
+    // State to hold the current list of products
+    private products = [];
 
-    // Triggered by clicking Active/Inactive tabs
-    async onStatusTabChange(status: string) {
-        return await getProducts({ status: status, page: 1, limit: 20 });
-    }
+    /**
+     * Triggered on Page Load or when the Search/Filter button is clicked.
+     */
+    async loadProductList(filters: { search?: string, brandName?: string }, pagination: { page: number, limit: number }) {
+        const response = await fetchProducts({
+            ...pagination,
+            ...filters
+        });
 
-    // Triggered by clicking the Apply Search button
-    async onApplySearch(searchTerm: string) {
-        return await getProducts({ search: searchTerm, page: 1, limit: 20 });
+        this.products = response.map(product => ({
+            sku: product.sku,
+            productName: product.productName,
+            brandName: product.brandName,
+            productCode: product.productCode,
+            tax: product.tax,
+            price: product.price
+        }));
+
+        return this.products;
     }
 }

@@ -1,21 +1,15 @@
 /**
- * API Service for Product operations
+ * API Contract Implementation
  */
-export const fetchProducts = async (params: { 
-  status?: string, 
-  search?: string, 
-  page?: number, 
-  limit?: number 
-}) => {
-  // Construct query string from params
-  const query = new URLSearchParams(params as any).toString();
-  
-  const response = await fetch(`/products?${query}`, {
-    method: 'GET',
-    headers: { 'Content-Type': 'application/json' }
-  });
+export const fetchProducts = async (params) => {
+  // Maps to GET /products
+  const query = new URLSearchParams({
+    page: params.page,
+    limit: params.limit,
+    search: params.search,
+    brandName: params.brandName
+  }).toString();
 
-  if (!response.ok) throw new Error('Failed to fetch products');
-  
+  const response = await fetch(`/products?${query}`, { method: 'GET' });
   return response.json();
 };

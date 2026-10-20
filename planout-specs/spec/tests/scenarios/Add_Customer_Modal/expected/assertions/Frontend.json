@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-add-customer-modal-addcustomermodal-md-exists",
-    "category": "structural",
-    "target": "Frontend/Add_Customer_Modal/AddCustomerModal.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

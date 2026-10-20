@@ -1,9 +1,0 @@
-[
-  {
-    "id": "feature-has-files",
-    "category": "cross-swimlane",
-    "target": "Data/Sales_Invoice_Detail_-_Company_sales_invoices_[record_id]#details-tab-content/SalesInvoiceService.md",
-    "check": "file_exists",
-    "rationale": "Feature must produce at least one file across all swimlanes."
-  }
-]

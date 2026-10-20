@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-sales-invoice-detail-company-navigation-tab-component-salesinvoicenavigationtabs-md-exists",
-    "category": "structural",
-    "target": "Frontend/Sales_Invoice_Detail_-_Company_Navigation_Tab_Component/SalesInvoiceNavigationTabs.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

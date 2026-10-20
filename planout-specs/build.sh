@@ -76,10 +76,10 @@ cd "$(dirname "$0")"
 # auto-detected Claude AGENT_CMD — if you override AGENT_CMD, add your own cap.
 #
 # The default is a per-project estimate the server substitutes for
-# 50 at generation (sized to this bundle's features /
+# 27 at generation (sized to this bundle's features /
 # pseudocode / assets). If this bundle was assembled without the server, the
 # placeholder is left as-is; the numeric guard below then falls back to a flat 15.
-DEFAULT_BUDGET_USD="50"
+DEFAULT_BUDGET_USD="27"
 case "$DEFAULT_BUDGET_USD" in ''|*[!0-9.]*) DEFAULT_BUDGET_USD="15" ;; esac
 MAX_BUDGET_USD="${MAX_BUDGET_USD-$DEFAULT_BUDGET_USD}"
 if [ -n "$MAX_BUDGET_USD" ] && [ "$MAX_BUDGET_USD" != "0" ]; then

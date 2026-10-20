@@ -1,0 +1,16 @@
+[
+  {
+    "id": "frontend-purchase-history-purchasehistorypage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Purchase_History/PurchaseHistoryPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-purchase-history-api-purchaseservice-md-exists",
+    "category": "structural",
+    "target": "Frontend/Purchase_History/api_purchaseService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

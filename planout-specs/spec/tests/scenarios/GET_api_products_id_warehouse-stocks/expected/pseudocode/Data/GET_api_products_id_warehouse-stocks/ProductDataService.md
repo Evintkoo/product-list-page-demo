@@ -1,14 +1,15 @@
 /**
- * Service layer to validate existence of the product before fetching stocks.
+ * Service layer to bridge the API controller and the database.
+ * Ensures data integrity and handles empty states.
  */
 
-FUNCTION validateProductExists(productId: uuid):
-    // Check if the product exists in the Product table
-    // If not found, throw a "Product Not Found" exception
+FUNCTION fetchWarehouseStocksForProduct(productId: uuid):
+    // Validate that the product exists in the system
+    IF NOT Product.exists(productId):
+        THROW Error("Product not found")
     
-    LET product = DB.query(SELECT id FROM Product WHERE id = productId)
+    // Retrieve stock data from the repository
+    stocks = WarehouseStockRepository.getStocksByProductId(productId)
     
-    IF product IS NULL:
-        THROW Error("Product with ID " + productId + " does not exist.")
-    
-    RETURN TRUE
+    // Return the formatted list
+    RETURN stocks

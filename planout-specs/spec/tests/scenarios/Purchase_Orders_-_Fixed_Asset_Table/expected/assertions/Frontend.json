@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-purchase-orders-fixed-asset-table-fixedassetpurchaseordertable-md-exists",
-    "category": "structural",
-    "target": "Frontend/Purchase_Orders_-_Fixed_Asset_Table/FixedAssetPurchaseOrderTable.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

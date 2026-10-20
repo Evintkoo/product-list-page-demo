@@ -12,5 +12,12 @@
     "target": "Frontend/Product_List_Page/api.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-list-page-submenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_List_Page/SubMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }
 ]

@@ -1,43 +1,52 @@
-FUNCTION getProductWarehouseStocks(request, response):
-    // 1. Validate path parameter
-    SET productId = request.params.id
-    
-    // 2. Verify Product existence
-    IF NOT Product.exists(id = productId):
-        RETURN response.status(404).json({ error: "Product not found" })
+/**
+ * Controller to handle retrieval of warehouse stocks for a specific product.
+ */
+async function getProductWarehouseStocks(req, res) {
+    const { id: productId } = req.params;
+    const { warehouse_id, name, location_code, page = 1, limit = 20 } = req.query;
 
-    // 3. Extract query filters and pagination
-    SET filters = {
-        warehouse_id: request.query.warehouse_id,
-        name: request.query.name,
-        location_code: request.query.location_code
+    // 1. Validate Product existence
+    const product = await db.Product.findOne({ where: { id: productId } });
+    if (!product) {
+        return res.status(404).json({ error: "Product not found", code: "PRODUCT_NOT_FOUND" });
     }
-    SET page = request.query.page OR 1
-    SET limit = request.query.limit OR 20
 
-    // 4. Fetch joined data
-    // Join WarehouseStock with Warehouse on warehouse_id
-    // Apply filters and pagination
-    SET stockRecords = WarehouseStock.findMany(
-        where: { product_id: productId, ...filters },
-        include: Warehouse,
-        limit: limit,
-        offset: (page - 1) * limit
-    )
+    // 2. Build query filters for Warehouse and WarehouseStock
+    const whereClause = { product_id: productId };
+    const warehouseFilters = {};
 
-    // 5. Calculate derived fields
-    // Note: reserved_quantity, in_transit_quantity, and total_cost are calculated 
-    // based on business logic rules for the specific ERP implementation.
-    FOR EACH record IN stockRecords:
-        record.reserved_quantity = calculateReserved(record) <!-- MISSING_FIELD: WarehouseStock.reserved_quantity -->
-        record.in_transit_quantity = calculateInTransit(record) <!-- MISSING_FIELD: WarehouseStock.in_transit_quantity -->
-        record.total_cost = calculateCost(record) <!-- MISSING_FIELD: WarehouseStock.total_cost -->
-    END FOR
+    if (warehouse_id) warehouseFilters.id = warehouse_id;
+    if (name) warehouseFilters.name = name;
+    if (location_code) warehouseFilters.location_code = location_code;
 
-    // 6. Prepare response
-    SET totalCount = WarehouseStock.count(where: { product_id: productId, ...filters })
-    
-    RETURN response.status(200).json({
-        total_quantity: totalCount,
-        data: stockRecords
-    })
+    // 3. Fetch stocks joined with Warehouse data
+    const { rows, count } = await db.WarehouseStock.findAndCountAll({
+        where: whereClause,
+        include: [{
+            model: db.Warehouse,
+            where: warehouseFilters,
+            required: true
+        }],
+        limit: parseInt(limit),
+        offset: (parseInt(page) - 1) * parseInt(limit)
+    });
+
+    // 4. Calculate additional metrics
+    // Note: reserved/in-transit/cost fields are derived logic
+    const processedData = rows.map(stock => ({
+        id: stock.id,
+        quantity_on_hand: stock.quantity_on_hand,
+        warehouse_name: stock.Warehouse.name,
+        location_code: stock.Warehouse.location_code,
+        last_updated: stock.last_updated,
+        reserved_quantity: 0, <!-- MISSING_FIELD: WarehouseStock.reserved_quantity -->
+        in_transit_quantity: 0, <!-- MISSING_FIELD: WarehouseStock.in_transit_quantity -->
+        total_cost: 0 <!-- MISSING_FIELD: WarehouseStock.total_cost -->
+    }));
+
+    // 5. Return response
+    return res.status(200).json({
+        total_quantity: count,
+        data: processedData
+    });
+}

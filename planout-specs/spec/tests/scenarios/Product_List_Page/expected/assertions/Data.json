@@ -7,6 +7,13 @@
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
+    "id": "data-product-list-page-productmapper-md-exists",
+    "category": "structural",
+    "target": "Data/Product_List_Page/ProductMapper.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
     "id": "schema-declares-product",
     "category": "structural",
     "target": "Data/Product_List_Page/ProductRepository.md",
@@ -15,15 +22,5 @@
       "entity": "Product"
     },
     "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
-  },
-  {
-    "id": "schema-declares-category",
-    "category": "structural",
-    "target": "Data/Product_List_Page/ProductRepository.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "Category"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"Category\" entity."
   }
 ]

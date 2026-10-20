@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-purchase-history-json-schema-purchasehistoryschema-md-exists",
+    "category": "structural",
+    "target": "Data/Purchase_History_JSON_Schema/PurchaseHistorySchema.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-purchase_history",
+    "category": "structural",
+    "target": "Data/Purchase_History_JSON_Schema/PurchaseHistorySchema.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PURCHASE_HISTORY"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PURCHASE_HISTORY\" entity."
+  }
+]

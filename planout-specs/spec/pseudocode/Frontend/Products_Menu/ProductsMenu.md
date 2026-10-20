@@ -1,40 +1,55 @@
-import React, { useState } from 'react';
-
 /**
- * ProductsMenu Navigation Component
+ * Component: ProductsMenu
+ * Description: Navigation list for the ERP Products section.
  * Asset: assets/16fbbd8a-2141-4a70-a6bc-1c62a3c55ee3.svg
  */
+
+import React, { useState } from 'react';
+
 export const ProductsMenu = () => {
+  // State to track the currently active navigation item
   const [activeItem, setActiveItem] = useState<string>('Products');
-  const [isProductsExpanded, setIsProductsExpanded] = useState<boolean>(true);
+  
+  // State to track accordion visibility for sub-menus
+  const [isSubMenuOpen, setIsSubMenuOpen] = useState<boolean>(true);
 
-  const handleNavigationClick = (itemName: string) => {
+  /**
+   * Handles navigation item clicks.
+   * Updates active state and toggles accordion if sub-menu exists.
+   */
+  const handleNavigationClick = (itemName: string, hasSubMenu: boolean) => {
     setActiveItem(itemName);
-    // Logic to route to corresponding page would be triggered here
-  };
-
-  const toggleProductsMenu = () => {
-    setIsProductsExpanded(!isProductsExpanded);
+    
+    if (hasSubMenu) {
+      setIsSubMenuOpen(!isSubMenuOpen);
+    } else {
+      // Logic to route to the corresponding default page
+      navigateToPage(itemName);
+    }
   };
 
   return (
-    <nav className="products-navigation">
+    <nav className="products-menu-container">
       <ul>
-        {/* Products Item with Accordion Toggle */}
+        {/* Products Item - Default Active State */}
         <li 
-          className={activeItem === 'Products' ? 'active' : ''}
-          onClick={() => {
-            handleNavigationClick('Products');
-            toggleProductsMenu();
-          }}
+          className={`nav-item ${activeItem === 'Products' ? 'active' : ''}`}
+          onClick={() => handleNavigationClick('Products', true)}
         >
-          Products
-          <span className="chevron">{isProductsExpanded ? '▼' : '▶'}</span>
+          <span>Products</span>
+          {/* Chevron icon indicates sub-menu toggle capability */}
+          <ChevronIcon isOpen={isSubMenuOpen} />
         </li>
 
         {/* Product Sub Menu Component (Accordion) */}
-        {isProductsExpanded && (
-          <ProductSubMenu />
+        {isSubMenuOpen && (
+          <div className="product-sub-menu">
+            {/* 
+               ORPHAN_FIELD: sub_menu_items 
+               (Expected to be populated by a data source or static config)
+            */}
+            <ProductSubMenu />
+          </div>
         )}
       </ul>
     </nav>

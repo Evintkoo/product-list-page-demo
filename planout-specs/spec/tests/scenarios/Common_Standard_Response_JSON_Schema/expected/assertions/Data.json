@@ -7,6 +7,13 @@
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
+    "id": "data-common-standard-response-json-schema-responsefactory-md-exists",
+    "category": "structural",
+    "target": "Data/Common_Standard_Response_JSON_Schema/ResponseFactory.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
     "id": "schema-declares-apiresponse",
     "category": "structural",
     "target": "Data/Common_Standard_Response_JSON_Schema/ApiResponseTypes.md",

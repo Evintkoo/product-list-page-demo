@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-customer-add-wholesale-page-details-card-customerdetailscard-md-exists",
-    "category": "structural",
-    "target": "Frontend/Customer_Add_Wholesale_Page_-_Details_Card/CustomerDetailsCard.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

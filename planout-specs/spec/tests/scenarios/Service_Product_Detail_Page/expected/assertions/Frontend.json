@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-service-product-detail-page-serviceproductdetailpage-md-exists",
-    "category": "structural",
-    "target": "Frontend/Service_Product_Detail_Page/ServiceProductDetailPage.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-address-filter-modal-addressfiltermodal-md-exists",
-    "category": "structural",
-    "target": "Frontend/Address_Filter_Modal/AddressFilterModal.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-add-page-tax-card-taxcard-md-exists",
-    "category": "structural",
-    "target": "Frontend/Add_Page_-_Tax_Card/TaxCard.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

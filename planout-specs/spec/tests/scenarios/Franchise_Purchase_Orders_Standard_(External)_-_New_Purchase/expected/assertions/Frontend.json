@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-franchise-purchase-orders-standard-external-new-purchase-franchisepurchaseorderform-md-exists",
-    "category": "structural",
-    "target": "Frontend/Franchise_Purchase_Orders_Standard_(External)_-_New_Purchase/FranchisePurchaseOrderForm.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

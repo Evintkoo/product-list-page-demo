@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-add-page-store-pricing-card-storepricingcard-md-exists",
-    "category": "structural",
-    "target": "Frontend/Add_Page_-_Store_Pricing_Card/StorePricingCard.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

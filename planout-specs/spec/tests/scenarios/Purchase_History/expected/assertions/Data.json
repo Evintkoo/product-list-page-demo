@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-purchase-history-purchaserepository-md-exists",
+    "category": "structural",
+    "target": "Data/Purchase_History/PurchaseRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-purchase-history-purchasecontroller-md-exists",
+    "category": "structural",
+    "target": "Data/Purchase_History/PurchaseController.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/Purchase_History/PurchaseRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  },
+  {
+    "id": "schema-declares-purchase",
+    "category": "structural",
+    "target": "Data/Purchase_History/PurchaseRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Purchase"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Purchase\" entity."
+  }
+]

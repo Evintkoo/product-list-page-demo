@@ -7,13 +7,6 @@
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
-    "id": "data-product-schema-warehouserepository-md-exists",
-    "category": "structural",
-    "target": "Data/Product_Schema/WarehouseRepository.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
-  },
-  {
     "id": "schema-declares-products",
     "category": "structural",
     "target": "Data/Product_Schema/ProductRepository.md",
@@ -32,16 +25,6 @@
       "entity": "store_stocks"
     },
     "rationale": "Data-tier SCHEMA block must declare the \"store_stocks\" entity."
-  },
-  {
-    "id": "schema-declares-warehouse_inventory",
-    "category": "structural",
-    "target": "Data/Product_Schema/ProductRepository.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "warehouse_inventory"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"warehouse_inventory\" entity."
   },
   {
     "id": "schema-declares-productbrand",
@@ -82,5 +65,35 @@
       "entity": "ProductTagMapping"
     },
     "rationale": "Data-tier SCHEMA block must declare the \"ProductTagMapping\" entity."
+  },
+  {
+    "id": "schema-declares-warehouse_stocks",
+    "category": "structural",
+    "target": "Data/Product_Schema/ProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "warehouse_stocks"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"warehouse_stocks\" entity."
+  },
+  {
+    "id": "schema-declares-warehouses",
+    "category": "structural",
+    "target": "Data/Product_Schema/ProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "warehouses"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"warehouses\" entity."
+  },
+  {
+    "id": "schema-declares-product_history",
+    "category": "structural",
+    "target": "Data/Product_Schema/ProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "product_history"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"product_history\" entity."
   }
 ]

@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-deactivate-customer-modal-deactivatecustomermodal-md-exists",
-    "category": "structural",
-    "target": "Frontend/Deactivate_Customer_Modal/DeactivateCustomerModal.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

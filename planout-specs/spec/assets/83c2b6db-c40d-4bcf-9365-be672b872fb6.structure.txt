@@ -1,9 +1,0 @@
-Canvas: 1440×44px
-
-├─ rect [0,0 1440×44]  fill=white
-├─ text-path [25,17 38×9]  fill=#4A54C4
-├─ icon [73,21 6×3]  stroke=#4A54C4
-├─ text-path [107,17 56×12]  fill=#565B66
-├─ icon [172,21 6×3]  stroke=#565B66
-├─ text-path [206,17 44×10]  fill=#565B66
-└─ icon [260,21 6×3]  stroke=#565B66

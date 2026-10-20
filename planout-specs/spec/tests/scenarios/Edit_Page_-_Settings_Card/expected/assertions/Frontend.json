@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-edit-page-settings-card-servicesettingscard-md-exists",
-    "category": "structural",
-    "target": "Frontend/Edit_Page_-_Settings_Card/ServiceSettingsCard.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

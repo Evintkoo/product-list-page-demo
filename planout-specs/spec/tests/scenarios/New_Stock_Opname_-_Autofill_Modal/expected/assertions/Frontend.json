@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-new-stock-opname-autofill-modal-autofillstockopnamemodal-md-exists",
-    "category": "structural",
-    "target": "Frontend/New_Stock_Opname_-_Autofill_Modal/AutofillStockOpnameModal.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

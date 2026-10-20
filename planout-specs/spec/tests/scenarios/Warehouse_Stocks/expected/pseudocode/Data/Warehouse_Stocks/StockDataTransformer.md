@@ -1,25 +1,14 @@
 /**
- * Maps the raw database result set into the specific JSON structure 
- * required by the frontend UI components.
+ * Maps the database result set to the specific JSON structure required by the UI.
+ * Calculates the summary total_quantity for the UI footer.
  */
-FUNCTION transformStockData(rawRows):
-    total_quantity_sum = SUM(rawRows.inventory_quantity)
+FUNCTION transformStockData(data):
+    SET total_summary = 0
     
+    FOR EACH row IN data:
+        total_summary += row.inventory_quantity
+        
     RETURN {
-        "items": rawRows.map((row, index) => ({
-            "no": index + 1,
-            "warehouse_code": row.warehouse_code,
-            "warehouse_name": row.warehouse_name,
-            "inventory_quantity": row.inventory_quantity,
-            "available_quantity": row.available_quantity,
-            "reserved_quantity": row.reserved_quantity,
-            "in_transit_quantity": row.in_transit_quantity,
-            "min_quantity": row.min_quantity,
-            "max_quantity": row.max_quantity,
-            "average_cost": row.average_cost,
-            "total_cost": row.total_cost
-        })),
-        "summary": {
-            "total_quantity": total_quantity_sum
-        }
+        "stocks": data,
+        "total_quantity": total_summary
     }

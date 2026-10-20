@@ -1,0 +1,23 @@
+[
+  {
+    "id": "frontend-product-detail-page-productdetailpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page/ProductDetailPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-page-api-productservice-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page/api_productService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-page-components-productcards-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page/components_ProductCards.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

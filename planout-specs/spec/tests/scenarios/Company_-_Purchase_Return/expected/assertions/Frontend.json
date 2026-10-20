@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-company-purchase-return-purchasereturnlist-md-exists",
-    "category": "structural",
-    "target": "Frontend/Company_-_Purchase_Return/PurchaseReturnList.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]

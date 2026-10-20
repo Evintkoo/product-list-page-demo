@@ -1,34 +1,32 @@
-/**
- * Handles the incoming request to fetch a single product by its ID.
- * @param {Object} req - The request object containing the path parameter 'id'.
- * @param {Object} res - The response object.
- */
-FUNCTION getProductById(req, res):
-    // 1. Validate the ID format
-    IF NOT isValidUuid(req.params.id) THEN
-        RETURN res.status(400).json({ error: "Bad Request", message: "Invalid ID format" })
-    END IF
-
-    // 2. Authenticate the request
-    IF NOT isAuthenticated(req) THEN
-        RETURN res.status(401).json({ error: "Unauthorized", message: "Missing or invalid credentials" })
-    END IF
-
-    // 3. Fetch product from database
+FUNCTION getProductById(request, response):
+    // 1. Validate input
+    SET productId = request.params.id
+    
+    IF NOT isValidUuid(productId):
+        RETURN response.status(400).json({ error: "Malformed ID format" })
+    
+    // 2. Authentication check
+    IF NOT isAuthenticated(request):
+        RETURN response.status(401).json({ error: "Unauthorized" })
+    
+    // 3. Fetch data from storage
     TRY:
-        product = Database.find("Product", { id: req.params.id })
-
-        // 4. Handle missing product
-        IF product IS NULL THEN
-            RETURN res.status(404).json({ error: "Not Found", message: "Product does not exist" })
-        END IF
-
-        // 5. Return the product data
-        RETURN res.status(200).json(product)
-
+        SET product = Database.find("Product", { id: productId })
+        
+        IF product IS NULL:
+            RETURN response.status(404).json({ error: "Product not found" })
+            
+        // 4. Return standard Product JSON schema
+        RETURN response.status(200).json({
+            id: product.id,
+            name: product.name,
+            sku: product.sku,
+            price: product.price,
+            description: product.description,
+            created_at: product.created_at
+        })
+        
     CATCH error:
-        // 6. Handle unexpected server errors
-        LOG_ERROR(error)
-        RETURN res.status(500).json({ error: "Internal Server Error", message: "An unexpected error occurred" })
-    END TRY
-END FUNCTION
+        // 5. Handle unexpected server errors
+        LOG error
+        RETURN response.status(500).json({ error: "Internal Server Error" })

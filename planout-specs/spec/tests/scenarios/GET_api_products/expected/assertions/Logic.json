@@ -7,13 +7,6 @@
     "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
   },
   {
-    "id": "logic-get-api-products-productservice-md-exists",
-    "category": "structural",
-    "target": "Logic/GET_api_products/ProductService.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
-  },
-  {
     "id": "logic-has-api-payload-block",
     "category": "behavioural",
     "target": "Logic/GET_api_products/ProductController.md",

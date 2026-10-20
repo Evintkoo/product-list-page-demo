@@ -1,9 +1,0 @@
-[
-  {
-    "id": "frontend-stock-store-work-order-search-and-filter-toolbar-stockstoreworkordertoolbar-md-exists",
-    "category": "structural",
-    "target": "Frontend/Stock_-_Store_Work_Order_Search_and_Filter_Toolbar/StockStoreWorkOrderToolbar.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  }
-]
