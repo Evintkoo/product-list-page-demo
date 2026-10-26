@@ -7,13 +7,6 @@
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
-    "id": "data-get-api-products-id-warehouse-stocks-productdataservice-md-exists",
-    "category": "structural",
-    "target": "Data/GET_api_products_id_warehouse-stocks/ProductDataService.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
-  },
-  {
     "id": "schema-declares-product",
     "category": "structural",
     "target": "Data/GET_api_products_id_warehouse-stocks/WarehouseStockRepository.md",

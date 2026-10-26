@@ -7,13 +7,6 @@
     "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
   },
   {
-    "id": "logic-get-api-products-utf8-q-attribute-predicate-value-page-rows-productservice-md-exists",
-    "category": "structural",
-    "target": "Logic/GET_api_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ProductService.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Logic\" emitted this pseudocode file."
-  },
-  {
     "id": "logic-has-api-payload-block",
     "category": "behavioural",
     "target": "Logic/GET_api_products_utf8=✓&q[attribute_predicate]=value&...&page_rows=/ProductController.md",

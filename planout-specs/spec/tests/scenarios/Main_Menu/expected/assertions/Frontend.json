@@ -1,22 +1,8 @@
 [
   {
-    "id": "frontend-main-menu-mainheader-md-exists",
+    "id": "frontend-main-menu-topnav-md-exists",
     "category": "structural",
-    "target": "Frontend/Main_Menu/MainHeader.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  },
-  {
-    "id": "frontend-main-menu-mainheaderlogic-md-exists",
-    "category": "structural",
-    "target": "Frontend/Main_Menu/MainHeaderLogic.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  },
-  {
-    "id": "frontend-main-menu-productsmenu-md-exists",
-    "category": "structural",
-    "target": "Frontend/Main_Menu/ProductsMenu.md",
+    "target": "Frontend/Main_Menu/TopNav.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }

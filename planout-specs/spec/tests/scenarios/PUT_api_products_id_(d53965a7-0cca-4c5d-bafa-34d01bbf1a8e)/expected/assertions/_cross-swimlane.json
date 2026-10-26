@@ -1,0 +1,9 @@
+[
+  {
+    "id": "feature-has-files",
+    "category": "cross-swimlane",
+    "target": "Data/PUT_api_products_id_(d53965a7-0cca-4c5d-bafa-34d01bbf1a8e)/ProductRepository.md",
+    "check": "file_exists",
+    "rationale": "Feature must produce at least one file across all swimlanes."
+  }
+]

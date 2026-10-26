@@ -81,6 +81,27 @@ Do not edit `/app/` for an out-of-band change until the plan file exists under `
 `plan/` ships as a placeholder (see `plan/README.md`); it is filled only when
 such a change is requested.
 
+# Repository context and plan (`spec/plan/`)
+
+`build.sh` first runs a plan step (`spec/prompts/plan.md`) that checks the
+repository around this bundle (`../`) and writes two files. When they exist,
+read them **before Stage 01** and keep to them:
+
+- **`spec/plan/repo-context.md`** — the repository's rules (from `CLAUDE.md`,
+  `AGENTS.md`, `CONTRIBUTING.md`, lint/format/test config), its stack and layout,
+  and a map of where each feature already lives. Follow these rules in everything
+  you generate; where one conflicts with `spec/tech-stack.md`, the repository rule
+  wins for style, naming, layout and tooling, and the specification stays
+  authoritative for behaviour.
+- **`spec/plan/build-plan.md`** — the ordered plan with a per-feature file list,
+  reuse targets, and a node-id checklist. Work through it stage by stage and tick
+  nothing off until the node is implemented.
+
+Reuse what the map marks `reuse`/`extend` instead of writing a second copy. Do not
+modify files in the surrounding repository outside `app/` unless the plan
+explicitly says to. If the two files are absent, no repository was found: build
+from `spec/` as described above.
+
 # Notes
 
 - Every per-node asset is named by its **node id**, and a node may contribute more than one

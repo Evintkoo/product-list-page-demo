@@ -1,30 +1,30 @@
-/**
- * Handles the logic for the Product List Page.
- * Orchestrates data fetching and mapping for the UI.
- */
-class ProductController {
-    
-    // State to hold the current list of products
-    private products = [];
+// Node: 393c2d63-6276-4487-ae98-578b69f7855c
+// Title: GET /products
+// Description: Fetch paginated and filtered product list.
 
-    /**
-     * Triggered on Page Load or when the Search/Filter button is clicked.
-     */
-    async loadProductList(filters: { search?: string, brandName?: string }, pagination: { page: number, limit: number }) {
-        const response = await fetchProducts({
-            ...pagination,
-            ...filters
-        });
+FUNCTION getProducts(request):
+  // Input from Frontend (Page Load): Receives query parameters for pagination (page, limit) and search (search).
+  
+  // Happy Path:
+  SET query = SELECT id, SKU, productName, brandName, productCode, tax, price 
+              FROM Product 
+              WHERE productName LIKE %search% OR SKU LIKE %search%
+              LIMIT request.limit OFFSET (request.page - 1) * request.limit;
+  
+  RETURN 200 OK with JSON body containing the list of products.
 
-        this.products = response.map(product => ({
-            sku: product.sku,
-            productName: product.productName,
-            brandName: product.brandName,
-            productCode: product.productCode,
-            tax: product.tax,
-            price: product.price
-        }));
+  // Validation/Error States:
+  IF request.page < 1 OR request.limit < 1:
+    RETURN 400 Bad Request with error "Invalid pagination parameters".
+  
+  // Empty State:
+  IF query returns no results:
+    RETURN 200 OK with empty array [].
 
-        return this.products;
-    }
-}
+  // Side Effects: None.
+
+// Notes covered: 
+// 1. Fetch product list from Product entity.
+// 2. Apply pagination via page and limit parameters.
+// 3. Apply search filtering on productName and SKU.
+// 4. Return mapped JSON response.

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "data-get-api-products-id-settings-productsettingsrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_products_id_settings/ProductSettingsRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/GET_api_products_id_settings/ProductSettingsRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  },
+  {
+    "id": "schema-declares-productsettings",
+    "category": "structural",
+    "target": "Data/GET_api_products_id_settings/ProductSettingsRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ProductSettings"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ProductSettings\" entity."
+  }
+]

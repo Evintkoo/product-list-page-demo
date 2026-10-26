@@ -1,0 +1,46 @@
+[
+  {
+    "id": "data-get-api-products-id-prices-by-warehouse-datashapes-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_products_id_prices_by-warehouse/DataShapes.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-products-id-prices-by-warehouse-pricerepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_products_id_prices_by-warehouse/PriceRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/GET_api_products_id_prices_by-warehouse/DataShapes.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  },
+  {
+    "id": "schema-declares-warehouse",
+    "category": "structural",
+    "target": "Data/GET_api_products_id_prices_by-warehouse/DataShapes.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Warehouse"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Warehouse\" entity."
+  },
+  {
+    "id": "schema-declares-warehouseprice",
+    "category": "structural",
+    "target": "Data/GET_api_products_id_prices_by-warehouse/DataShapes.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "WarehousePrice"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"WarehousePrice\" entity."
+  }
+]

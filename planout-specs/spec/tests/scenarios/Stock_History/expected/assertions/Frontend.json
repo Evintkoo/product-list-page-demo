@@ -1,0 +1,30 @@
+[
+  {
+    "id": "frontend-stock-history-stockhistorypage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_History/StockHistoryPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-history-stockhistoryview-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_History/StockHistoryView.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-history-stockhistoryfilter-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_History/StockHistoryFilter.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-history-stockhistorynavigation-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_History/StockHistoryNavigation.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

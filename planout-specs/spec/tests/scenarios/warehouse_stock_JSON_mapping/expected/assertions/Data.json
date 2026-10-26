@@ -1,0 +1,33 @@
+[
+  {
+    "id": "data-warehouse-stock-json-mapping-warehouse-stock-schema-md-exists",
+    "category": "structural",
+    "target": "Data/warehouse_stock_JSON_mapping/warehouse_stock_schema.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-warehouse-stock-json-mapping-warehouse-stock-query-md-exists",
+    "category": "structural",
+    "target": "Data/warehouse_stock_JSON_mapping/warehouse_stock_query.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-warehouse-stock-json-mapping-warehouse-stock-data-access-md-exists",
+    "category": "structural",
+    "target": "Data/warehouse_stock_JSON_mapping/warehouse_stock_data_access.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-warehouse_stock",
+    "category": "structural",
+    "target": "Data/warehouse_stock_JSON_mapping/warehouse_stock_schema.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "warehouse_stock"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"warehouse_stock\" entity."
+  }
+]

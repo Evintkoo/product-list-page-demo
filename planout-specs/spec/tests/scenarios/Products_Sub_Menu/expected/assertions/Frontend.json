@@ -1,15 +1,15 @@
 [
   {
-    "id": "frontend-products-sub-menu-productssubmenu-md-exists",
+    "id": "frontend-products-sub-menu-productsubmenu-md-exists",
     "category": "structural",
-    "target": "Frontend/Products_Sub_Menu/ProductsSubMenu.md",
+    "target": "Frontend/Products_Sub_Menu/ProductSubMenu.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-products-sub-menu-productssubmenu-md-exists",
+    "id": "frontend-products-sub-menu-productmenuhandlers-md-exists",
     "category": "structural",
-    "target": "Frontend/Products_Sub_Menu/ProductsSubMenu.md",
+    "target": "Frontend/Products_Sub_Menu/ProductMenuHandlers.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }

@@ -1,0 +1,136 @@
+[
+  {
+    "id": "data-customer-schema-definitions-md-exists",
+    "category": "structural",
+    "target": "Data/Customer/schema_definitions.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-customer-customerschema-md-exists",
+    "category": "structural",
+    "target": "Data/Customer/CustomerSchema.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-claim",
+    "category": "structural",
+    "target": "Data/Customer/schema_definitions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Claim"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Claim\" entity."
+  },
+  {
+    "id": "schema-declares-membershipprovider",
+    "category": "structural",
+    "target": "Data/Customer/schema_definitions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "MembershipProvider"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"MembershipProvider\" entity."
+  },
+  {
+    "id": "schema-declares-customermembership",
+    "category": "structural",
+    "target": "Data/Customer/schema_definitions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "CustomerMembership"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"CustomerMembership\" entity."
+  },
+  {
+    "id": "schema-declares-deposittransaction",
+    "category": "structural",
+    "target": "Data/Customer/schema_definitions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "DepositTransaction"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"DepositTransaction\" entity."
+  },
+  {
+    "id": "schema-declares-deposit",
+    "category": "structural",
+    "target": "Data/Customer/schema_definitions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Deposit"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Deposit\" entity."
+  },
+  {
+    "id": "schema-declares-vehiclemodel",
+    "category": "structural",
+    "target": "Data/Customer/schema_definitions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "VehicleModel"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"VehicleModel\" entity."
+  },
+  {
+    "id": "schema-declares-vehicle",
+    "category": "structural",
+    "target": "Data/Customer/schema_definitions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Vehicle"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Vehicle\" entity."
+  },
+  {
+    "id": "schema-declares-vehiclemake",
+    "category": "structural",
+    "target": "Data/Customer/schema_definitions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "VehicleMake"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"VehicleMake\" entity."
+  },
+  {
+    "id": "schema-declares-customerproductprice",
+    "category": "structural",
+    "target": "Data/Customer/schema_definitions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "CustomerProductPrice"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"CustomerProductPrice\" entity."
+  },
+  {
+    "id": "schema-declares-customerbilling",
+    "category": "structural",
+    "target": "Data/Customer/schema_definitions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "CustomerBilling"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"CustomerBilling\" entity."
+  },
+  {
+    "id": "schema-declares-customer",
+    "category": "structural",
+    "target": "Data/Customer/schema_definitions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Customer"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Customer\" entity."
+  },
+  {
+    "id": "schema-declares-customergroup",
+    "category": "structural",
+    "target": "Data/Customer/schema_definitions.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "CustomerGroup"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"CustomerGroup\" entity."
+  }
+]

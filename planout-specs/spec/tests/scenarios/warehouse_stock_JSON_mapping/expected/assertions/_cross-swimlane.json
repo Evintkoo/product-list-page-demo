@@ -1,0 +1,9 @@
+[
+  {
+    "id": "feature-has-files",
+    "category": "cross-swimlane",
+    "target": "Data/warehouse_stock_JSON_mapping/warehouse_stock_schema.md",
+    "check": "file_exists",
+    "rationale": "Feature must produce at least one file across all swimlanes."
+  }
+]

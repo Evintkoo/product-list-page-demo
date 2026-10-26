@@ -7,16 +7,23 @@
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-product-list-page-api-md-exists",
+    "id": "frontend-product-list-page-productdetailsnavigation-md-exists",
     "category": "structural",
-    "target": "Frontend/Product_List_Page/api.md",
+    "target": "Frontend/Product_List_Page/ProductDetailsNavigation.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-product-list-page-submenu-md-exists",
+    "id": "frontend-product-list-page-submenuhandler-md-exists",
     "category": "structural",
-    "target": "Frontend/Product_List_Page/SubMenu.md",
+    "target": "Frontend/Product_List_Page/SubMenuHandler.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-list-page-commonmenuintegration-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_List_Page/CommonMenuIntegration.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }

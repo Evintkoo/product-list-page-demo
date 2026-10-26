@@ -7,13 +7,6 @@
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
-    "id": "data-product-list-page-productmapper-md-exists",
-    "category": "structural",
-    "target": "Data/Product_List_Page/ProductMapper.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
-  },
-  {
     "id": "schema-declares-product",
     "category": "structural",
     "target": "Data/Product_List_Page/ProductRepository.md",

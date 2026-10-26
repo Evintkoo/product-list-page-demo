@@ -1,35 +1,69 @@
 [
   {
-    "id": "data-product-schema-productrepository-md-exists",
+    "id": "data-product-schema-productschemas-md-exists",
     "category": "structural",
-    "target": "Data/Product_Schema/ProductRepository.md",
+    "target": "Data/Product_Schema/ProductSchemas.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
-    "id": "schema-declares-products",
+    "id": "data-product-schema-productqueries-md-exists",
     "category": "structural",
-    "target": "Data/Product_Schema/ProductRepository.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "products"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"products\" entity."
+    "target": "Data/Product_Schema/ProductQueries.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
-    "id": "schema-declares-store_stocks",
+    "id": "data-product-schema-datalayer-md-exists",
     "category": "structural",
-    "target": "Data/Product_Schema/ProductRepository.md",
+    "target": "Data/Product_Schema/DataLayer.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/Product_Schema/ProductSchemas.md",
     "check": "schema_block_present",
     "args": {
-      "entity": "store_stocks"
+      "entity": "Product"
     },
-    "rationale": "Data-tier SCHEMA block must declare the \"store_stocks\" entity."
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  },
+  {
+    "id": "schema-declares-warehouse",
+    "category": "structural",
+    "target": "Data/Product_Schema/ProductSchemas.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Warehouse"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Warehouse\" entity."
+  },
+  {
+    "id": "schema-declares-warehousestock",
+    "category": "structural",
+    "target": "Data/Product_Schema/ProductSchemas.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "WarehouseStock"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"WarehouseStock\" entity."
+  },
+  {
+    "id": "schema-declares-storestock",
+    "category": "structural",
+    "target": "Data/Product_Schema/ProductSchemas.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StoreStock"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StoreStock\" entity."
   },
   {
     "id": "schema-declares-productbrand",
     "category": "structural",
-    "target": "Data/Product_Schema/ProductRepository.md",
+    "target": "Data/Product_Schema/ProductSchemas.md",
     "check": "schema_block_present",
     "args": {
       "entity": "ProductBrand"
@@ -39,7 +73,7 @@
   {
     "id": "schema-declares-producttype",
     "category": "structural",
-    "target": "Data/Product_Schema/ProductRepository.md",
+    "target": "Data/Product_Schema/ProductSchemas.md",
     "check": "schema_block_present",
     "args": {
       "entity": "ProductType"
@@ -47,53 +81,13 @@
     "rationale": "Data-tier SCHEMA block must declare the \"ProductType\" entity."
   },
   {
-    "id": "schema-declares-tag",
+    "id": "schema-declares-producthistory",
     "category": "structural",
-    "target": "Data/Product_Schema/ProductRepository.md",
+    "target": "Data/Product_Schema/ProductSchemas.md",
     "check": "schema_block_present",
     "args": {
-      "entity": "Tag"
+      "entity": "ProductHistory"
     },
-    "rationale": "Data-tier SCHEMA block must declare the \"Tag\" entity."
-  },
-  {
-    "id": "schema-declares-producttagmapping",
-    "category": "structural",
-    "target": "Data/Product_Schema/ProductRepository.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "ProductTagMapping"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"ProductTagMapping\" entity."
-  },
-  {
-    "id": "schema-declares-warehouse_stocks",
-    "category": "structural",
-    "target": "Data/Product_Schema/ProductRepository.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "warehouse_stocks"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"warehouse_stocks\" entity."
-  },
-  {
-    "id": "schema-declares-warehouses",
-    "category": "structural",
-    "target": "Data/Product_Schema/ProductRepository.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "warehouses"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"warehouses\" entity."
-  },
-  {
-    "id": "schema-declares-product_history",
-    "category": "structural",
-    "target": "Data/Product_Schema/ProductRepository.md",
-    "check": "schema_block_present",
-    "args": {
-      "entity": "product_history"
-    },
-    "rationale": "Data-tier SCHEMA block must declare the \"product_history\" entity."
+    "rationale": "Data-tier SCHEMA block must declare the \"ProductHistory\" entity."
   }
 ]

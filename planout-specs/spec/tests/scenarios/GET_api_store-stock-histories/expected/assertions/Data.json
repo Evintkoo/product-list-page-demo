@@ -1,0 +1,36 @@
+[
+  {
+    "id": "data-get-api-store-stock-histories-stockhistoryrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_store-stock-histories/StockHistoryRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-store-stock-histories-stockhistoryrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_store-stock-histories/StockHistoryRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-storestockhistory",
+    "category": "structural",
+    "target": "Data/GET_api_store-stock-histories/StockHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StoreStockHistory"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StoreStockHistory\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/GET_api_store-stock-histories/StockHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  }
+]

@@ -1,22 +1,15 @@
 [
   {
-    "id": "data-get-api-products-id-productrepository-md-exists",
+    "id": "data-get-api-products-id-productdataschemas-md-exists",
     "category": "structural",
-    "target": "Data/GET_api_products_id/ProductRepository.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
-  },
-  {
-    "id": "data-get-api-products-id-errorschemas-md-exists",
-    "category": "structural",
-    "target": "Data/GET_api_products_id/ErrorSchemas.md",
+    "target": "Data/GET_api_products_id/ProductDataSchemas.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
     "id": "schema-declares-product",
     "category": "structural",
-    "target": "Data/GET_api_products_id/ProductRepository.md",
+    "target": "Data/GET_api_products_id/ProductDataSchemas.md",
     "check": "schema_block_present",
     "args": {
       "entity": "Product"

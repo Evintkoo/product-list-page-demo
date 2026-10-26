@@ -7,9 +7,23 @@
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-purchase-history-api-purchaseservice-md-exists",
+    "id": "frontend-purchase-history-purchasetable-md-exists",
     "category": "structural",
-    "target": "Frontend/Purchase_History/api_purchaseService.md",
+    "target": "Frontend/Purchase_History/PurchaseTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-purchase-history-productqrcodedisplay-md-exists",
+    "category": "structural",
+    "target": "Frontend/Purchase_History/ProductQRCodeDisplay.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-purchase-history-purchasehistorylist-md-exists",
+    "category": "structural",
+    "target": "Frontend/Purchase_History/PurchaseHistoryList.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }

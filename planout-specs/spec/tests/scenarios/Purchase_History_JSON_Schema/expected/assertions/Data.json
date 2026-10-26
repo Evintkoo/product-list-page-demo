@@ -7,6 +7,13 @@
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
+    "id": "data-purchase-history-json-schema-purchasehistorytable-md-exists",
+    "category": "structural",
+    "target": "Data/Purchase_History_JSON_Schema/PurchaseHistoryTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
     "id": "schema-declares-purchase_history",
     "category": "structural",
     "target": "Data/Purchase_History_JSON_Schema/PurchaseHistorySchema.md",

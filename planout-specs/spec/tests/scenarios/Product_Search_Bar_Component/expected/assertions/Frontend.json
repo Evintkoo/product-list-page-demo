@@ -1,0 +1,9 @@
+[
+  {
+    "id": "frontend-product-search-bar-component-productfilterbar-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Search_Bar_Component/ProductFilterBar.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  }
+]

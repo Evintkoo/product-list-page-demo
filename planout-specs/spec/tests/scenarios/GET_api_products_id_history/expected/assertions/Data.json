@@ -1,0 +1,43 @@
+[
+  {
+    "id": "data-get-api-products-id-history-producthistoryrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_products_id_history/ProductHistoryRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-products-id-history-errorschemas-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_products_id_history/ErrorSchemas.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-get-api-products-id-history-producthistoryrepository-md-exists",
+    "category": "structural",
+    "target": "Data/GET_api_products_id_history/ProductHistoryRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/GET_api_products_id_history/ProductHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  },
+  {
+    "id": "schema-declares-producthistory",
+    "category": "structural",
+    "target": "Data/GET_api_products_id_history/ProductHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "ProductHistory"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"ProductHistory\" entity."
+  }
+]

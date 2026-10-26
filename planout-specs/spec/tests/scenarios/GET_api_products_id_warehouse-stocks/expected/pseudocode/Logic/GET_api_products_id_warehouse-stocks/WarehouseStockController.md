@@ -1,52 +1,60 @@
 /**
- * Controller to handle retrieval of warehouse stocks for a specific product.
+ * Node: GET /api/products/:id/warehouse-stocks (ID: 67737683-d4c5-468f-ad63-ea2d2974fceb)
+ * Description: Fetches warehouse stock details for a product, including joined warehouse data, 
+ * calculated quantities, and costs. Supports filtering and pagination.
  */
 async function getProductWarehouseStocks(req, res) {
-    const { id: productId } = req.params;
-    const { warehouse_id, name, location_code, page = 1, limit = 20 } = req.query;
+    const { id } = req.params;
+    const { warehouse_id, name, warehouse_code, page = 1, limit = 20 } = req.query;
 
-    // 1. Validate Product existence
-    const product = await db.Product.findOne({ where: { id: productId } });
+    // 1. Validation: Ensure product exists
+    const product = await db.Product.findUnique({ where: { id } });
     if (!product) {
         return res.status(404).json({ error: "Product not found", code: "PRODUCT_NOT_FOUND" });
     }
 
-    // 2. Build query filters for Warehouse and WarehouseStock
-    const whereClause = { product_id: productId };
-    const warehouseFilters = {};
+    // 2. Data Retrieval: Join WarehouseStock with Warehouse
+    // Note: Logic requires calculating reserved, in-transit, and available quantities 
+    // and total cost per warehouse.
+    const queryOptions = {
+        where: {
+            product_id: id,
+            ...(warehouse_id && { warehouse_id }),
+            ...(name && { Warehouse: { name: { contains: name } } }),
+            ...(warehouse_code && { Warehouse: { code: warehouse_code } }) <!-- MISSING_FIELD: Warehouse.code -->
+        },
+        include: { Warehouse: true },
+        skip: (page - 1) * limit,
+        take: limit
+    };
 
-    if (warehouse_id) warehouseFilters.id = warehouse_id;
-    if (name) warehouseFilters.name = name;
-    if (location_code) warehouseFilters.location_code = location_code;
-
-    // 3. Fetch stocks joined with Warehouse data
-    const { rows, count } = await db.WarehouseStock.findAndCountAll({
-        where: whereClause,
-        include: [{
-            model: db.Warehouse,
-            where: warehouseFilters,
-            required: true
-        }],
-        limit: parseInt(limit),
-        offset: (parseInt(page) - 1) * parseInt(limit)
-    });
-
-    // 4. Calculate additional metrics
-    // Note: reserved/in-transit/cost fields are derived logic
-    const processedData = rows.map(stock => ({
-        id: stock.id,
-        quantity_on_hand: stock.quantity_on_hand,
-        warehouse_name: stock.Warehouse.name,
-        location_code: stock.Warehouse.location_code,
-        last_updated: stock.last_updated,
-        reserved_quantity: 0, <!-- MISSING_FIELD: WarehouseStock.reserved_quantity -->
-        in_transit_quantity: 0, <!-- MISSING_FIELD: WarehouseStock.in_transit_quantity -->
-        total_cost: 0 <!-- MISSING_FIELD: WarehouseStock.total_cost -->
-    }));
-
-    // 5. Return response
-    return res.status(200).json({
-        total_quantity: count,
-        data: processedData
-    });
+    try {
+        const stocks = await db.WarehouseStock.findMany(queryOptions);
+        
+        // 3. Response Construction
+        // Note: Response shape is { total_quantity, data[] }
+        const totalQuantity = stocks.reduce((sum, item) => sum + item.quantity, 0);
+        
+        return res.status(200).json({
+            total_quantity: totalQuantity,
+            data: stocks
+        });
+    } catch (error) {
+        // 4. Error Handling
+        // Note: 400 for bad params, 401 for auth, 500 for server failure
+        return res.status(500).json({ error: "Internal Server Error", code: "SERVER_FAILURE" });
+    }
 }
+
+/**
+ * Notes covered:
+ * - Fetches warehouse stock details for a single product.
+ * - Uses product id as path parameter.
+ * - Joins WarehouseStock with Warehouse master data.
+ * - Calculates reserved, in-transit, available quantities, and total cost per warehouse.
+ * - Response format: { total_quantity, data[] }.
+ * - Supports filtering by warehouse id, name, or warehouse code.
+ * - Supports pagination via page and limit.
+ * - Returns 200 (success), 400 (bad query params), 401 (auth), 404 (product not found), 500 (server failure).
+ * - All errors follow Common Standard Response JSON Schema.
+ */

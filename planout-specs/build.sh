@@ -25,6 +25,20 @@
 #   PROMPT_FILE="..."   # path to the prompt/contract file (default: spec/AGENTS.md).
 #                       # For the Replit path keep it under spec/ — that's what
 #                       # gets synced to the repl.
+#   PLAN_FIRST="..."    # plan step before the build (default: auto). The agent
+#                       # first checks the repository around this bundle (../),
+#                       # reads its rule files (CLAUDE.md, AGENTS.md,
+#                       # CONTRIBUTING.md, lint/format config), maps each feature
+#                       # to where it already lives, and writes spec/plan/
+#                       # repo-context.md + build-plan.md, which the build then
+#                       # follows. auto = run when ../ is a repository; 1 = always
+#                       # run (greenfield plan if there is no repo); 0 = skip.
+#                       # An existing spec/plan/build-plan.md is reused unless
+#                       # PLAN_REFRESH=1.
+#   REPO_DIR="..."      # repository root to check (default: .. — the directory
+#                       # that contains this bundle).
+#   PLAN_BUDGET_USD="..."# spend cap for the plan step alone (default: 3; 0 or
+#                       # empty = uncapped). Ignored if you override AGENT_CMD.
 #   PROGRESS_LOG="..."  # raw NDJSON event log (default: .build/progress.log)
 #
 # Replit (see REPLIT_GUIDE.md for the one-time setup):
@@ -76,10 +90,10 @@ cd "$(dirname "$0")"
 # auto-detected Claude AGENT_CMD — if you override AGENT_CMD, add your own cap.
 #
 # The default is a per-project estimate the server substitutes for
-# 27 at generation (sized to this bundle's features /
+# 50 at generation (sized to this bundle's features /
 # pseudocode / assets). If this bundle was assembled without the server, the
 # placeholder is left as-is; the numeric guard below then falls back to a flat 15.
-DEFAULT_BUDGET_USD="27"
+DEFAULT_BUDGET_USD="50"
 case "$DEFAULT_BUDGET_USD" in ''|*[!0-9.]*) DEFAULT_BUDGET_USD="15" ;; esac
 MAX_BUDGET_USD="${MAX_BUDGET_USD-$DEFAULT_BUDGET_USD}"
 if [ -n "$MAX_BUDGET_USD" ] && [ "$MAX_BUDGET_USD" != "0" ]; then
@@ -92,6 +106,106 @@ PROMPT_FILE="${PROMPT_FILE:-spec/AGENTS.md}"
 PROGRESS_LOG="${PROGRESS_LOG:-.build/progress.log}"
 mkdir -p "$(dirname "$PROGRESS_LOG")"
 
+# ---------------------------------------------------------------------------
+# Plan step — before building, convert the spec into plans and check the
+# repository around this bundle. Writes spec/plan/repo-context.md and
+# spec/plan/build-plan.md (spec/AGENTS.md tells the build agent to follow them).
+# Runs locally even when the build itself goes to Replit: the repository lives
+# on this machine, and spec/ (plan included) is what gets synced up.
+# ---------------------------------------------------------------------------
+PLAN_FIRST="${PLAN_FIRST:-auto}"
+PLAN_DIR="spec/plan"
+PLAN_PROMPT_FILE="spec/prompts/plan.md"
+REPO_DIR="${REPO_DIR:-$(cd .. 2>/dev/null && pwd || true)}"
+PLAN_BUDGET_USD="${PLAN_BUDGET_USD-3}"
+if [ -n "$PLAN_BUDGET_USD" ] && [ "$PLAN_BUDGET_USD" != "0" ]; then
+  PLAN_BUDGET_FLAG=" --max-budget-usd ${PLAN_BUDGET_USD}"
+else
+  PLAN_BUDGET_FLAG=""
+fi
+
+# Rule files an agent should read before touching a repository, one per line.
+detect_rule_files() {
+  local f
+  for f in CLAUDE.md AGENTS.md CONTRIBUTING.md .cursorrules .cursor/rules \
+           .github/copilot-instructions.md .editorconfig; do
+    if [ -e "$REPO_DIR/$f" ]; then echo "$f"; fi
+  done
+}
+
+# True when REPO_DIR looks like a repository: a git work tree, or rule files.
+repo_detected() {
+  [ -d "$REPO_DIR" ] || return 1
+  [ -e "$REPO_DIR/.git" ] && return 0
+  git -C "$REPO_DIR" rev-parse --is-inside-work-tree >/dev/null 2>&1 && return 0
+  [ -n "$(detect_rule_files)" ]
+}
+
+# The plan prompt plus the facts the shell can gather cheaply. Appended rather
+# than substituted into the prompt text, so no path or file name can be misread
+# as part of a replacement pattern.
+build_plan_prompt() {
+  cat "$PLAN_PROMPT_FILE"
+  printf '\n\n# Detected\n\n'
+  if repo_detected; then
+    printf 'Repository root: %s\n\nRule files:\n' "$REPO_DIR"
+    local rules; rules="$(detect_rule_files)"
+    if [ -n "$rules" ]; then printf '%s\n' "$rules" | sed 's/^/- /'; else echo "- (none found)"; fi
+    printf '\nTop-level entries:\n'
+    ls -1A "$REPO_DIR" | head -60 | sed 's/^/- /'
+  else
+    printf 'No repository found at %s. This build is greenfield.\n' "$REPO_DIR"
+  fi
+}
+
+run_plan_phase() {
+  case "$PLAN_FIRST" in
+    0|false|no|off) return 0 ;;
+    auto) if ! repo_detected; then
+            echo "Plan step skipped: no repository at $REPO_DIR (PLAN_FIRST=1 plans anyway)."
+            return 0
+          fi ;;
+  esac
+  if [ ! -f "$PLAN_PROMPT_FILE" ]; then
+    echo "Plan step skipped: $PLAN_PROMPT_FILE is missing from this bundle."
+    return 0
+  fi
+  if [ -f "$PLAN_DIR/build-plan.md" ] && [ "${PLAN_REFRESH:-0}" != "1" ]; then
+    echo "Plan step: reusing existing $PLAN_DIR/ (PLAN_REFRESH=1 to redo it)."
+    return 0
+  fi
+
+  local cmd
+  if [ -n "${AGENT_CMD:-}" ]; then
+    cmd="$AGENT_CMD"; USE_CLAUDE_RENDERER=0
+  elif type claude >/dev/null 2>&1; then
+    cmd="claude -p --model ${CLAUDE_MODEL:-opus} --output-format stream-json --verbose --dangerously-skip-permissions${PLAN_BUDGET_FLAG}"
+    USE_CLAUDE_RENDERER=1
+  else
+    echo "Plan step skipped: no local agent to run it (install claude or set AGENT_CMD)."
+    return 0
+  fi
+
+  mkdir -p "$PLAN_DIR"
+  echo ""
+  echo "Plan step — checking $REPO_DIR and converting the spec into plans..."
+  local rc
+  set +e
+  $cmd "$(build_plan_prompt)" | tee "${PROGRESS_LOG}.plan" | render_output
+  rc="${PIPESTATUS[0]}"
+  set -e
+  USE_CLAUDE_RENDERER=0
+  if [ "$rc" != "0" ]; then
+    echo "✗ plan step failed (exit $rc). Fix it, or run with PLAN_FIRST=0 to build without a plan." >&2
+    exit "$rc"
+  fi
+  if [ ! -s "$PLAN_DIR/build-plan.md" ]; then
+    echo "✗ plan step finished without writing $PLAN_DIR/build-plan.md. Re-run, or use PLAN_FIRST=0." >&2
+    exit 1
+  fi
+  echo "✓ plan written to $PLAN_DIR/"
+}
+
 print_banner() {
   echo "========================================="
   echo "  Code Auto-Builder - ver 0.10"
@@ -101,6 +215,7 @@ print_banner() {
   echo "  Source:  $AGENT_SOURCE"
   echo "  Prompt:  $PROMPT_FILE"
   echo "  Log:     $PROGRESS_LOG"
+  if [ -f "$PLAN_DIR/build-plan.md" ]; then echo "  Plan:    $PLAN_DIR/ (repo: $REPO_DIR)"; fi
   if [ -n "$BUDGET_FLAG" ]; then
     echo "  Budget:  \$${MAX_BUDGET_USD} (set MAX_BUDGET_USD=0 to disable)"
   else
@@ -108,6 +223,7 @@ print_banner() {
   fi
   echo ""
   echo "  Steps:"
+  echo "    0. Plan from the spec and the repository rules (see PLAN_FIRST)"
   echo "    1. Read $PROMPT_FILE and scan project"
   echo "    2. Scaffold app structure"
   echo "    3. Generate code from pseudocode + hints"
@@ -198,6 +314,8 @@ run_replit_ssh() {
 # `set -e`, matching prior behavior.
 USE_CLAUDE_RENDERER=0
 CLAUDE_CMD="claude -p --model ${CLAUDE_MODEL:-opus} --output-format stream-json --verbose --dangerously-skip-permissions${BUDGET_FLAG}"
+run_plan_phase
+
 if [ -n "${AGENT_CMD:-}" ]; then
   AGENT_SOURCE="custom AGENT_CMD"
   USE_CLAUDE_RENDERER=0

@@ -7,13 +7,6 @@
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
-    "id": "data-warehouse-stocks-stockdatatransformer-md-exists",
-    "category": "structural",
-    "target": "Data/Warehouse_Stocks/StockDataTransformer.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
-  },
-  {
     "id": "schema-declares-warehouse",
     "category": "structural",
     "target": "Data/Warehouse_Stocks/StockRepository.md",
@@ -24,13 +17,23 @@
     "rationale": "Data-tier SCHEMA block must declare the \"Warehouse\" entity."
   },
   {
-    "id": "schema-declares-productstock",
+    "id": "schema-declares-stock",
     "category": "structural",
     "target": "Data/Warehouse_Stocks/StockRepository.md",
     "check": "schema_block_present",
     "args": {
-      "entity": "ProductStock"
+      "entity": "Stock"
     },
-    "rationale": "Data-tier SCHEMA block must declare the \"ProductStock\" entity."
+    "rationale": "Data-tier SCHEMA block must declare the \"Stock\" entity."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/Warehouse_Stocks/StockRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
   }
 ]

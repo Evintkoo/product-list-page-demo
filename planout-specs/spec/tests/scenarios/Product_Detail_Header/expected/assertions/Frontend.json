@@ -5,12 +5,5 @@
     "target": "Frontend/Product_Detail_Header/ProductDetailHeader.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  },
-  {
-    "id": "frontend-product-detail-header-useproductactions-md-exists",
-    "category": "structural",
-    "target": "Frontend/Product_Detail_Header/useProductActions.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }
 ]

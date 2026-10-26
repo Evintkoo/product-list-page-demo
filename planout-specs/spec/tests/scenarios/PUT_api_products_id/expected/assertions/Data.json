@@ -1,0 +1,19 @@
+[
+  {
+    "id": "data-put-api-products-id-productrepository-md-exists",
+    "category": "structural",
+    "target": "Data/PUT_api_products_id/ProductRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-product",
+    "category": "structural",
+    "target": "Data/PUT_api_products_id/ProductRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Product"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+  }
+]

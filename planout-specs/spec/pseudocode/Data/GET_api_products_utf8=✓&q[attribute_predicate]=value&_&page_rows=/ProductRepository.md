@@ -1,61 +1,45 @@
 /**
  * Data access layer for Product search operations.
- * Translates query parameters into database filter criteria.
+ * Receives sanitized filter criteria from the Logic layer.
  */
-function findProducts(filters: QueryParams, limit: number) {
-  let query = Database.table("Product").select("*");
 
-  // Apply string containment filters
-  if (filters.q.sku_cont) query.where("sku", "LIKE", `%${filters.q.sku_cont}%`);
-  if (filters.q.name_cont) query.where("name", "LIKE", `%${filters.q.name_cont}%`);
-  if (filters.q.product_code_cont) query.where("product_code", "LIKE", `%${filters.q.product_code_cont}%`);
-  if (filters.q.info_1_cont) query.where("info_1", "LIKE", `%${filters.q.info_1_cont}%`);
-  if (filters.q.info_2_cont) query.where("info_2", "LIKE", `%${filters.q.info_2_cont}%`);
-  if (filters.q.info_3_cont) query.where("info_3", "LIKE", `%${filters.q.info_3_cont}%`);
-
-  // Apply exact match filters
-  if (filters.q.product_brand_id_eq) {
-    validateExists("ProductBrand", filters.q.product_brand_id_eq);
-    query.where("product_brand_id", "=", filters.q.product_brand_id_eq);
-  }
-  if (filters.q.product_type_id_eq) {
-    validateExists("ProductType", filters.q.product_type_id_eq);
-    query.where("product_type_id", "=", filters.q.product_type_id_eq);
-  }
-  if (filters.q.tax_id_eq) {
-    validateExists("Tax", filters.q.tax_id_eq);
-    query.where("tax_id", "=", filters.q.tax_id_eq);
-  }
-
-  // Apply tag inclusion filter
-  if (filters.q.product_tags_id_in) {
-    query.whereIn("id", 
-      Database.table("ProductTag")
-        .select("product_id")
-        .whereIn("tag_id", filters.q.product_tags_id_in)
-    );
-  }
-
-  // Apply sorting
-  if (filters.q.s) {
-    const sortParams = Array.isArray(filters.q.s) ? filters.q.s : [filters.q.s];
-    sortParams.forEach(param => {
-      const [column, direction] = param.split(" ");
-      query.orderBy(column, direction || "ASC");
-    });
-  }
-
-  // Apply pagination limit
-  if (limit) {
-    query.limit(limit);
-  }
-
-  return query.execute();
+interface ProductQueryFilters {
+  sku_cont?: string;
+  name_cont?: string;
+  product_code_cont?: string;
+  product_brand_id_eq?: number;
+  product_type_id_eq?: number;
+  tax_id_eq?: number;
+  product_tags_id_in?: number[];
+  info_1_cont?: string;
+  info_2_cont?: string;
+  info_3_cont?: string;
+  s?: string | string[];
+  page_rows?: number;
 }
 
-function validateExists(entityName: string, id: number) {
-  const exists = Database.table(entityName).where("id", "=", id).exists();
-  if (!exists) {
-    throw new NotFoundError(`${entityName} with id ${id} not found`);
-  }
-}
+export const findProducts = async (filters: ProductQueryFilters) => {
+  // Implementation maps the 'q' object properties to database query clauses
+  // 'cont' maps to SQL LIKE %value%
+  // 'eq' maps to SQL =
+  // 'in' maps to SQL IN (...)
+  // 's' maps to ORDER BY clause
+  // 'page_rows' maps to LIMIT clause
+  
+  return await db.products.findMany({
+    where: {
+      sku: filters.sku_cont ? { contains: filters.sku_cont } : undefined,
+      name: filters.name_cont ? { contains: filters.name_cont } : undefined,
+      product_code: filters.product_code_cont ? { contains: filters.product_code_cont } : undefined,
+      product_brand_id: filters.product_brand_id_eq,
+      product_type_id: filters.product_type_id_eq,
+      tax_id: filters.tax_id_eq,
+      tags: filters.product_tags_id_in ? { some: { id: { in: filters.product_tags_id_in } } } : undefined,
+      info_1: filters.info_1_cont ? { contains: filters.info_1_cont } : undefined,
+      info_2: filters.info_2_cont ? { contains: filters.info_2_cont } : undefined,
+      info_3: filters.info_3_cont ? { contains: filters.info_3_cont } : undefined
+    },
+    orderBy: parseSort(filters.s),
+    take: filters.page_rows
+  });
+};

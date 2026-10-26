@@ -1,0 +1,29 @@
+[
+  {
+    "id": "data-stock-history-stockdataservice-md-exists",
+    "category": "structural",
+    "target": "Data/Stock_History/StockDataService.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/Stock_History/StockDataService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  },
+  {
+    "id": "schema-declares-stockhistory",
+    "category": "structural",
+    "target": "Data/Stock_History/StockDataService.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "StockHistory"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"StockHistory\" entity."
+  }
+]

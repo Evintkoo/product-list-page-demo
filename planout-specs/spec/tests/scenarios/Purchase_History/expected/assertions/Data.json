@@ -7,9 +7,9 @@
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
-    "id": "data-purchase-history-purchasecontroller-md-exists",
+    "id": "data-purchase-history-databaseschema-md-exists",
     "category": "structural",
-    "target": "Data/Purchase_History/PurchaseController.md",
+    "target": "Data/Purchase_History/DatabaseSchema.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
@@ -19,9 +19,9 @@
     "target": "Data/Purchase_History/PurchaseRepository.md",
     "check": "schema_block_present",
     "args": {
-      "entity": "Product"
+      "entity": "PRODUCT"
     },
-    "rationale": "Data-tier SCHEMA block must declare the \"Product\" entity."
+    "rationale": "Data-tier SCHEMA block must declare the \"PRODUCT\" entity."
   },
   {
     "id": "schema-declares-purchase",
@@ -29,8 +29,8 @@
     "target": "Data/Purchase_History/PurchaseRepository.md",
     "check": "schema_block_present",
     "args": {
-      "entity": "Purchase"
+      "entity": "PURCHASE"
     },
-    "rationale": "Data-tier SCHEMA block must declare the \"Purchase\" entity."
+    "rationale": "Data-tier SCHEMA block must declare the \"PURCHASE\" entity."
   }
 ]

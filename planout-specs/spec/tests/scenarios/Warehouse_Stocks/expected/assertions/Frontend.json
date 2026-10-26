@@ -7,16 +7,51 @@
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-warehouse-stocks-api-md-exists",
+    "id": "frontend-warehouse-stocks-productstab-md-exists",
     "category": "structural",
-    "target": "Frontend/Warehouse_Stocks/api.md",
+    "target": "Frontend/Warehouse_Stocks/ProductsTab.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-warehouse-stocks-validation-md-exists",
+    "id": "frontend-warehouse-stocks-qrcodebutton-md-exists",
     "category": "structural",
-    "target": "Frontend/Warehouse_Stocks/validation.md",
+    "target": "Frontend/Warehouse_Stocks/QRCodeButton.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-warehouse-stocks-submenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Warehouse_Stocks/SubMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-warehouse-stocks-mainmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Warehouse_Stocks/MainMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-warehouse-stocks-filterbar-md-exists",
+    "category": "structural",
+    "target": "Frontend/Warehouse_Stocks/FilterBar.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-warehouse-stocks-warehousestockpage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Warehouse_Stocks/WarehouseStockPage.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-warehouse-stocks-barcodepage-md-exists",
+    "category": "structural",
+    "target": "Frontend/Warehouse_Stocks/BarcodePage.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }
