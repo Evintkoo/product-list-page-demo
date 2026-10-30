@@ -32,5 +32,25 @@
       "entity": "Store"
     },
     "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/GET_api_store-stock-histories/StockHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "STORE"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"STORE\" entity."
+  },
+  {
+    "id": "schema-declares-stock_history",
+    "category": "structural",
+    "target": "Data/GET_api_store-stock-histories/StockHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "STOCK_HISTORY"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"STOCK_HISTORY\" entity."
   }
 ]

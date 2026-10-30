@@ -1,15 +1,71 @@
 [
   {
-    "id": "frontend-product-detail-page-productdetailpage-md-exists",
+    "id": "frontend-product-detail-page-productdetailview-md-exists",
     "category": "structural",
-    "target": "Frontend/Product_Detail_Page/ProductDetailPage.md",
+    "target": "Frontend/Product_Detail_Page/ProductDetailView.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-product-detail-page-productnavigation-md-exists",
+    "id": "frontend-product-detail-page-productlistnavigation-md-exists",
     "category": "structural",
-    "target": "Frontend/Product_Detail_Page/ProductNavigation.md",
+    "target": "Frontend/Product_Detail_Page/ProductListNavigation.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-page-producttabcontent-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page/ProductTabContent.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-page-productdetailview-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page/ProductDetailView.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-page-changescard-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page/ChangesCard.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-page-productdetailview-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page/ProductDetailView.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-page-productdetailcards-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page/ProductDetailCards.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-page-warehousestockdetails-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page/WarehouseStockDetails.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-page-purchasehistorymenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page/PurchaseHistoryMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-page-purchasehistoryview-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Page/PurchaseHistoryView.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }

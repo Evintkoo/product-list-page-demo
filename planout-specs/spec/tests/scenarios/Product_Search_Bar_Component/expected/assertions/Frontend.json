@@ -5,5 +5,12 @@
     "target": "Frontend/Product_Search_Bar_Component/ProductFilterBar.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-search-bar-component-skutextform-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Search_Bar_Component/SKUTextForm.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }
 ]

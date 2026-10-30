@@ -1,12 +1,5 @@
 [
   {
-    "id": "frontend-stock-history-stockhistorypage-md-exists",
-    "category": "structural",
-    "target": "Frontend/Stock_History/StockHistoryPage.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  },
-  {
     "id": "frontend-stock-history-stockhistoryview-md-exists",
     "category": "structural",
     "target": "Frontend/Stock_History/StockHistoryView.md",
@@ -14,16 +7,44 @@
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-stock-history-stockhistoryfilter-md-exists",
+    "id": "frontend-stock-history-mappingutils-md-exists",
     "category": "structural",
-    "target": "Frontend/Stock_History/StockHistoryFilter.md",
+    "target": "Frontend/Stock_History/MappingUtils.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-stock-history-stockhistorynavigation-md-exists",
+    "id": "frontend-stock-history-producttabhandler-md-exists",
     "category": "structural",
-    "target": "Frontend/Stock_History/StockHistoryNavigation.md",
+    "target": "Frontend/Stock_History/ProductTabHandler.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-history-productsmenu-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_History/ProductsMenu.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-history-productsmenucontainer-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_History/ProductsMenuContainer.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-history-stockhistorytable-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_History/StockHistoryTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-stock-history-mainmenunavigation-md-exists",
+    "category": "structural",
+    "target": "Frontend/Stock_History/MainMenuNavigation.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }

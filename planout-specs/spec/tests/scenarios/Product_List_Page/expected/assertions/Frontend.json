@@ -1,29 +1,29 @@
 [
   {
-    "id": "frontend-product-list-page-productlistpage-md-exists",
+    "id": "frontend-product-list-page-productlist-md-exists",
     "category": "structural",
-    "target": "Frontend/Product_List_Page/ProductListPage.md",
+    "target": "Frontend/Product_List_Page/ProductList.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-product-list-page-productdetailsnavigation-md-exists",
+    "id": "frontend-product-list-page-submenuaction-md-exists",
     "category": "structural",
-    "target": "Frontend/Product_List_Page/ProductDetailsNavigation.md",
+    "target": "Frontend/Product_List_Page/SubMenuAction.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-product-list-page-submenuhandler-md-exists",
+    "id": "frontend-product-list-page-productlist-md-exists",
     "category": "structural",
-    "target": "Frontend/Product_List_Page/SubMenuHandler.md",
+    "target": "Frontend/Product_List_Page/ProductList.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-product-list-page-commonmenuintegration-md-exists",
+    "id": "frontend-product-list-page-mainmenuintegration-md-exists",
     "category": "structural",
-    "target": "Frontend/Product_List_Page/CommonMenuIntegration.md",
+    "target": "Frontend/Product_List_Page/MainMenuIntegration.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }

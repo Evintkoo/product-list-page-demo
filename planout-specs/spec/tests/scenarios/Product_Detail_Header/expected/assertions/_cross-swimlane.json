@@ -2,7 +2,7 @@
   {
     "id": "feature-has-files",
     "category": "cross-swimlane",
-    "target": "Frontend/Product_Detail_Header/ProductDetailHeader.md",
+    "target": "Frontend/Product_Detail_Header/InventoryComponents.md",
     "check": "file_exists",
     "rationale": "Feature must produce at least one file across all swimlanes."
   }

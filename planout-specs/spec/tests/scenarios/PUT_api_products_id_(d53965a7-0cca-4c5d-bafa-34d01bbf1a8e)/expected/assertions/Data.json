@@ -7,6 +7,13 @@
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
+    "id": "data-put-api-products-id-d53965a7-0cca-4c5d-bafa-34d01bbf1a8e-productrepository-md-exists",
+    "category": "structural",
+    "target": "Data/PUT_api_products_id_(d53965a7-0cca-4c5d-bafa-34d01bbf1a8e)/ProductRepository.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
     "id": "schema-declares-product",
     "category": "structural",
     "target": "Data/PUT_api_products_id_(d53965a7-0cca-4c5d-bafa-34d01bbf1a8e)/ProductRepository.md",

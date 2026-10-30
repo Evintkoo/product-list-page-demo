@@ -1,8 +1,22 @@
 [
   {
-    "id": "frontend-product-detail-header-productdetailheader-md-exists",
+    "id": "frontend-product-detail-header-inventorycomponents-md-exists",
     "category": "structural",
-    "target": "Frontend/Product_Detail_Header/ProductDetailHeader.md",
+    "target": "Frontend/Product_Detail_Header/InventoryComponents.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-header-productsubstitutes-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Header/ProductSubstitutes.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
+  },
+  {
+    "id": "frontend-product-detail-header-producthistory-md-exists",
+    "category": "structural",
+    "target": "Frontend/Product_Detail_Header/ProductHistory.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }

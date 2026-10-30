@@ -1,8 +1,29 @@
 [
   {
-    "id": "data-customer-schema-definitions-md-exists",
+    "id": "data-customer-customerproductprice-md-exists",
     "category": "structural",
-    "target": "Data/Customer/schema_definitions.md",
+    "target": "Data/Customer/CustomerProductPrice.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-customer-customerbilling-md-exists",
+    "category": "structural",
+    "target": "Data/Customer/CustomerBilling.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-customer-customer-md-exists",
+    "category": "structural",
+    "target": "Data/Customer/Customer.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-customer-customergroup-md-exists",
+    "category": "structural",
+    "target": "Data/Customer/CustomerGroup.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
@@ -16,7 +37,7 @@
   {
     "id": "schema-declares-claim",
     "category": "structural",
-    "target": "Data/Customer/schema_definitions.md",
+    "target": "Data/Customer/CustomerProductPrice.md",
     "check": "schema_block_present",
     "args": {
       "entity": "Claim"
@@ -26,7 +47,7 @@
   {
     "id": "schema-declares-membershipprovider",
     "category": "structural",
-    "target": "Data/Customer/schema_definitions.md",
+    "target": "Data/Customer/CustomerProductPrice.md",
     "check": "schema_block_present",
     "args": {
       "entity": "MembershipProvider"
@@ -36,7 +57,7 @@
   {
     "id": "schema-declares-customermembership",
     "category": "structural",
-    "target": "Data/Customer/schema_definitions.md",
+    "target": "Data/Customer/CustomerProductPrice.md",
     "check": "schema_block_present",
     "args": {
       "entity": "CustomerMembership"
@@ -46,7 +67,7 @@
   {
     "id": "schema-declares-deposittransaction",
     "category": "structural",
-    "target": "Data/Customer/schema_definitions.md",
+    "target": "Data/Customer/CustomerProductPrice.md",
     "check": "schema_block_present",
     "args": {
       "entity": "DepositTransaction"
@@ -56,7 +77,7 @@
   {
     "id": "schema-declares-deposit",
     "category": "structural",
-    "target": "Data/Customer/schema_definitions.md",
+    "target": "Data/Customer/CustomerProductPrice.md",
     "check": "schema_block_present",
     "args": {
       "entity": "Deposit"
@@ -66,7 +87,7 @@
   {
     "id": "schema-declares-vehiclemodel",
     "category": "structural",
-    "target": "Data/Customer/schema_definitions.md",
+    "target": "Data/Customer/CustomerProductPrice.md",
     "check": "schema_block_present",
     "args": {
       "entity": "VehicleModel"
@@ -76,7 +97,7 @@
   {
     "id": "schema-declares-vehicle",
     "category": "structural",
-    "target": "Data/Customer/schema_definitions.md",
+    "target": "Data/Customer/CustomerProductPrice.md",
     "check": "schema_block_present",
     "args": {
       "entity": "Vehicle"
@@ -86,7 +107,7 @@
   {
     "id": "schema-declares-vehiclemake",
     "category": "structural",
-    "target": "Data/Customer/schema_definitions.md",
+    "target": "Data/Customer/CustomerProductPrice.md",
     "check": "schema_block_present",
     "args": {
       "entity": "VehicleMake"
@@ -96,7 +117,7 @@
   {
     "id": "schema-declares-customerproductprice",
     "category": "structural",
-    "target": "Data/Customer/schema_definitions.md",
+    "target": "Data/Customer/CustomerProductPrice.md",
     "check": "schema_block_present",
     "args": {
       "entity": "CustomerProductPrice"
@@ -106,7 +127,7 @@
   {
     "id": "schema-declares-customerbilling",
     "category": "structural",
-    "target": "Data/Customer/schema_definitions.md",
+    "target": "Data/Customer/CustomerProductPrice.md",
     "check": "schema_block_present",
     "args": {
       "entity": "CustomerBilling"
@@ -116,7 +137,7 @@
   {
     "id": "schema-declares-customer",
     "category": "structural",
-    "target": "Data/Customer/schema_definitions.md",
+    "target": "Data/Customer/CustomerProductPrice.md",
     "check": "schema_block_present",
     "args": {
       "entity": "Customer"
@@ -126,11 +147,21 @@
   {
     "id": "schema-declares-customergroup",
     "category": "structural",
-    "target": "Data/Customer/schema_definitions.md",
+    "target": "Data/Customer/CustomerProductPrice.md",
     "check": "schema_block_present",
     "args": {
       "entity": "CustomerGroup"
     },
     "rationale": "Data-tier SCHEMA block must declare the \"CustomerGroup\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/Customer/CustomerProductPrice.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "Store"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"Store\" entity."
   }
 ]

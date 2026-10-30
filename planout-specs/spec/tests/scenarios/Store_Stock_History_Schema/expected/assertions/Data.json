@@ -52,5 +52,35 @@
       "entity": "products"
     },
     "rationale": "Data-tier SCHEMA block must declare the \"products\" entity."
+  },
+  {
+    "id": "schema-declares-store",
+    "category": "structural",
+    "target": "Data/Store_Stock_History_Schema/DataLayer.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "STORE"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"STORE\" entity."
+  },
+  {
+    "id": "schema-declares-store_stock",
+    "category": "structural",
+    "target": "Data/Store_Stock_History_Schema/DataLayer.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "STORE_STOCK"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"STORE_STOCK\" entity."
+  },
+  {
+    "id": "schema-declares-store_stock_history",
+    "category": "structural",
+    "target": "Data/Store_Stock_History_Schema/DataLayer.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "STORE_STOCK_HISTORY"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"STORE_STOCK_HISTORY\" entity."
   }
 ]

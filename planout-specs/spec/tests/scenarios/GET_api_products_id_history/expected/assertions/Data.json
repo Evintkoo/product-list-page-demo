@@ -39,5 +39,15 @@
       "entity": "ProductHistory"
     },
     "rationale": "Data-tier SCHEMA block must declare the \"ProductHistory\" entity."
+  },
+  {
+    "id": "schema-declares-purchasehistory",
+    "category": "structural",
+    "target": "Data/GET_api_products_id_history/ProductHistoryRepository.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "PurchaseHistory"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"PurchaseHistory\" entity."
   }
 ]

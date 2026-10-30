@@ -1,15 +1,36 @@
 [
   {
-    "id": "data-product-productschema-md-exists",
+    "id": "data-product-warehousetable-md-exists",
     "category": "structural",
-    "target": "Data/Product/ProductSchema.md",
+    "target": "Data/Product/WarehouseTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-product-producttagsmapping-md-exists",
+    "category": "structural",
+    "target": "Data/Product/ProductTagsMapping.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-product-purchasehistorytable-md-exists",
+    "category": "structural",
+    "target": "Data/Product/PurchaseHistoryTable.md",
+    "check": "file_exists",
+    "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "data-product-productstable-md-exists",
+    "category": "structural",
+    "target": "Data/Product/ProductsTable.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
   {
     "id": "schema-declares-producttype",
     "category": "structural",
-    "target": "Data/Product/ProductSchema.md",
+    "target": "Data/Product/WarehouseTable.md",
     "check": "schema_block_present",
     "args": {
       "entity": "ProductType"
@@ -19,7 +40,7 @@
   {
     "id": "schema-declares-storestockhistory",
     "category": "structural",
-    "target": "Data/Product/ProductSchema.md",
+    "target": "Data/Product/WarehouseTable.md",
     "check": "schema_block_present",
     "args": {
       "entity": "StoreStockHistory"
@@ -29,7 +50,7 @@
   {
     "id": "schema-declares-storestocks",
     "category": "structural",
-    "target": "Data/Product/ProductSchema.md",
+    "target": "Data/Product/WarehouseTable.md",
     "check": "schema_block_present",
     "args": {
       "entity": "StoreStocks"
@@ -39,7 +60,7 @@
   {
     "id": "schema-declares-store",
     "category": "structural",
-    "target": "Data/Product/ProductSchema.md",
+    "target": "Data/Product/WarehouseTable.md",
     "check": "schema_block_present",
     "args": {
       "entity": "Store"
@@ -49,7 +70,7 @@
   {
     "id": "schema-declares-producthistory",
     "category": "structural",
-    "target": "Data/Product/ProductSchema.md",
+    "target": "Data/Product/WarehouseTable.md",
     "check": "schema_block_present",
     "args": {
       "entity": "ProductHistory"
@@ -59,7 +80,7 @@
   {
     "id": "schema-declares-pricestracking",
     "category": "structural",
-    "target": "Data/Product/ProductSchema.md",
+    "target": "Data/Product/WarehouseTable.md",
     "check": "schema_block_present",
     "args": {
       "entity": "PricesTracking"
@@ -69,7 +90,7 @@
   {
     "id": "schema-declares-productbrand",
     "category": "structural",
-    "target": "Data/Product/ProductSchema.md",
+    "target": "Data/Product/WarehouseTable.md",
     "check": "schema_block_present",
     "args": {
       "entity": "ProductBrand"
@@ -79,7 +100,7 @@
   {
     "id": "schema-declares-warehousestock",
     "category": "structural",
-    "target": "Data/Product/ProductSchema.md",
+    "target": "Data/Product/WarehouseTable.md",
     "check": "schema_block_present",
     "args": {
       "entity": "WarehouseStock"
@@ -89,7 +110,7 @@
   {
     "id": "schema-declares-warehouse",
     "category": "structural",
-    "target": "Data/Product/ProductSchema.md",
+    "target": "Data/Product/WarehouseTable.md",
     "check": "schema_block_present",
     "args": {
       "entity": "Warehouse"
@@ -99,7 +120,7 @@
   {
     "id": "schema-declares-producttagsmapping",
     "category": "structural",
-    "target": "Data/Product/ProductSchema.md",
+    "target": "Data/Product/WarehouseTable.md",
     "check": "schema_block_present",
     "args": {
       "entity": "ProductTagsMapping"
@@ -109,7 +130,7 @@
   {
     "id": "schema-declares-purchasehistory",
     "category": "structural",
-    "target": "Data/Product/ProductSchema.md",
+    "target": "Data/Product/WarehouseTable.md",
     "check": "schema_block_present",
     "args": {
       "entity": "PurchaseHistory"
@@ -119,7 +140,7 @@
   {
     "id": "schema-declares-products",
     "category": "structural",
-    "target": "Data/Product/ProductSchema.md",
+    "target": "Data/Product/WarehouseTable.md",
     "check": "schema_block_present",
     "args": {
       "entity": "Products"

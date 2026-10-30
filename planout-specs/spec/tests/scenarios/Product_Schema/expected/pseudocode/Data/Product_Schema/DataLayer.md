@@ -1,47 +1,27 @@
-// Node (0608f021-412f-4c2c-92c6-f92d468527cd)
-// Input: Product List JSON Schema (from Product List JSON Schema node)
-// Output: None
-// Logic: Receives the list of products from the products table.
-// Happy Path: Returns array of Product entities.
-// Error State: Returns empty array if no products found.
-// Notes covered: List of products from products table.
+// Unit: fc851a60-6869-47df-b997-cc7c267d2481
+// Receives: Product Type JSON Schema (e88e8222), Consolidated Product Data Query (862a65f8)
+// Logic: Joins the product type definition with the consolidated product query result.
+// Happy Path: Returns a unified object containing product attributes and type metadata.
+// Error State: Returns null if the product ID is not found in the type mapping.
+// Notes covered: None (Node description empty).
 
-// Node (d14efbdd-950c-4a77-914c-5fa6397aa404)
-// Input: None
-// Output: None
-// Logic: Placeholder node for schema initialization.
-// Happy Path: N/A
-// Error State: N/A
-// Notes covered: None (Empty description)
+// Unit: e35a495e-aa03-4284-839a-216097df74f2
+// Receives: N/A
+// Logic: Defines the schema for StoreStocks.
+// Happy Path: Validates that product_id, sku, store_id, quantity, and updated_at are present.
+// Error State: Throws validation error if required fields are missing.
+// Notes covered: Table contains list of product stock quantities per store; JSON mapping to StoreStocks Table; Fields: product_id (int, ref Products), sku (string, ref Products), store_id (int, ref Stores), quantity (number), updated_at (date); Required: product_id, sku, store_id, quantity, updated_at.
 
-// Node (6c7c066a-36e5-4327-9afe-380536f5061a)
-// Input: Consolidated Product Data Query (warehouse inventory), warehouse data query (warehouse table)
-// Output: None
-// Logic: Joins the Consolidated Product Data Query with the warehouse table to retrieve inventory levels.
-// Happy Path: Returns product record with nested warehouse inventory data.
-// Error State: Returns null for inventory if no warehouse record exists.
-// Notes covered: warehouse inventory, warehouse table.
+// Unit: f9678e3d-5552-4213-a176-a9b2318e54df
+// Receives: Consolidated Product Data Query (862a65f8), Store Stocks JSON Schema (e35a495e)
+// Logic: Aggregates store-specific stock data into the consolidated product view.
+// Happy Path: Returns the product record with an embedded array of stock objects.
+// Error State: Returns empty array for stocks if no records exist for the product.
+// Notes covered: None (Node description empty).
 
-// Node (c675d5d9-6fe4-43a9-a02f-0cbe16bac04a)
-// Input: Consolidated Product Data Query (product brand), Product Brand JSON Schema (product brand table)
-// Output: None
-// Logic: Joins the Consolidated Product Data Query with the product brand table.
-// Happy Path: Returns product record with associated Brand entity.
-// Error State: Returns "Unknown" brand if foreign key is orphaned.
-// Notes covered: product brand, product brand table.
-
-// Node (fc851a60-6869-47df-b997-cc7c267d2481)
-// Input: Product Type JSON Schema (product type table), Consolidated Product Data Query (product type)
-// Output: None
-// Logic: Joins the Consolidated Product Data Query with the product type table.
-// Happy Path: Returns product record with associated ProductType entity.
-// Error State: Returns null type if no match found.
-// Notes covered: product type table, product type.
-
-// Node (f9678e3d-5552-4213-a176-a9b2318e54df)
-// Input: Consolidated Product Data Query (store stock), Store Stocks JSON Schema (mapping to StoreStocks Table)
-// Output: None
-// Logic: Joins the Consolidated Product Data Query with the StoreStocks table.
-// Happy Path: Returns product record with associated store stock quantities.
-// Error State: Returns 0 for stock if no StoreStocks record exists for the product.
-// Notes covered: store stock, This JSON is a mapping to the StoreStocks Table.
+// Unit: 34c95762-b78b-4c12-9a0e-356490f4287d
+// Receives: N/A
+// Logic: Defines the response shape for product history entries.
+// Happy Path: Returns object with history_id, product_id, updated_at, updated_by, and optional pricing/status fields.
+// Error State: N/A (Schema definition).
+// Notes covered: history_id (int, auto-increment, PK); product_id (int, ref Products); updated_at (datetime); updated_by (string); company_supply_price, wholesale_price, supply_price, retail_price (number); is_taxed (bool); trade_in, warranty (number); is_active, is_tracked, is_bundle (bool); Required: history_id, product_id, updated_at, updated_by.

@@ -1,29 +1,22 @@
 [
   {
-    "id": "frontend-purchase-history-purchasehistorypage-md-exists",
+    "id": "frontend-purchase-history-purchasehistory-md-exists",
     "category": "structural",
-    "target": "Frontend/Purchase_History/PurchaseHistoryPage.md",
+    "target": "Frontend/Purchase_History/PurchaseHistory.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-purchase-history-purchasetable-md-exists",
+    "id": "frontend-purchase-history-purchasehistorytable-md-exists",
     "category": "structural",
-    "target": "Frontend/Purchase_History/PurchaseTable.md",
+    "target": "Frontend/Purchase_History/PurchaseHistoryTable.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   },
   {
-    "id": "frontend-purchase-history-productqrcodedisplay-md-exists",
+    "id": "frontend-purchase-history-usepurchasehistory-md-exists",
     "category": "structural",
-    "target": "Frontend/Purchase_History/ProductQRCodeDisplay.md",
-    "check": "file_exists",
-    "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
-  },
-  {
-    "id": "frontend-purchase-history-purchasehistorylist-md-exists",
-    "category": "structural",
-    "target": "Frontend/Purchase_History/PurchaseHistoryList.md",
+    "target": "Frontend/Purchase_History/usePurchaseHistory.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Frontend\" emitted this pseudocode file."
   }

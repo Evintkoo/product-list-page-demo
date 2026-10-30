@@ -1,8 +1,8 @@
 [
   {
-    "id": "data-common-standard-response-json-schema-responseschemas-md-exists",
+    "id": "data-common-standard-response-json-schema-httpresponseschemas-md-exists",
     "category": "structural",
-    "target": "Data/Common_Standard_Response_JSON_Schema/ResponseSchemas.md",
+    "target": "Data/Common_Standard_Response_JSON_Schema/HTTPResponseSchemas.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
   },
@@ -12,5 +12,35 @@
     "target": "Data/Common_Standard_Response_JSON_Schema/ErrorSchemas.md",
     "check": "file_exists",
     "rationale": "Swimlane \"Data\" emitted this pseudocode file."
+  },
+  {
+    "id": "schema-declares-http401response",
+    "category": "structural",
+    "target": "Data/Common_Standard_Response_JSON_Schema/HTTPResponseSchemas.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "HTTP401Response"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"HTTP401Response\" entity."
+  },
+  {
+    "id": "schema-declares-http500response",
+    "category": "structural",
+    "target": "Data/Common_Standard_Response_JSON_Schema/HTTPResponseSchemas.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "HTTP500Response"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"HTTP500Response\" entity."
+  },
+  {
+    "id": "schema-declares-http404response",
+    "category": "structural",
+    "target": "Data/Common_Standard_Response_JSON_Schema/HTTPResponseSchemas.md",
+    "check": "schema_block_present",
+    "args": {
+      "entity": "HTTP404Response"
+    },
+    "rationale": "Data-tier SCHEMA block must declare the \"HTTP404Response\" entity."
   }
 ]
